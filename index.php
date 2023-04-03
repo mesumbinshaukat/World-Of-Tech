@@ -13,7 +13,9 @@
 
     <section id="navbar">
 
-        <?php include("navbar.html");?>
+         <?php # include("navbar.html");?>
+        <?php include("navtest.html");?>
+
 
     </section>
 
@@ -25,36 +27,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
                             <h1 class="text-center mt-5">COMING SOON!!!</h1>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
+                    
 
                     </div>
                 </center>
