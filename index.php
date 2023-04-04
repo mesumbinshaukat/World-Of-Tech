@@ -19,11 +19,7 @@
 
 
     </section>
-    <section>
-        <article>
-            <?php include("slider.html");?>
-        </article>
-    </section>
+
 
     <section>
         <main>
@@ -42,10 +38,10 @@
     </section>
 
 
-    <section id="footer" class="footer">
-        <?php include("footer.php");?>
+    <footer class="footer-section">
+        <?php include("footer.html");?>
 
-    </section>
+   </footer>
 </body>
 
 </html>
