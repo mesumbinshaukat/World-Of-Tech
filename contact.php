@@ -40,7 +40,8 @@
 
                         </div>
                         <div class="col-lg-12">
-                            <textarea rows="2" cols="22"></textarea>
+                            <textarea rows="2" cols="20" name="message" placeholder="Enter your message"
+                                required></textarea>
                         </div>
                     </div>
 
