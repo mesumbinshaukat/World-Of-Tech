@@ -13,8 +13,8 @@
 
     <section id="navbar">
 
-        <?php # include("navbar.html");?>
-        <?php include("navbar.html");?><br><br><br><br>
+         <?php # include("navbar.html");?>
+        <?php include("navbar.html");?>
 
 
 
@@ -24,22 +24,10 @@
             <?php include("slider.html");?>
         </article>
     </section>
-
-    <section>
-        <main>
-            <div class="container-fluid mt-5">
-                <center>
-                    <div class="row mt-5 text-center justify-content-center">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
+    
 
 
-                    </div>
-                </center>
-            </div>
-        </main>
-    </section>
+   
 
 
     <section id="footer" class="footer">
