@@ -9,7 +9,7 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-light d-flex flex-column min-vh-100">
 
     <section id="navbar">
 
@@ -26,7 +26,7 @@
             <div class="container-fluid mt-5">
                 <center>
                     <div class="row mt-5 text-center justify-content-center">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center" style="height:800px;">
                             <h1 class="text-center mt-5">COMING SOON!!!</h1>
                         </div>
 
@@ -38,7 +38,7 @@
     </section>
 
 
-    <footer class="footer-section">
+    <footer class="footer">
         <?php include("footer.html");?>
 
    </footer>
