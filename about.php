@@ -21,9 +21,9 @@
     }
 
     .about_pic {
-        height: 30rem;
+        /* height: 30rem; */
         border-radius: 20px;
-
+        box-shadow: -1px 2px 15px 5px black;
     }
 
     .icon {
@@ -88,7 +88,7 @@
                             or consumer software based on the needs of their client base and structure for a software
                             release.
                         </p>
-                        <img src="./images/about-us-pic.jpg" alt="code" class="about_pic mt-4">
+                        <img src="./images/pexels-fauxels-3183197.jpg" alt="code" class="about_pic mt-4">
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@
                         <div class="container mt-5">
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="./icons/web-dev.jpg" alt="" class="icon">
+                                    <img src="./icons/web-design (2).png" alt="" class="icon">
                                     <p class="mt-3">Web development</p>
                                 </div>
                                 <div class="col text-center">
@@ -126,7 +126,7 @@
                         <div class="container mt-3">
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="./icons/digital.png" alt="" class="icon">
+                                    <img src="./icons/social-media-2.png" alt="" class="icon">
                                     <p class="mt-3">Digital Marketing</p>
                                 </div>
                                 <div class="col text-center">
@@ -166,17 +166,17 @@
                         <div class="container mt-5">
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="./Icons/anony2.jpg" alt="" class="t_img">
+                                    <img src="./Icons/hacker.png" alt="" class="t_img">
                                     <h6>Mesum</h6>
                                     <p class="mt-3">Developer</p>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./Icons/anony2.jpg" alt="" class="t_img">
+                                    <img src="./Icons/hacker.png" alt="" class="t_img">
                                     <h6>Abdul Rafay</h6>
                                     <p class="mt-3">Developer</p>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./Icons/anony2.jpg" alt="" class="t_img">
+                                    <img src="./Icons/hacker.png" alt="" class="t_img">
                                     <h6>Zohair</h6>
                                     <p class="mt-3">Developer</p>
                                 </div>
@@ -185,17 +185,17 @@
                         <div class="container mt-3">
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="./Icons/anony2.jpg" alt="" class="t_img">
+                                    <img src="./Icons/hacker.png" alt="" class="t_img">
                                     <h6>Sarim</h6>
                                     <p class="mt-3">Developer</p>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./Icons/anony2.jpg" alt="" class="t_img">
+                                    <img src="./Icons/hacker.png" alt="" class="t_img">
                                     <h6>Huzaifa</h6>
                                     <p class="mt-3">Developer</p>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./Icons/anony2.jpg" alt="" class="t_img">
+                                    <img src="./Icons/hacker.png" alt="" class="t_img">
                                     <h6>Mashood</h6>
                                     <p class="mt-3">Developer</p>
                                 </div>
@@ -208,12 +208,12 @@
                 <div class="container mt-3">
                     <div class="row">
                         <div class="col text-center">
-                            <img src="./Icons/anony2.jpg" alt="" class="t_imgd">
+                            <img src="./Icons/hacker.png" alt="" class="t_imgd">
                             <h6>Umer</h6>
                             <p class="mt-3">Developer</p>
                         </div>
                         <div class="col text-center">
-                            <img src="./Icons/anony2.jpg" alt="" class="t_imgd">
+                            <img src="./Icons/hacker.png" alt="" class="t_imgd">
                             <h6>Owais</h6>
                             <p class="mt-3">Developer</p>
                         </div>
