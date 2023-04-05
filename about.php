@@ -213,11 +213,11 @@
                     <div class="row">
                         <div class="col text-center mb-5">
                             <img src="./Icons/hacker.png" alt="" class="t_imgd">
-                            <h6 class="mt-2"><u>Umer Siddique</u> </h6>
+                            <h6 class="mt-2">Umer Siddique </h6>
                         </div>
                         <div class="col text-center mb-5">
                             <img src="./Icons/hacker.png" alt="" class="t_imgd">
-                            <h6 class="mt-2"> <u>Mohammad Owais Khan</u> </h6>
+                            <h6 class="mt-2"> Mohammad Owais Khan </h6>
                         </div>
                     </div>
                 </div> <hr>
