@@ -40,12 +40,11 @@
         /* height: 50%; */
         width: 30%;
     }
+
     .about-a {
         box-shadow: -1px 1px 7px 5px black;
-        
-    }
-    
 
+    }
     </style>
 
 </head>
@@ -172,19 +171,16 @@
                         <div class="container mt-5">
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6>Mesum</h6>
-                                    <p class="mt-3">Developer</p>
+                                    <img src="./images/pic1.jpeg" alt="" class="t_img">
+                                    <h6>Mesum Bin Shaukat</h6>
+                                </div>
+                                <div class="col text-center">
+                                    <img src="./images/Zohair.jpg" alt="" class="t_img">
+                                    <h6>Zohair Adeel</h6>
                                 </div>
                                 <div class="col text-center">
                                     <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6>Abdul Rafay</h6>
-                                    <p class="mt-3">Developer</p>
-                                </div>
-                                <div class="col text-center">
-                                    <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6>Zohair</h6>
-                                    <p class="mt-3">Developer</p>
+                                    <h6>Abdul Rafay Khan</h6>
                                 </div>
                             </div>
                         </div>
@@ -192,18 +188,15 @@
                             <div class="row">
                                 <div class="col text-center">
                                     <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6>Sarim</h6>
-                                    <p class="mt-3">Developer</p>
+                                    <h6>Sarim Khan</h6>
                                 </div>
                                 <div class="col text-center">
                                     <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6>Huzaifa</h6>
-                                    <p class="mt-3">Developer</p>
+                                    <h6>Huzaifa Irfan</h6>
                                 </div>
                                 <div class="col text-center">
                                     <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6>Mashood</h6>
-                                    <p class="mt-3">Developer</p>
+                                    <h6>Muhammad Mashood Khan</h6>
                                 </div>
                             </div>
                         </div>
@@ -211,17 +204,15 @@
 
                     </div>
                 </div>
-                <div class="container mt-3">
+                <div class="container mt-3 mb-5">
                     <div class="row">
-                        <div class="col text-center">
+                        <div class="col text-center mb-5">
                             <img src="./Icons/hacker.png" alt="" class="t_imgd">
-                            <h6>Umer</h6>
-                            <p class="mt-3">Developer</p>
+                            <h6>Umer Siddique</h6>
                         </div>
-                        <div class="col text-center">
+                        <div class="col text-center mb-5">
                             <img src="./Icons/hacker.png" alt="" class="t_imgd">
-                            <h6>Owais</h6>
-                            <p class="mt-3">Developer</p>
+                            <h6>Mohammad Owais Khan</h6>
                         </div>
                     </div>
                 </div>
@@ -234,7 +225,10 @@
     </div>
 
 
+    <footer class="footer">
+        <?php include("footer.html");?>
 
+    </footer>
 
 
 </body>
