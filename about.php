@@ -34,17 +34,22 @@
     .t_img {
         /* height: 60%; */
         width: 50%;
+        border-radius:150px;
     }
 
     .t_imgd {
         /* height: 50%; */
         width: 30%;
+        border-radius:150px;
+
     }
 
     .about-a {
         box-shadow: -1px 1px 7px 5px black;
 
     }
+  
+    
     </style>
 
 </head>
@@ -172,34 +177,34 @@
                             <div class="row">
                                 <div class="col text-center">
                                     <img src="./images/pic1.jpeg" alt="" class="t_img">
-                                    <h6>Mesum Bin Shaukat</h6>
+                                    <h6 class="mt-2 name"> Mesum Bin Shaukat</h6>
                                 </div>
                                 <div class="col text-center">
                                     <img src="./images/Zohair.jpg" alt="" class="t_img">
-                                    <h6>Zohair Adeel</h6>
+                                    <h6 class="mt-2 name"> Zohair Adeel </h6>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6>Abdul Rafay Khan</h6>
-                                </div>
+                                    <img src="./images/sarim.jpeg" alt="" class="t_img">
+                                    <h6 class="mt-2 name"> Sarim Khan </h6>
+                                </div> <hr>
                             </div>
                         </div>
                         <div class="container mt-3">
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6>Sarim Khan</h6>
+                                    <img src="./images/rafay.jpg" alt="" class="t_img">
+                                    <h6 class="mt-2 name"> Abdul Rafay Khan </h6>
                                 </div>
                                 <div class="col text-center">
                                     <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6>Huzaifa Irfan</h6>
+                                    <h6 class="mt-2 name">Huzaifa Irfan </h6>
                                 </div>
                                 <div class="col text-center">
                                     <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6>Muhammad Mashood Khan</h6>
+                                    <h6 class="mt-2 name">  Muhammad Mashood Khan</h6>
                                 </div>
                             </div>
-                        </div>
+                        </div> <hr>
 
 
                     </div>
@@ -208,14 +213,14 @@
                     <div class="row">
                         <div class="col text-center mb-5">
                             <img src="./Icons/hacker.png" alt="" class="t_imgd">
-                            <h6>Umer Siddique</h6>
+                            <h6 class="mt-2"><u>Umer Siddique</u> </h6>
                         </div>
                         <div class="col text-center mb-5">
                             <img src="./Icons/hacker.png" alt="" class="t_imgd">
-                            <h6>Mohammad Owais Khan</h6>
+                            <h6 class="mt-2"> <u>Mohammad Owais Khan</u> </h6>
                         </div>
                     </div>
-                </div>
+                </div> <hr>
 
 
             </div>
