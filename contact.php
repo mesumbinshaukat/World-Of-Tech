@@ -27,12 +27,12 @@
                             <input type="text" name="user_name" placeholder="Enter your name" required>
 
                         </div>
-                        <!-- <div class="col-lg-12">
+                        <div class="col-lg-12">
                             <input type="email" name="user_email" placeholder="Enter your email" required>
 
                         </div>
                         <div class="col-lg-12">
-                            <input type="tel" name="phone_number" placeholder="Enter your phone number" required>
+                            <input type="number" name="phone_number" placeholder="Enter your phone number" required>
 
                         </div>
                         <div class="col-lg-12">
@@ -42,7 +42,7 @@
                         <div class="col-lg-12">
                             <textarea rows="2" cols="20" name="message" placeholder="Enter your message"
                                 required></textarea>
-                        </div> -->
+                        </div>
                     </div>
 
                     <input type="submit" name="btn_submit" value="Submit" class="btn btn-outline-dark">
