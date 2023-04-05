@@ -32,14 +32,20 @@
     }
 
     .t_img {
-        height: 60%;
+        /* height: 60%; */
         width: 50%;
     }
 
     .t_imgd {
-        height: 50%;
+        /* height: 50%; */
         width: 30%;
     }
+    .about-a {
+        box-shadow: -1px 1px 7px 5px black;
+        
+    }
+    
+
     </style>
 
 </head>
@@ -94,7 +100,7 @@
 
 
 
-                <div class="container mt-5">
+                <div class="container-sm  mt-5">
                     <div class="row">
                         <h3 class="text-center">
                             <b>What Makes Us Diffrent..</b>
@@ -107,33 +113,33 @@
                             will get a chance to compete with their competitors.You can also hire us to keep your
                             website up to date.
                         </p>
-                        <div class="container mt-5">
+                        <div class="container-sm  mt-5">
                             <div class="row">
-                                <div class="col text-center">
+                                <div class="col p-4 m-2 about-a text-center">
                                     <img src="./icons/web-design (2).png" alt="" class="icon">
                                     <p class="mt-3">Web development</p>
                                 </div>
-                                <div class="col text-center">
+                                <div class="col p-4 m-2 about-a text-center">
                                     <img src="./Icons/app-development.png" alt="" class="icon">
                                     <p class="mt-3">App development</p>
                                 </div>
-                                <div class="col text-center">
+                                <div class="col p-4 m-2  about-a text-center">
                                     <img src="./Icons/designer.png" alt="" class="icon">
                                     <p class="mt-3">UI/UX Designing</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="container mt-3">
+                        <div class="container-sm  mt-3">
                             <div class="row">
-                                <div class="col text-center">
+                                <div class="col p-4 m-2 about-a text-center">
                                     <img src="./icons/social-media-2.png" alt="" class="icon">
                                     <p class="mt-3">Digital Marketing</p>
                                 </div>
-                                <div class="col text-center">
+                                <div class="col p-4 m-2 about-a text-center">
                                     <img src="./Icons/database-storage.png" alt="" class="icon">
                                     <p class="mt-3">Database Designing</p>
                                 </div>
-                                <div class="col text-center">
+                                <div class="col p-4 m-2 about-a text-center">
                                     <img src="./Icons/seo.png" alt="" class="icon">
                                     <p class="mt-3">SEO</p>
                                 </div>
