@@ -196,7 +196,7 @@
                                     <h6 class="mt-2 name"> Abdul Rafay Khan </h6>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./Icons/hacker.png" alt="" class="t_img">
+                                    <img src="./images/huzaifa.jpg" alt="" class="t_img">
                                     <h6 class="mt-2 name">Huzaifa Irfan </h6>
                                 </div>
                                 <div class="col text-center">
