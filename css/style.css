@@ -4,9 +4,9 @@
 * {
 font-family: 'Libre Baskerville', serif;
 }
-.first_sp{
+/* .first_sp{
     margin-left: 14rem !important;
-}
+} */
 .spacing{
     margin-left: 4rem;
 }
@@ -16,7 +16,6 @@ font-family: 'Libre Baskerville', serif;
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: black;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -27,11 +26,12 @@ font-family: 'Libre Baskerville', serif;
   }
   
    .btn-animated:hover {
-    background: #242a2b;
+    text-decoration: none;
+    background: #fff;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 2px gray, 0 0 15px gray, 0 0 25px gray,
-      0 0 50px gray;
+    box-shadow: 0 0 2px #fff, 0 0 15px #fff, 0 0 25px #fff,
+      0 0 50px #fff;
   }
   
    .btn-animated span {
@@ -44,7 +44,7 @@ font-family: 'Libre Baskerville', serif;
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #000);
+    background: linear-gradient(90deg, transparent, #fff);
     animation: btn-anim1 1s linear infinite;
   }
   
@@ -63,7 +63,7 @@ font-family: 'Libre Baskerville', serif;
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #000);
+    background: linear-gradient(180deg, transparent, #fff);
     animation: btn-anim2 1s linear infinite;
     animation-delay: 0.25s;
   }
@@ -83,7 +83,7 @@ font-family: 'Libre Baskerville', serif;
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #000);
+    background: linear-gradient(270deg, transparent, #fff);
     animation: btn-anim3 1s linear infinite;
     animation-delay: 0.5s;
   }
@@ -103,7 +103,7 @@ font-family: 'Libre Baskerville', serif;
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #000);
+    background: linear-gradient(360deg, transparent, #fff);
     animation: btn-anim4 1s linear infinite;
     animation-delay: 0.75s;
   }
