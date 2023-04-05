@@ -21,27 +21,19 @@
     </section>
 
 
-    <section>
-        <main>
+    <section class="mb-5">
+        <main class="mb-5">
             <div class="container-fluid mt-5">
-                <center>
-                    <div class="row mt-5 text-center justify-content-center">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5 text-center" style="height:800px;">
-                            <h1 class="text-center mt-5">COMING SOON!!!</h1>
-                        </div>
-
-
-                    </div>
-                </center>
+                <?php include('cards.html');?>
             </div>
         </main>
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer mt-5">
         <?php include("footer.html");?>
 
-   </footer>
+    </footer>
 </body>
 
 </html>
