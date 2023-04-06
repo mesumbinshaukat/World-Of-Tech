@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./LOGO/youtube-picture(500px-500px).png">
+
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
@@ -20,11 +22,15 @@
 
     </section>
 
+    <section>
+        <?php include('slider.php');?>
+    </section>
+
 
     <section class="mb-5">
         <main class="mb-5">
             <div class="container-fluid mt-5">
-                <?php include('cards.html');?>
+                <?php include('cards.php');?>
             </div>
         </main>
     </section>
