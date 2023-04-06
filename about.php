@@ -23,7 +23,7 @@
     .about_pic {
         /* height: 30rem; */
         border-radius: 20px;
-        box-shadow: -1px 2px 15px 5px black;
+        box-shadow: -1px 2px 15px 5px grey;
     }
 
     .icon {
@@ -34,22 +34,22 @@
     .t_img {
         /* height: 60%; */
         width: 50%;
-        border-radius:150px;
+        border-radius: 150px;
     }
+
+
 
     .t_imgd {
         /* height: 50%; */
         width: 30%;
-        border-radius:150px;
+        border-radius: 150px;
 
     }
 
     .about-a {
-        box-shadow: -1px 1px 7px 5px black;
+        box-shadow: -1px 1px 7px 5px grey;
 
     }
-  
-    
     </style>
 
 </head>
@@ -120,16 +120,16 @@
                         <div class="container-sm  mt-5">
                             <div class="row">
                                 <div class="col p-4 m-2 about-a text-center">
-                                    <img src="./icons/web-design (2).png" alt="" class="icon">
-                                    <p class="mt-3">Web development</p>
+                                    <img src="./icons/backend (3).png" alt="" class="icon">
+                                    <p class="mt-3">WEB DEVELOPMENT</p>
                                 </div>
                                 <div class="col p-4 m-2 about-a text-center">
-                                    <img src="./Icons/app-development.png" alt="" class="icon">
-                                    <p class="mt-3">App development</p>
+                                    <img src="./Icons/coding (4).png" alt="" class="icon">
+                                    <p class="mt-3">WEB DESIGNING</p>
                                 </div>
                                 <div class="col p-4 m-2  about-a text-center">
                                     <img src="./Icons/designer.png" alt="" class="icon">
-                                    <p class="mt-3">UI/UX Designing</p>
+                                    <p class="mt-3">UI/UX DESIGNING</p>
                                 </div>
                             </div>
                         </div>
@@ -137,11 +137,11 @@
                             <div class="row">
                                 <div class="col p-4 m-2 about-a text-center">
                                     <img src="./icons/social-media-2.png" alt="" class="icon">
-                                    <p class="mt-3">Digital Marketing</p>
+                                    <p class="mt-3">DIGITAL MARKETING</p>
                                 </div>
                                 <div class="col p-4 m-2 about-a text-center">
                                     <img src="./Icons/database-storage.png" alt="" class="icon">
-                                    <p class="mt-3">Database Designing</p>
+                                    <p class="mt-3">DATABASE DESINGING</p>
                                 </div>
                                 <div class="col p-4 m-2 about-a text-center">
                                     <img src="./Icons/seo.png" alt="" class="icon">
@@ -167,44 +167,43 @@
                     <div class="row">
                         <h3 class="text-center"><b>Meet Our Executive Team</b> </h3>
                         <p class="text-center mt-3">
-                            This team operates as an interdependent, collaborative decision-making body – strategically
-                            executing the company's mission and visionWorld of tech is a company that provides
-                            specialization primarily in software products, in either business
-                            or consumer software based on the needs of their client base and structure for a software
-                            release.
+                            This team operates as an intedependent, collaborative decision-making body – strategically
+                            executing the company's mission and vision.
                         </p>
                         <div class="container mt-5">
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="./images/pic1.jpeg" alt="" class="t_img">
+                                    <img src="./images/pic1.jpeg" alt="Mesum Bin Shaukat" class="t_img">
                                     <h6 class="mt-2 name"> Mesum Bin Shaukat</h6>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./images/Zohair.jpg" alt="" class="t_img">
+                                    <img src="./images/Zohair.jpg" alt="Zohair Adeel" class="t_img">
                                     <h6 class="mt-2 name"> Zohair Adeel </h6>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./images/sarim.jpeg" alt="" class="t_img">
+                                    <img src="./images/sarim.jpeg" alt="Sarim Khan" class="t_img">
                                     <h6 class="mt-2 name"> Sarim Khan </h6>
-                                </div> <hr>
+                                </div>
+                                <hr>
                             </div>
                         </div>
                         <div class="container mt-3">
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="./images/rafay.jpg" alt="" class="t_img">
+                                    <img src="./images/rafay.jpg" alt="Abdul Rafay Khan" class="t_img">
                                     <h6 class="mt-2 name"> Abdul Rafay Khan </h6>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./images/huzaifa.jpg" alt="" class="t_img">
+                                    <img src="./images/huzaifa.jpg" alt="Huzaifa Irfan" class="t_img">
                                     <h6 class="mt-2 name">Huzaifa Irfan </h6>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./Icons/hacker.png" alt="" class="t_img">
-                                    <h6 class="mt-2 name">  Muhammad Mashood Khan</h6>
+                                    <img src="./images/mashood.jpeg" alt="Muhammad Mashood Khan" class="t_img">
+                                    <h6 class="mt-2 name"> Muhammad Mashood Khan</h6>
                                 </div>
                             </div>
-                        </div> <hr>
+                        </div>
+                        <hr>
 
 
                     </div>
@@ -220,7 +219,8 @@
                             <h6 class="mt-2"> Mohammad Owais Khan </h6>
                         </div>
                     </div>
-                </div> <hr>
+                </div>
+                <hr>
 
 
             </div>
