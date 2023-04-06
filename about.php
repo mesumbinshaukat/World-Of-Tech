@@ -198,7 +198,7 @@
                                     <h6 class="mt-2 name">Huzaifa Irfan </h6>
                                 </div>
                                 <div class="col text-center">
-                                    <img src="./images/mashood.jpeg" alt="Muhammad Mashood Khan" class="t_img">
+                                    <img src="./images/mashoood.jpg" alt="Muhammad Mashood Khan" class="t_img">
                                     <h6 class="mt-2 name"> Muhammad Mashood Khan</h6>
                                 </div>
                             </div>
