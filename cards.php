@@ -18,11 +18,7 @@
         color: rgb(105, 102, 102);
     }
 
-    .img {}
 
-    .img1 {
-        /*height: 130px;*/
-    }
 
     .card {
         border: none;
@@ -98,45 +94,45 @@
     <br>
 
     <section>
-        <div class="container text-center">
-            <div class="row justify-content-center text-center align-items-center">
-                <div class="col-lg-4 col-md-4" data-aos="fade-right">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bolder fs-3 text">shared title</h5>
-                            <img src="./Icons/animation.png" class="card-img-top img img1 mt-1 mb-3 w-50" alt="...">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                            <a href="#" class="btn btn-light">Go somewhere</a>
+        <h1 class="text-center" data-aos="fade-right">Our Mission</h1>
+        <center>
+            <div class="container text-center mt-5">
+                <center>
+                    <div class="row justify-content-center text-center align-items-center">
+                        <div class="col-lg-4 col-md-4 text-center justify-content-center" data-aos="fade-right">
+                            <div class="card text-center justify-content-center">
+                                <div class="card-body text-center justify-content-center">
+                                    <h5 class="card-title fw-bolder fs-3 text">Customer Service</h5>
+                                    <img src="./Icons/support.gif" class="card-img-top img img1  mb-3 w-25" alt="...">
+                                    <p class="card-text"> Best Customer Service available for 24/7</p>
+                                    <!-- <a href="#" class="btn btn-light">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4" data-aos="fade-down">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bolder fs-3 text">Cheapest Price</h5>
+                                    <img src="./Icons/receipt.gif" class="card-img-top img mb-4 w-25" alt="...">
+                                    <p class="card-text">We Provide our products at cheapest and affordable prices</p>
+                                    <!-- <a href="#" class="btn btn-light">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4" data-aos="fade-left">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bolder fs-3 text">Fast Delivery</h5>
+                                    <img src="./Icons/route.gif" class="card-img-top img mb-4  w-25" alt="...">
+                                    <p class="card-text">We Deliver The Items To Their Respective Owners ASAP</p>
+                                    <!-- <a href="#" class="btn btn-light">Go somewhere</a> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4" data-aos="fade-down">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bolder fs-3 text">Card title</h5>
-                            <img src="./Icons/web-design.png" class="card-img-top img mt-2 mb-4 w-50" alt="...">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                            <a href="#" class="btn btn-light">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4" data-aos="fade-left">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bolder fs-3 text">Card title</h5>
-                            <img src="./Icons/c-document.png" class="card-img-top img mb-4 mt-2 w-50" alt="...">
-                            <p class="card-text">Some quick example text to build on the card the bulk of the card's
-                                content.</p>
-                            <a href="#" class="btn btn-light">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
+                </center>
             </div>
-        </div>
+        </center>
     </section>
 
 
@@ -156,16 +152,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mt-5" data-aos="zoom-out-right">
-                    <div class="card" style="width: 35rem;">
+                    <div class="card">
                         <div class="card-body ms-4">
-                            <h5 class="card-title sectitle">GET YOUR WEBSITES DONE IN HOURS BY WORLD-OF-TECH</h5><br>
-                            <p class="card-text sectext">Some quick example text to build <br>
-                                Some quick example text to build the bulk of the card's
-                                <br><br>
-                                Lorem ipsum dolor sit amet consectetur adipisicin Mollitia, dolores?
-                                content. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, voluptas!
+                            <h5 class="card-title sectitle">GET YOUR WEBSITES DONE IN HOURS BY <span
+                                    class="fw-bold">WORLD OF TECH</span></h5><br>
+                            <p class="card-text sectext mt-4">Hey, you! Yeah, you! Are you tired of feeling left out
+                                of
+                                the
+                                tech game? Do you want to up your digital game? Look no further than <span
+                                    class="fw-bold">WORLD OF TECH!</span> Our
+                                Software House offers a variety of services, including web development, e-commerce
+                                solutions, and mobile app development. You'll be the talk of the town (or your office,
+                                at least) with your revamped digital presence. Don't wait, join the tech party
+                                today!<br> <br>
+                                <span class="fw-bold">WORLD OF TECH</span> is a dynamic Software House brand that offers
+                                groundbreaking
+                                software
+                                solutions to businesses of all sizes. Our Goal As Software House is to help clients
+                                optimize their business processes through automation, customization, and integration of
+                                software systems. Our team of experts is dedicated to providing excellent services that
+                                meet your unique requirements with precision and professionalism.
                             </p>
-                            <a href="#" class="btn btn-light mt-2">Go somewhere</a>
+                            <!-- <a href="#" class="btn btn-light mt-2">Go somewhere</a> -->
                         </div>
                     </div>
                 </div>
@@ -182,7 +190,7 @@
     <br>
     <br>
     <br>
-    <section data-aos="fade-up" style="background-color: rgb(240, 234, 234);">
+    <!-- <section data-aos="fade-up" style="background-color: rgb(240, 234, 234);">
         <br>
         <br>
         <br>
@@ -265,7 +273,7 @@
         </div>
 
 
-    </section>
+    </section> -->
 
 
 

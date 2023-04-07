@@ -17,8 +17,14 @@
 
     </section>
 
+    <section>
+        <main>
+            <?php include('./Services/Services.html')?>
+        </main>
+    </section>
+
     <section id="footer">
-        <?php include("footer.php");?>
+        <?php include("footer.html");?>
     </section>
 </body>
 

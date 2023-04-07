@@ -506,6 +506,15 @@ img {
 </style>
 
 <body>
+
+    <section id="navbar">
+
+        <?php #include("navbar.html");?><br><br><br><br>
+
+
+
+    </section>
+
     <main class="Main">
 
         <section class="Carousel" id="carousel" tabindex="-1">
@@ -594,6 +603,7 @@ img {
                 <a href="#card-5" class="Dot" tabindex="-1"><span class="Hidden">Slide 5</span></a>
             </div>
         </nav>
+
 
         <script>
         (() => {

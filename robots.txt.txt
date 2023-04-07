@@ -1,0 +1,16 @@
+User-agent: *
+Disallow: /slider.php
+Disallow: /.gitattributes
+Disallow: /cards.php/
+Disallow: /footer.html
+Disallow: /navbar.html
+Disallow: /.git/
+Disallow: /admin/
+Disallow: /bootstrap-5.2.3/
+Disallow: /css/
+Disallow: /Icons/
+Disallow: /images/
+Disallow: /js/
+Disallow: /LOGO/
+Disallow: /carousel/
+Disallow: /jquery/
