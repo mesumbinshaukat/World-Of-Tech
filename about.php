@@ -52,6 +52,15 @@
         box-shadow: -1px 1px 7px 5px grey;
 
     }
+    .project{
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: .3s;
+
+    }
+    .project:hover{
+transform: scale(1.2) ;
+    }
     </style>
 
 </head>
@@ -108,7 +117,7 @@
 
                 <div class="container-sm  mt-5">
                     <div class="row">
-                        <h3 class="text-center">
+                        <h3 class="text-center mt-3">
                             <b>What Makes Us Diffrent..</b>
                         </h3>
                         <p class="text-center mt-3">
@@ -234,11 +243,22 @@
                             <b>Our Projects</b>
                         </h3>
                         <p class="text-center mt-3">
-                            World of tech is a company that provides specialization primarily in software products, in
-                            either business
-                            or consumer software based on the needs of their client base and structure for a software
-                            release.
+                           We worked on many projects,
+                           You can see our work below.
                         </p>
+                        <div class="container mt-5">
+  <div class="row">
+    <div class="col text-center">
+    <a href="https://zohair-git.github.io/Project/"><img class="project w-50 text-center h-75" src="./images/project1.png" alt=""></a>  
+    </div>
+    <div class="col text-center">
+       <a href="https://sarimkhan515.github.io/wedding-planner/"><img class="project w-50 h-75 text-center" src="./images/project2.png" alt=""></a> 
+    </div>
+    <div class="col text-center">
+       <a href="http://huzaifa1509.github.io/project/"> <img class="project w-50 h-75 text-center" src="./images/project3.png" alt=""></a>
+    </div>
+  </div>
+</div>
                         
                     </div>
                 </div>
