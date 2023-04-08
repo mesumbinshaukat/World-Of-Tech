@@ -14,9 +14,9 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
-    .text {
+    /* .text {
         color: rgb(105, 102, 102);
-    }
+    } */
 
 
 
@@ -86,54 +86,72 @@
         border: 2px solid rgb(194, 188, 188);
 
     }
+
+    @media only screen and (max-width:360px) {
+      .sectext{
+        font-size: smaller;
+      }
+      .sectitle{
+        font-size: 1rem;
+      }
+      .secimg{
+        width: 220px;
+      }
+      .mcard{
+        width: 18rem !important;
+      }
+      /* .margin-left{
+        margin-left: 7px;
+      } */
+      
+    }
+    @media only screen and (max-width:375px) {
+      .sectext{
+        font-size: smaller;
+      }
+      .sectitle{
+        font-size: 1rem;
+      }
+      .secimg{
+        width: 220px;
+      }
+      .mcard{
+        width: 15rem;
+      }
+      /* .margin-left{
+        margin-left: 7px;
+      } */
+    }
+    @media only screen and (min-width:375) and (max-width:500px) {
+   
+      .sectext{
+        font-size: small;
+        
+      }
+      .sectitle{
+        font-size: 1.2rem;
+      }
+      .secimg{
+        width: 220px;
+       
+      }
+      .mcard{
+        width: 15rem;
+      }
+      /* .margin-left{
+        margin-left: 10px;
+      } */
+    }
+
+
     </style>
 </head>
 
 <body>
-    <br>
-    <br>
+   
 
-    <section>
-        <h1 class="text-center" data-aos="fade-right">Our Mission</h1>
-        <center>
-            <div class="container text-center mt-5">
-                <center>
-                    <div class="row justify-content-center text-center align-items-center">
-                        <div class="col-lg-4 col-md-4 text-center justify-content-center" data-aos="fade-right">
-                            <div class="card text-center justify-content-center">
-                                <div class="card-body text-center justify-content-center">
-                                    <h5 class="card-title fw-bolder fs-3 text">Customer Service</h5>
-                                    <img src="./Icons/support.gif" class="card-img-top img img1  mb-3 w-25" alt="...">
-                                    <p class="card-text"> Best Customer Service available for 24/7</p>
-                                    <!-- <a href="#" class="btn btn-light">Go somewhere</a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4" data-aos="fade-down">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bolder fs-3 text">Cheapest Price</h5>
-                                    <img src="./Icons/receipt.gif" class="card-img-top img mb-4 w-25" alt="...">
-                                    <p class="card-text">We Provide our products at cheapest and affordable prices</p>
-                                    <!-- <a href="#" class="btn btn-light">Go somewhere</a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4" data-aos="fade-left">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bolder fs-3 text">Fast Delivery</h5>
-                                    <img src="./Icons/route.gif" class="card-img-top img mb-4  w-25" alt="...">
-                                    <p class="card-text">We Deliver The Items To Their Respective Owners ASAP</p>
-                                    <!-- <a href="#" class="btn btn-light">Go somewhere</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </center>
-            </div>
-        </center>
-    </section>
+
+   
 
 
     <br>
@@ -151,8 +169,8 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mt-5" data-aos="zoom-out-right">
-                    <div class="card">
+                <div class="col-lg-6 mt-5 overflow-hidden" data-aos="zoom-out-right">
+                    <div class="container-fluid card mcard">
                         <div class="card-body ms-4">
                             <h5 class="card-title sectitle">GET YOUR WEBSITES DONE IN HOURS BY <span
                                     class="fw-bold">WORLD OF TECH</span></h5><br>
@@ -178,8 +196,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="card" style="width: 30rem;" data-aos="zoom-out-left">
-                        <img src="./Icons/mobile.png" class="card-img-top secimg" alt="...">
+                    <div class="container-fluid card mcard overflow-hidden mt-5" data-aos="zoom-out-left">
+                        <!-- <img src="./Icons/mobile.png" class="card-img-top secimg" alt="..."> -->
                     </div>
                 </div>
             </div>

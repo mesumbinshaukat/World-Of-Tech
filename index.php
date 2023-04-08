@@ -9,7 +9,12 @@
     <link href="./css/style.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="./LOGO/youtube-picture(500px-500px).png">
-
+<style>
+     .image{
+        width: 100px !important;
+        margin-left:90px;
+      }
+</style>
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
@@ -21,12 +26,13 @@
 
 
     </section>
+    
+
     <br>
     <section id="carousel">
         <?php #include('carousel.html');?>
         <?php include('carousel.html');?>
     </section>
-
 
     <section class="">
         <main class="">
@@ -35,7 +41,9 @@
             </div>
         </main>
     </section>
-
+    <section>
+    <?php include('startingcards.html'); ?>
+</section>
     <section>
         <footer class="footer mt-5">
             <?php include("footer.html");?>
