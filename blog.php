@@ -16,7 +16,7 @@
         <?php include("navbar.html");?>
 
     </section>
-
+           
     <section id="footer">
         <?php include("footer.php");?>
     </section>
