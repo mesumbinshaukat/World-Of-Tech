@@ -244,7 +244,7 @@ transform: scale(1.2) ;
                         </h3>
                         <p class="text-center mt-3">
                            We worked on many projects,
-                           You can see our work below.
+                           You can our static sites below.
                         </p>
                         <div class="container mt-5">
   <div class="row">
