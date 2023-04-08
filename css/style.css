@@ -27,8 +27,8 @@ font-family: 'Libre Baskerville', serif;
   }
   
    .btn-animated:hover {
-    background:  #fff !important;
-    color: #000;
+    background:  #000000 !important;
+    color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 0 2px gray, 0 0 15px gray, 0 0 25px gray,
       0 0 50px gray;
