@@ -19,7 +19,7 @@
 
     <section>
         <main>
-            <?php include('./Services/Services.html')?>
+            <?php include('./Services.html')?>
         </main>
     </section>
 

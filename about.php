@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+ 
+
     <style>
     .breadcrumb a {
         color: #6c757d;
@@ -87,9 +89,9 @@
                     </div>
                 </div>
 
-                <div class="container mt-4">
-                    <div class="row">
-                        <h3 class="text-center">
+                <div  class="container mt-4">
+                    <div  class="row">
+                        <h3  class="text-center">
                             <b>About Us..</b>
                         </h3>
                         <p class="text-center mt-3">
@@ -98,7 +100,7 @@
                             or consumer software based on the needs of their client base and structure for a software
                             release.
                         </p>
-                        <img src="./images/pexels-fauxels-3183197.jpg" alt="code" class="about_pic mt-4">
+                        <img  src="./images/pexels-fauxels-3183197.jpg" alt="code" class="about_pic mt-4">
                     </div>
                 </div>
 
@@ -226,8 +228,26 @@
             </div>
         </div>
 
+        <div  class="container mt-5">
+                    <div  class="row">
+                        <h3  class="text-center">
+                            <b>Our Projects</b>
+                        </h3>
+                        <p class="text-center mt-3">
+                            World of tech is a company that provides specialization primarily in software products, in
+                            either business
+                            or consumer software based on the needs of their client base and structure for a software
+                            release.
+                        </p>
+                        
+                    </div>
+                </div>
+
+
+
     </div>
     </div>
+    
 
 
     <footer class="footer">

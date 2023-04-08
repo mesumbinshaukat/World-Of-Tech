@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      *{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+      }
+     .image {
+        width: 100px !important;
+        margin-left: 90px;
+    }
+      .card{
+        border: 2px solid rgb(209, 204, 204);
+      }
+      @media screen and (min-width:375px) {
+        .card{
+          margin-left: 20px;
+          margin-bottom: 15px;
+        }
+      }
+        @media screen and (min-width:375px) and (max-width:412px) {
+        .card{
+          margin-left: 48px;
+          margin-bottom: 20px;
+        }
+      }
+      /* for iphone se */
+        @media screen and (width:375px) and (height:667px) {
+        .card{
+          margin-left: 38px;
+          margin-bottom: 20px;
+        }
+      }
+       /* for iphone xr */
+       @media screen and (width:414px) and (height:896px) {
+        .card{
+          margin-left: 54px;
+          margin-bottom: 20px;
+        }
+      }
+        /* for samsung galaxy s8 */
+        @media screen and (width:360px) and (height:740px) {
+        .card{
+          margin-left: 25px;
+          margin-bottom: 20px;
+        }
+      }
+      @media screen and (width:412px) and (min-width:820px) {
+        .card{
+          margin-left: 20px;
+          margin-bottom: 45px;
+        }
+        .thirdcard{
+          margin-left: 12rem;
+        }
+      }
+      @media screen and (min-width:820px) and (max-width:1024px) {
+        .card{
+          margin-left: 24px;
+          margin-bottom: 45px;
+        }
+        .thirdcard{
+          margin-left: 12.5rem;
+        }
+      }
+      @media screen and (min-width:768px) and (max-width:1024px) {
+        .card{
+          margin-left: 24px;
+          margin-bottom: 45px;
+        }
+        .thirdcard{
+          margin-left: 12.5rem;
+        }
+      }
+      @media screen and (min-width:540px) and (height:720px) {
+        .card{
+          margin-left: 110px;
+          margin-bottom: 45px;
+        }
+      }
+      @media screen and (min-width:1024px) and (height:600px) {
+        .card{
+          margin-left: 10px;
+        }
+      }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row overflow-hidden">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="./Icons/support.gif" class="card-img-top image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fs-4 fw-bold">Customer Service</h5>
+                      <p class="card-text fst-italic">Best Customer Service available for 24/7 by our company</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="./Icons/output-onlinegiftools (1).gif"  class="card-img-top image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fs-4 fw-bold">Cheapest Price</h5>
+                      <p class="card-text fst-italic">We Provide our products at cheapest and affordable prices</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+            </div> <div class="col-lg-4 text-center">
+                <div class="card thirdcard" style="width: 18rem;">
+                    <img src="./Icons/route.gif" class="card-img-top image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fs-4 fw-bold">Fast Delievery</h5>
+                      <p class="card-text fst-italic" style="margin-bottom: -1rem;">We Deliver The Items To Their Respective Owners ASAP</p>                      </p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
