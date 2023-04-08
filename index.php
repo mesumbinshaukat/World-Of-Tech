@@ -5,6 +5,11 @@
     <title>WORLD OF TECH</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="website maker, world of tech, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website make, website builder">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="author"
+        content="World Of Tech, Mesum Bin Shaukat, Zohair Adeel, Mohammad Sarim, Huzaifa Irfan, Abdul Rafay Khan, Mohammad Mashood Khan, Omar Siddique, Mohammad Owais Khan, Mustafa Mansoor">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
