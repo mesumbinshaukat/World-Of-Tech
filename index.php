@@ -14,34 +14,39 @@
         width: 100px !important;
         margin-left: 90px;
     }
+    @media screen and (max-width:400px) {
+        .margin{
+            margin-top:-80px !important;
+        }
+    }
     </style>
 </head>
 
-<body class="bg-light d-flex flex-column min-vh-100">
+<body class="bg-light">
 
-    <section id="navbar" class="mb-5">
+    <section id="navbar" class="">
 
-        <?php include("navbar.html");?><br><br><br><br>
+        <?php include("navbar.html");?>
 
+</section>
 
+    
 
-    </section>
-
-
-    <br>
+    
     <section id="carousel">
-        <?php #include('carousel.html');?>
         <?php include('carousel.html');?>
     </section>
-
-    <section class="">
-        <main class="">
+<br><br>
+    <section>
             <div class="container-fluid ">
-
                 <?php include('startingcards.html'); ?>
             </div>
-        </main>
-    </section>
+    <section>
+        <br><br>
+    <section class="">
+            <div class="container-fluid ">
+                <?php include('secondcard.html'); ?>
+            </div>
     <section>
 
         <section>
