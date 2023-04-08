@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
+$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
 if(isset($_POST['submitbtn'])){
     $thumnail_img = $_FILES['thumbnail']['name'];
     $thumbnail_img_tmp = $_FILES['thumbnail']['tmp_name'];
@@ -42,6 +42,7 @@ if(isset($_POST['submitbtn'])){
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,50 +51,52 @@ if(isset($_POST['submitbtn'])){
 
     <title>Document</title>
 </head>
+
 <body>
     <?php include("navbar.html");?>
     <h1 class="text-center">Blog</h1>
-<form method="post" enctype="multipart/form-data" >
+    <form method="post" enctype="multipart/form-data">
 
-  <div class="mb-3">
-    <label>Thumnail</label>
-    <input type="file" name="thumbnail" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label>Blog Title</label>
-    <input type="text" name="title" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label>Sub Title</label>
-    <input type="text" name="subtitle" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label>Intro Paragraph</label>
-    <input type="text" name="intro_para" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label>Intro Image/Video</label>
-    <input type="file" name="intro_img" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label>Main Paragraph</label>
-    <input type="text" name="main_para" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label>Main Image/Video</label>
-    <input type="file" name="main_img" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label>Conclusion</label>
-    <input type="text" name="conclusion_para" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label>Conclusion Image/Video</label>
-    <input type="file" name="conclusion_img" class="form-control">
-  </div>
+        <div class="mb-3">
+            <label>Thumnail</label>
+            <input type="file" name="thumbnail" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Blog Title</label>
+            <input type="text" name="title" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Sub Title</label>
+            <input type="text" name="subtitle" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Intro Paragraph</label>
+            <input type="text" name="intro_para" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Intro Image/Video</label>
+            <input type="file" name="intro_img" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Main Paragraph</label>
+            <input type="text" name="main_para" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Main Image/Video</label>
+            <input type="file" name="main_img" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Conclusion</label>
+            <input type="text" name="conclusion_para" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Conclusion Image/Video</label>
+            <input type="file" name="conclusion_img" class="form-control">
+        </div>
 
-  <input type="submit" name="submitbtn" value="Submit">
+        <input type="submit" name="submitbtn" value="Submit">
 
-</form>
+    </form>
 </body>
+
 </html>

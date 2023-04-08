@@ -37,6 +37,7 @@
     <section class="">
         <main class="">
             <div class="container-fluid ">
+
                 <?php include('startingcards.html'); ?>
             </div>
         </main>
