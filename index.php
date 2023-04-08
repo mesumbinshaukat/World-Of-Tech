@@ -9,12 +9,12 @@
     <link href="./css/style.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="./LOGO/youtube-picture(500px-500px).png">
-<style>
-     .image{
+    <style>
+    .image {
         width: 100px !important;
-        margin-left:90px;
-      }
-</style>
+        margin-left: 90px;
+    }
+    </style>
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
@@ -26,7 +26,7 @@
 
 
     </section>
-    
+
 
     <br>
     <section id="carousel">
@@ -37,13 +37,18 @@
     <section class="">
         <main class="">
             <div class="container-fluid ">
-                <?php include('cards.php');?>
+                <?php include('startingcards.html'); ?>
             </div>
         </main>
     </section>
     <section>
-    <?php include('startingcards.html'); ?>
-</section>
+
+        <section>
+            <?php# include('cards.php');?>
+
+        </section>
+
+    </section>
     <section>
         <footer class="footer mt-5">
             <?php include("footer.html");?>
