@@ -11,13 +11,7 @@ if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
 }
 
 
-if (isset($_POST['logout'])) {
-    session_unset();
-    if (session_destroy()) {
-        header('location:../index.php');
-        exit();
-    }
-}
+
 
 ?>
 
