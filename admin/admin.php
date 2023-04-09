@@ -7,7 +7,7 @@ if (isset($_POST['check'])) {
     $admin_name = $_POST['admin_name'];
     $admin_password = $_POST['admin_password'];
 
-    $password_hash = password_hash($admin_password, PASSWORD_DEFAULT);
+    // $password_hash = password_hash($admin_password, PASSWORD_DEFAULT);
     
     // $insert_query = "INSERT INTO `admin_details`(`admin_name`, `admin_password`) VALUES ('$admin_name', '$password_hash')";
     
