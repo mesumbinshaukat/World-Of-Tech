@@ -68,11 +68,12 @@
     .project:hover {
         transform: scale(1.2);
     }
+
     @media (max-width: 500px) {
-  .font {
-    font-size:10px;
-  }
-}
+        .font {
+            font-size: 10px;
+        }
+    }
     </style>
 
 </head>
@@ -142,8 +143,8 @@
                         </p>
                         <div class="container-sm  mt-5">
                             <div class="row">
-                                <div class="col p-4 m-2 about-a text-center">
-                                    <img src="./icons/developing.png" alt="" class="icon">
+                                <div class="col p-4 m-2  about-a text-center">
+                                    <img src="./Icons/web development 2.png" alt="" class="icon">
                                     <p class="mt-3">WEB DEVELOPMENT</p>
                                 </div>
                                 <div class="col p-4 m-2 about-a text-center">
@@ -158,8 +159,8 @@
                         </div>
                         <div class="container-sm  mt-3">
                             <div class="row">
-                                <div class="col p-4 m-2 about-a text-center">
-                                    <img src="./icons/social-media.png" alt="" class="icon">
+                                <div class="col p-4 m-2  about-a text-center">
+                                    <img src="./Icons/digital-campaign.png" alt="" class="icon">
                                     <p class="mt-3">DIGITAL MARKETING</p>
                                 </div>
                                 <div class="col p-4 m-2 about-a text-center">
