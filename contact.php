@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
-        content="website maker, world of tech, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website make, website builder">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="author"
-        content="World Of Tech, Mesum Bin Shaukat, Zohair Adeel, Mohammad Sarim, Huzaifa Irfan, Abdul Rafay Khan, Mohammad Mashood Khan, Omar Siddique, Mohammad Owais Khan, Mustafa Mansoor">
+        content="website maker, world of tech about us, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website maker, about us">
+    <meta name="description"
+        content="Enhance your business productivity with our innovative software solutions. Our experienced team offers customized, cost-effective software development services. Contact us today to take your business to the next level.">
+    <meta name="author" content="World Of Tech">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <style>
