@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
-        content="website maker, world of tech about us, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website maker, about us">
+        content="website maker, world of tech contact us, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website maker, contact us">
     <meta name="description"
         content="Enhance your business productivity with our innovative software solutions. Our experienced team offers customized, cost-effective software development services. Contact us today to take your business to the next level.">
     <meta name="author" content="World Of Tech">
