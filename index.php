@@ -16,6 +16,11 @@
 
     <link rel="shortcut icon" href="./LOGO/youtube-picture(500px-500px).png">
     <style>
+       
+       @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+  body{
+    font-family: 'Roboto Slab', serif !important;
+  }
     .image {
         width: 100px !important;
         margin-left: 90px;
@@ -26,12 +31,32 @@
             margin-top: -80px !important;
         }
     }
+    .side-block{
+        display:none;
+        transition:.3s;
+    }
+    .side-arrow{
+        display:block;
+        background-color:gray;
+        border:2px solid darkgray;
+        border-radius:50%;
+        padding:5px;
+        position:fixed;
+        top:85%;
+        left:95%;
+        z-index: 1;
+    }
+
     </style>
 </head>
 
 <body class="bg-light">
+    <div id="top"></div>
+    <div id="arrow" class="side-arrow side-block">
+        <a href="#top"><img src="./Icons/keyboard_double_arrow_up_FILL0_wght400_GRAD0_opsz48.png" alt=""></a>
+    </div>
 
-    <section id="navbar" class="">
+    <section id="" class="">
 
         <?php include("navbar.html");?>
 
@@ -55,24 +80,30 @@
                     <?php include('secondcard.html'); ?>
                 </div>
                 <section>
+            <?php include('plans.html'); ?>
 
                     <section>
                         <?php# include('cards.php');?>
 
-                    </section>
+    </section>
+    <section>
+        <footer class="footer mt-5">
+            <?php include("footer.html");?>
+        </footer>
+    </section>
 
-                </section>
-                <section>
-                    <footer class="footer mt-5">
-                        <?php include("footer.html");?>
-                    </footer>
 
+    
+    <script src="./jquery/jquery-3.6.0.min.js"></script>
+       <script>
+       $(document).ready(function () {
+      $(window).scroll(function () {
+        // alert("working")
 
-                </section>
-
-                <!-- <script src="./jquery/jquery-3.5.1.min.js"> -->
-                </script>
-
+        $('#arrow').toggleClass('side-arrow', $(this).scrollTop() > 200);
+      });
+    });
+</script>
 </body>
 
 </html>
