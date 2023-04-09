@@ -2,12 +2,17 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>About Us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="website maker, world of tech about us, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website maker, about us">
+    <meta name="description"
+        content="Explore the world of technology with our TECH BASED SERVICES! Our Software House business excels in providing top-quality solutions to clients worldwide.">
+    <meta name="author" content="World Of Tech">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
- 
+
 
     <style>
     .breadcrumb a {
@@ -52,6 +57,17 @@
         box-shadow: -1px 1px 7px 5px grey;
 
     }
+
+    .project {
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: .3s;
+
+    }
+
+    .project:hover {
+        transform: scale(1.2);
+    }
     </style>
 
 </head>
@@ -89,9 +105,9 @@
                     </div>
                 </div>
 
-                <div  class="container mt-4">
-                    <div  class="row">
-                        <h3  class="text-center">
+                <div class="container mt-4">
+                    <div class="row">
+                        <h3 class="text-center">
                             <b>About Us..</b>
                         </h3>
                         <p class="text-center mt-3">
@@ -100,7 +116,7 @@
                             or consumer software based on the needs of their client base and structure for a software
                             release.
                         </p>
-                        <img  src="./images/pexels-fauxels-3183197.jpg" alt="code" class="about_pic mt-4">
+                        <img src="./images/pexels-fauxels-3183197.jpg" alt="code" class="about_pic mt-4">
                     </div>
                 </div>
 
@@ -108,7 +124,7 @@
 
                 <div class="container-sm  mt-5">
                     <div class="row">
-                        <h3 class="text-center">
+                        <h3 class="text-center mt-3">
                             <b>What Makes Us Diffrent..</b>
                         </h3>
                         <p class="text-center mt-3">
@@ -228,26 +244,39 @@
             </div>
         </div>
 
-        <div  class="container mt-5">
-                    <div  class="row">
-                        <h3  class="text-center">
-                            <b>Our Projects</b>
-                        </h3>
-                        <p class="text-center mt-3">
-                            World of tech is a company that provides specialization primarily in software products, in
-                            either business
-                            or consumer software based on the needs of their client base and structure for a software
-                            release.
-                        </p>
-                        
+        <div class="container mt-5">
+            <div class="row">
+                <h3 class="text-center">
+                    <b>Our Projects</b>
+                </h3>
+                <p class="text-center text-secondary mt-3">
+                    Check out our gorgeous projects we've accomplished.
+                </p>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="https://zohair-git.github.io/Project/"><img class="project w-50 text-center h-75"
+                                    src="./images/project1.png" alt=""></a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="https://sarimkhan515.github.io/wedding-planner/"><img
+                                    class="project w-50 h-75 text-center" src="./images/project2.png" alt=""></a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="http://huzaifa1509.github.io/project/"> <img class="project w-50 h-75 text-center"
+                                    src="./images/project3.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
 
+            </div>
+        </div>
+
 
 
     </div>
     </div>
-    
+
 
 
     <footer class="footer">
