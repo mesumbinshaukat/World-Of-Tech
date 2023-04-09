@@ -68,6 +68,11 @@
     .project:hover {
         transform: scale(1.2);
     }
+    @media (max-width: 500px) {
+  .font {
+    font-size:10px;
+  }
+}
     </style>
 
 </head>
@@ -192,15 +197,15 @@
                             <div class="row">
                                 <div class="col text-center">
                                     <img src="./images/pic1.jpeg" alt="Mesum Bin Shaukat" class="t_img">
-                                    <h6 class="mt-2 name"> Mesum Bin Shaukat</h6>
+                                    <h6 class="mt-2 name font "> Mesum Bin Shaukat</h6>
                                 </div>
                                 <div class="col text-center">
                                     <img src="./images/Zohair.jpg" alt="Zohair Adeel" class="t_img">
-                                    <h6 class="mt-2 name"> Zohair Adeel </h6>
+                                    <h6 class="mt-2 name font"> Zohair Adeel </h6>
                                 </div>
                                 <div class="col text-center">
                                     <img src="./images/sarim.jpeg" alt="Sarim Khan" class="t_img">
-                                    <h6 class="mt-2 name"> Sarim Khan </h6>
+                                    <h6 class="mt-2 name font"> Sarim Khan </h6>
                                 </div>
                                 <hr>
                             </div>
@@ -209,15 +214,15 @@
                             <div class="row">
                                 <div class="col text-center">
                                     <img src="./images/rafay.jpg" alt="Abdul Rafay Khan" class="t_img">
-                                    <h6 class="mt-2 name"> Abdul Rafay Khan </h6>
+                                    <h6 class="mt-2 name font"> Abdul Rafay Khan </h6>
                                 </div>
                                 <div class="col text-center">
                                     <img src="./images/huzaifa.jpg" alt="Huzaifa Irfan" class="t_img">
-                                    <h6 class="mt-2 name">Huzaifa Irfan </h6>
+                                    <h6 class="mt-2 name font">Huzaifa Irfan </h6>
                                 </div>
                                 <div class="col text-center">
                                     <img src="./images/mashoood.jpg" alt="Muhammad Mashood Khan" class="t_img">
-                                    <h6 class="mt-2 name"> Muhammad Mashood Khan</h6>
+                                    <h6 class="mt-2 name font"> Muhammad Mashood Khan</h6>
                                 </div>
                             </div>
                         </div>
@@ -230,11 +235,11 @@
                     <div class="row">
                         <div class="col text-center mb-5">
                             <img src="./Icons/hacker.png" alt="" class="t_imgd">
-                            <h6 class="mt-2">Umer Siddique </h6>
+                            <h6 class="mt-2 font">Umer Siddique </h6>
                         </div>
                         <div class="col text-center mb-5">
                             <img src="./Icons/hacker.png" alt="" class="t_imgd">
-                            <h6 class="mt-2"> Mohammad Owais Khan </h6>
+                            <h6 class="mt-2 font"> Mohammad Owais Khan </h6>
                         </div>
                     </div>
                 </div>
