@@ -62,7 +62,7 @@
         <a href="#top"><img src="./Icons/keyboard_double_arrow_up_FILL0_wght400_GRAD0_opsz48.png" alt=""></a>
     </div>
 
-    <section id="" class="">
+    <section>
 
         <?php include("navbar.html");?>
 
