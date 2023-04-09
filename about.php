@@ -143,7 +143,7 @@
                         <div class="container-sm  mt-5">
                             <div class="row">
                                 <div class="col p-4 m-2 about-a text-center">
-                                    <img src="./icons/backend (3).png" alt="" class="icon">
+                                    <img src="./icons/developing.png" alt="" class="icon">
                                     <p class="mt-3">WEB DEVELOPMENT</p>
                                 </div>
                                 <div class="col p-4 m-2 about-a text-center">
@@ -159,7 +159,7 @@
                         <div class="container-sm  mt-3">
                             <div class="row">
                                 <div class="col p-4 m-2 about-a text-center">
-                                    <img src="./icons/social-media-2.png" alt="" class="icon">
+                                    <img src="./icons/social-media.png" alt="" class="icon">
                                     <p class="mt-3">DIGITAL MARKETING</p>
                                 </div>
                                 <div class="col p-4 m-2 about-a text-center">
