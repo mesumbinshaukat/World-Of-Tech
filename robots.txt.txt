@@ -12,5 +12,10 @@ Disallow: /Icons/
 Disallow: /images/
 Disallow: /js/
 Disallow: /LOGO/
-Disallow: /carousel/
+Disallow: /carousel
 Disallow: /jquery/
+Disallow: /startingcards.html
+Disallow: /secondcard.html
+Disallow: /plans.html
+Disallow: /contactDb.php
+
