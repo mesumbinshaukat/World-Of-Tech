@@ -1,5 +1,16 @@
 <?php
-$conn = mysqli_connect('localhost', 'root','', 'world_of_tech') or die("Can't Connect");
+session_start();
+
+$admin_name = "WorldOfTech_Admin_778866_Official!!!";
+$session_admin_name = $_SESSION['Admin_Name'];
+
+
+if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
+    header('location:../index.php');
+    exit();
+}
+
+$conn = mysqli_connect('localhost', 'root','XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
 if(isset($_POST['submitbtn'])){
     $blog_date = $_POST['blog_date'];
     $blog_categories = $_POST['blog_categories'];
@@ -61,57 +72,57 @@ if(isset($_POST['submitbtn'])){
     <?php include("navbar.html");?>
     <h1 class="text-center">Blog</h1>
     <div class="container">
-    <form method="post" enctype="multipart/form-data">
-        <div class="mb-3">
-            <input type="date" name="blog_date" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label >Blog Category</label>
-            <select name="blog_categories" class="form-control" >
-                <option value="Tech">Tech</option>
-                <option value="Sports">Sports</option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label>Thumnail</label>
-            <input type="file" name="thumbnail" required class="form-control">
-        </div>
-        <div class="mb-3">
-            <label>Blog Title</label>
-            <textarea type="text" name="title" required class="form-control"></textarea>
-        </div>
-        <div class="mb-3">
-            <label>Sub Title</label>
-            <textarea type="text" name="subtitle" required class="form-control"></textarea>
-        </div>
-        <div class="mb-3">
-            <label>Intro Paragraph</label>
-            <textarea type="text" name="intro_para" required class="form-control"></textarea>
-        </div>
-        <div class="mb-3">
-            <label>Intro Image/Video</label>
-            <input type="file" name="intro_img" required class="form-control">
-        </div>
-        <div class="mb-3">
-            <label>Main Paragraph</label>
-            <textarea type="text" name="main_para" required class="form-control"></textarea>
-        </div>
-        <div class="mb-3">
-            <label>Main Image/Video</label>
-            <input type="file" name="main_img" required class="form-control">
-        </div>
-        <div class="mb-3">
-            <label>Conclusion</label>
-            <textarea type="text" name="conclusion_para" required class="form-control"></textarea>
-        </div>
-        <div class="mb-3">
-            <label>Conclusion Image/Video</label>
-            <input type="file" name="conclusion_img" required class="form-control">
-        </div>
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input type="date" name="blog_date" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label>Blog Category</label>
+                <select name="blog_categories" class="form-control">
+                    <option value="Tech">Tech</option>
+                    <option value="Sports">Sports</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label>Thumnail</label>
+                <input type="file" name="thumbnail" required class="form-control">
+            </div>
+            <div class="mb-3">
+                <label>Blog Title</label>
+                <textarea type="text" name="title" required class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label>Sub Title</label>
+                <textarea type="text" name="subtitle" required class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label>Intro Paragraph</label>
+                <textarea type="text" name="intro_para" required class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label>Intro Image/Video</label>
+                <input type="file" name="intro_img" required class="form-control">
+            </div>
+            <div class="mb-3">
+                <label>Main Paragraph</label>
+                <textarea type="text" name="main_para" required class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label>Main Image/Video</label>
+                <input type="file" name="main_img" required class="form-control">
+            </div>
+            <div class="mb-3">
+                <label>Conclusion</label>
+                <textarea type="text" name="conclusion_para" required class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label>Conclusion Image/Video</label>
+                <input type="file" name="conclusion_img" required class="form-control">
+            </div>
 
-        <input type="submit" class="btn btn-primary form-control" name="submitbtn" value="Submit">
+            <input type="submit" class="btn btn-primary form-control" name="submitbtn" value="Submit">
 
-    </form>
+        </form>
     </div>
 </body>
 
