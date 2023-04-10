@@ -1,64 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<!-- <url>
+  <!-- <url>
   <loc>https://worldoftech.company/</loc>
   <lastmod>2023-04-10T05:01:32+00:00</lastmod>
   <priority>1.00</priority>
 </url> -->
-<url>
-  <loc>www.worldoftech.company</loc>
-  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>worldoftech.company</loc>
-  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://worldoftech.company</loc>
-  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-<url>
-  <loc>https://www.worldoftech.company/index.php</loc>
-  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-<url>
-  <loc>https://worldoftech.company/index.php</loc>
-  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://worldoftech.company/about.php</loc>
-  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://worldoftech.company/services.php</loc>
-  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://worldoftech.company/blog.php</loc>
-  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://worldoftech.company/contact.php</loc>
-  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>www.worldoftech.company</loc>
+    <changefreq>always</changefreq>
+    <lastmod>2023-04-11T01:00:32+00:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>worldoftech.company</loc>
+    <lastmod>2023-04-11T01:00:32+00:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://worldoftech.company</loc>
+    <changefreq>always</changefreq>
+    <lastmod>2023-04-11T01:00:32+00:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <url>
+      <loc>https://www.worldoftech.company/index.php</loc>
+      <changefreq>always</changefreq>
+      <lastmod>2023-04-11T01:00:32+00:00</lastmod>
+      <priority>1.0</priority>
+    </url>
+    <url>
+      <url>
+        <loc>https://worldoftech.company/index.php</loc>
+        <changefreq>always</changefreq>
+        <lastmod>2023-04-11T01:00:32+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+      <url>
+        <loc>https://worldoftech.company/about.php</loc>
+        <changefreq>always</changefreq>
+        <lastmod>2023-04-11T01:00:32+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+      <url>
+        <loc>https://worldoftech.company/services.php</loc>
+        <lastmod>2023-04-11T01:00:32+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+      <url>
+        <loc>https://worldoftech.company/blog.php</loc>
+        <changefreq>always</changefreq>
+        <lastmod>2023-04-11T01:00:32+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+      <url>
+        <loc>https://worldoftech.company/contact.php</loc>
+        <changefreq>always</changefreq>
+        <lastmod>2023-04-11T01:00:32+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
 
 
-</urlset>
+    </urlset>
