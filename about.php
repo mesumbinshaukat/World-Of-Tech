@@ -81,7 +81,7 @@
 </head>
 
 <body>
-    <section id="navbar">
+    <section>
 
         <?php include("navbar.html");?>
 

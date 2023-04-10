@@ -90,12 +90,12 @@ transition: background-color 200ms linear;
                     <?php include('secondcard.html'); ?>
                 </div>
                 <section>
+                    <?php include('video.html');?>
+
+                </section>
+                <section>
                     <?php include('plans.html'); ?>
 
-                    <section>
-                        <?php# include('cards.php');?>
-
-                    </section>
                     <section>
                         <footer class="footer mt-5">
                             <?php include("footer.html");?>
