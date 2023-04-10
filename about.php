@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>About Us</title>
+    <title>WORLD OF TECH | ABOUT US</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
@@ -10,6 +10,8 @@
     <meta name="description"
         content="Explore the world of technology with our TECH BASED SERVICES! Our Software House business excels in providing top-quality solutions to clients worldwide.">
     <meta name="author" content="World Of Tech">
+    <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
+    <link rel="apple-touch-icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
@@ -122,7 +124,8 @@
                             or consumer software based on the needs of their client base and structure for a software
                             release.
                         </p>
-                        <img src="./images/pexels-fauxels-3183197.jpg" alt="code" class="about_pic mt-4">
+                        <img src="./images/pexels-fauxels-3183197.jpg" alt="Office Meeting Picture"
+                            class="about_pic mt-4">
                     </div>
                 </div>
 
@@ -144,15 +147,15 @@
                         <div class="container-sm  mt-5">
                             <div class="row">
                                 <div class="col p-4 m-2  about-a text-center">
-                                    <img src="./Icons/web development 2.png" alt="" class="icon">
+                                    <img src="./Icons/web development 2.png" alt="WEB DEVELOPMENT ICON" class="icon">
                                     <p class="mt-3">WEB DEVELOPMENT</p>
                                 </div>
                                 <div class="col p-4 m-2 about-a text-center">
-                                    <img src="./Icons/coding (4).png" alt="" class="icon">
+                                    <img src="./Icons/coding (4).png" alt="WEB DESIGNING ICON" class="icon">
                                     <p class="mt-3">WEB DESIGNING</p>
                                 </div>
                                 <div class="col p-4 m-2  about-a text-center">
-                                    <img src="./Icons/designer.png" alt="" class="icon">
+                                    <img src="./Icons/designer.png" alt="UI/UX DESIGNING" class="icon">
                                     <p class="mt-3">UI/UX DESIGNING</p>
                                 </div>
                             </div>
@@ -160,15 +163,15 @@
                         <div class="container-sm  mt-3">
                             <div class="row">
                                 <div class="col p-4 m-2  about-a text-center">
-                                    <img src="./Icons/digital-campaign.png" alt="" class="icon">
+                                    <img src="./Icons/digital-campaign.png" alt="DIGITAL MARKETING" class="icon">
                                     <p class="mt-3">DIGITAL MARKETING</p>
                                 </div>
                                 <div class="col p-4 m-2 about-a text-center">
-                                    <img src="./Icons/database-storage.png" alt="" class="icon">
+                                    <img src="./Icons/database-storage.png" alt="DATABASE DESIGNING" class="icon">
                                     <p class="mt-3">DATABASE DESINGING</p>
                                 </div>
                                 <div class="col p-4 m-2 about-a text-center">
-                                    <img src="./Icons/seo.png" alt="" class="icon">
+                                    <img src="./Icons/seo.png" alt="SEO" class="icon">
                                     <p class="mt-3">SEO</p>
                                 </div>
                             </div>
@@ -235,11 +238,11 @@
                 <div class="container mt-3 mb-5">
                     <div class="row">
                         <div class="col text-center mb-5">
-                            <img src="./Icons/hacker.png" alt="" class="t_imgd">
+                            <img src="./Icons/hacker.png" alt="Umer Siddique" class="t_imgd">
                             <h6 class="mt-2 font">Umer Siddique </h6>
                         </div>
                         <div class="col text-center mb-5">
-                            <img src="./Icons/hacker.png" alt="" class="t_imgd">
+                            <img src="./Icons/hacker.png" alt="Mohammad Owais Khan" class="t_imgd">
                             <h6 class="mt-2 font"> Mohammad Owais Khan </h6>
                         </div>
                     </div>
@@ -262,15 +265,16 @@
                     <div class="row">
                         <div class="col text-center">
                             <a href="https://zohair-git.github.io/Project/"><img class="project w-50 text-center h-75"
-                                    src="./images/project1.png" alt=""></a>
+                                    src="./images/project1.png" alt="Project-1"></a>
                         </div>
                         <div class="col text-center">
                             <a href="https://sarimkhan515.github.io/wedding-planner/"><img
-                                    class="project w-50 h-75 text-center" src="./images/project2.png" alt=""></a>
+                                    class="project w-50 h-75 text-center" src="./images/project2.png"
+                                    alt="Project-2"></a>
                         </div>
                         <div class="col text-center">
                             <a href="http://huzaifa1509.github.io/project/"> <img class="project w-50 h-75 text-center"
-                                    src="./images/project3.png" alt=""></a>
+                                    src="./images/project3.png" alt="Project-3"></a>
                         </div>
                     </div>
                 </div>

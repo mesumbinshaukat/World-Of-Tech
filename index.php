@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>WORLD OF TECH</title>
+    <title>WORLD OF TECH | BEST SOFTWATE HOUSE</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
         content="website maker, world of tech, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website maker">
     <meta name="description"
-        content="With WORLD OF TECH, experience top-of-the-line TECH BASED SERVICES for your company. Our expert Software House team ensures seamless execution and timely delivery of innovative solutions.">
+        content="Our expert Software House team ensures seamless execution and timely delivery of innovative solutions.">
     <meta name="author"
         content="World Of Tech, Mesum Bin Shaukat, Zohair Adeel, Mohammad Sarim, Huzaifa Irfan, Abdul Rafay Khan, Mohammad Mashood Khan, Omar Siddique, Mohammad Owais Khan, Mustafa Mansoor">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="./LOGO/youtube-picture(500px-500px).png">
+    <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 

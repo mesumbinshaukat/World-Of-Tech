@@ -7,34 +7,56 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://www.worldoftech.company/</loc>
-  <lastmod>2023-04-07T00:19:18+00:00</lastmod>
+<!-- <url>
+  <loc>https://worldoftech.company/</loc>
+  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
   <priority>1.00</priority>
+</url> -->
+<url>
+  <loc>www.worldoftech.company</loc>
+  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>worldoftech.company</loc>
+  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://worldoftech.company</loc>
+  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
 <url>
   <loc>https://www.worldoftech.company/index.php</loc>
-  <lastmod>2023-04-07T00:19:18+00:00</lastmod>
+  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.worldoftech.company/about.php</loc>
-  <lastmod>2023-04-07T00:19:18+00:00</lastmod>
+<url>
+  <loc>https://worldoftech.company/index.php</loc>
+  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.worldoftech.company/blog.php</loc>
-  <lastmod>2023-04-07T00:19:18+00:00</lastmod>
+  <loc>https://worldoftech.company/about.php</loc>
+  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.worldoftech.company/services.php</loc>
-  <lastmod>2023-04-07T00:19:18+00:00</lastmod>
+  <loc>https://worldoftech.company/services.php</loc>
+  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.worldoftech.company/contact.php</loc>
-  <lastmod>2023-04-07T00:19:18+00:00</lastmod>
+  <loc>https://worldoftech.company/blog.php</loc>
+  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://worldoftech.company/contact.php</loc>
+  <lastmod>2023-04-10T05:01:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

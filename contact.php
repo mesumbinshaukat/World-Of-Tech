@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-    <title>Contact Us</title>
+    <title>WORLD OF TECH | CONTACT US</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
         content="website maker, world of tech contact us, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website maker, contact us">
     <meta name="description"
-        content="Enhance your business productivity with our innovative software solutions. Our experienced team offers customized, cost-effective software development services. Contact us today to take your business to the next level.">
+        content="Enhance your business productivity with our innovative software solutions. Contact us today to take your business to the next level.">
     <meta name="author" content="World Of Tech">
+    <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <style>
