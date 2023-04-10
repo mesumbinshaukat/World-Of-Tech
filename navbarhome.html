@@ -1,0 +1,204 @@
+<head>
+<link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bgtrans{
+      background-color: transparent;
+    }
+    @media screen and (max-width:992px)  {
+      .smbg{
+        background-color:  rgba(73, 71, 71, 0.712);
+      }
+    }
+
+.btn-animated {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    /* margin-top: 40px; */
+    letter-spacing: 4px;
+  }
+  
+   .btn-animated:hover {
+    background:  #464646 !important;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px gray, 0 0 15px gray, 0 0 25px gray,
+      0 0 50px gray;
+  }
+  
+   .btn-animated span {
+    position: absolute;
+    display: block;
+  }
+  
+   .btn-animated span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+   .btn-animated span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+   .btn-animated span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+  .btn-animated span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+
+
+
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+    
+  </style>
+</head>
+<body>
+  
+<!-- <nav id="navbar" class="navbar navbar-expand-lg fixed-top scrolled bg-trans">
+  <div class="container-fluid ">
+    <a class="navbar-brand" href="#"><img src="./LOGO/Text-logo_1920-1080.png" alt="logo" width="140" class="rounded"></a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-lg-0 ">
+        <li class="nav-item d-flex justify-content-center">
+          <a class="nav-link active fw-bold text-white " aria-current="page" href="index.php">Home</a>
+        </li>
+        <li class="nav-item d-flex justify-content-center">
+          <a class="nav-link active fw-bold text-white " href="about.php">About Us</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active fw-bold spacing text-white disabled" href="blog.php">Blogs</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active fw-bold spacing text-white disabled" href="services.php">Services</a>
+        </li>
+        
+
+
+
+        <a href="contact.php" class="btn-animated d-flex justify-content-center text-white">
+      <span class=""></span>
+       <span class=""></span>
+       <span class=""></span>
+       <span class=""></span>
+          Contact Us
+        </a>
+       
+      </ul>
+      
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top smbg " id="navbar" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php"><img src="./LOGO/Logo-white-text-full-screen(2048px-1152px).png" alt="logo" width="140" class="rounded"></a>
+    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+            <ul class="nav navbar-nav justify-content-center">
+              <li class="nav-item">
+                  <a class="nav-link active me-4 d-flex justify-content-center " aria-current="page" href="index.php">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active me-4 d-flex justify-content-center" aria-current="page" href="about.php">About us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active me-4 d-flex justify-content-center" aria-current="page" href="services.php">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active me-4 d-flex justify-content-center" aria-current="page" href="blog.php">Blogs</a>
+              </li>
+              <li>
+                <a href="contact.php" class="btn-animated d-flex justify-content-center text-white">
+                  <span class=""></span>
+                   <span class=""></span>
+                   <span class=""></span>
+                   <span class=""></span>
+                      Contact Us
+                    </a>
+              </li>
+          </ul>
+    </div>
+  </div>
+</nav>
+
+<script src="./bootstrap-5.2.3/js/bootstrap.min.js"></script>
+<script src="./jquery/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

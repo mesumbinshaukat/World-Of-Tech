@@ -53,6 +53,10 @@
     .bg_color {
         background-color: #D5D5D5;
     }
+    .scrolled {
+background-color: rgba(73, 71, 71, 0.712) ;
+transition: background-color 200ms linear;
+}
     </style>
 </head>
 
@@ -64,7 +68,7 @@
 
     <section>
 
-        <?php include("navbar.html");?>
+        <?php include("navbarhome.html");?>
 
     </section>
 
@@ -99,7 +103,7 @@
                     </section>
 
 
-
+                    <script src="./bootstrap-5.2.3/js/bootstrap.min.js"></script>
                     <script src="./jquery/jquery-3.6.0.min.js"></script>
                     <script>
                     $(document).ready(function() {
@@ -109,7 +113,17 @@
                             $('#arrow').toggleClass('side-arrow', $(this).scrollTop() > 200);
                         });
                     });
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $("#navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > 300);
+  });
+});
                     </script>
+
+
+
 </body>
 
 </html>
