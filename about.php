@@ -28,6 +28,7 @@
         margin-bottom: 0;
         border-radius: 0;
         border-bottom: 1px solid #ddd
+        
     }
 
     .about_pic {
@@ -77,6 +78,10 @@
             font-size: 10px;
         }
     }
+    .pstyle{
+        -webkit-box-shadow: 0px 3px 54px 1px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 3px 54px 1px rgba(0,0,0,0.49);
+box-shadow: 0px 3px 54px 1px rgba(0,0,0,0.49);   }
     </style>
 
 </head>
@@ -97,7 +102,7 @@
 
 
 
-                <div class="container">
+                <div class="container mt-4">
                     <div class="row">
                         <div class="col">
                             <div class="breadcrumb-nav">
@@ -265,16 +270,16 @@
                 <div class="container mt-5">
                     <div class="row">
                         <div class="col text-center">
-                            <a href="https://zohair-git.github.io/Project/"><img class="project w-50 text-center h-75"
+                            <a href="https://zohair-git.github.io/Project/"><img class="pstyle project w-50 text-center h-75"
                                     src="./images/project1.png" alt="Project-1"></a>
                         </div>
                         <div class="col text-center">
                             <a href="https://sarimkhan515.github.io/wedding-planner/"><img
-                                    class="project w-50 h-75 text-center" src="./images/project2.png"
+                                    class="pstyle project w-50 h-75 text-center" src="./images/project2.png"
                                     alt="Project-2"></a>
                         </div>
                         <div class="col text-center">
-                            <a href="http://huzaifa1509.github.io/project/"> <img class="project w-50 h-75 text-center"
+                            <a href="http://huzaifa1509.github.io/project/"> <img class="pstyle project w-50 h-75 text-center"
                                     src="./images/project3.png" alt="Project-3"></a>
                         </div>
                     </div>
