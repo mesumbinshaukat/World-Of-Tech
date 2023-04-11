@@ -15,6 +15,7 @@
     <link href="./css/style.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
+    <link rel="canonical" href="https://www.worldoftech.company">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
@@ -53,10 +54,11 @@
     .bg_color {
         background-color: #D5D5D5;
     }
+
     .scrolled {
-background-color: rgba(73, 71, 71, 0.712) ;
-transition: background-color 200ms linear;
-}
+        background-color: rgba(73, 71, 71, 0.712);
+        transition: background-color 200ms linear;
+    }
     </style>
 </head>
 
@@ -114,12 +116,12 @@ transition: background-color 200ms linear;
                         });
                     });
 
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $("#navbar");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > 300);
-  });
-});
+                    $(function() {
+                        $(document).scroll(function() {
+                            var $nav = $("#navbar");
+                            $nav.toggleClass('scrolled', $(this).scrollTop() > 300);
+                        });
+                    });
                     </script>
 
 

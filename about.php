@@ -14,6 +14,7 @@
     <link rel="apple-touch-icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="canonical" href="https://www.worldoftech.company/about.php">
 
 
     <style>
