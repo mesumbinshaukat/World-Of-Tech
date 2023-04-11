@@ -1,5 +1,5 @@
 <?php 
-$conn = mysqli_connect("localhost","root","","world_of_tech");
+$conn = mysqli_connect("localhost","root","XcRny943ve76JB","world_of_tech");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,11 +8,18 @@ $conn = mysqli_connect("localhost","root","","world_of_tech");
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.css">
-    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
+    <link rel="apple-touch-icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="canonical" href="https://www.worldoftech.company/blog.php">
+    <?php include('./font.html')?>
     <style>
     .items {
         transition: .4s;
@@ -101,8 +108,12 @@ $conn = mysqli_connect("localhost","root","","world_of_tech");
 
 </body>
 
-<script src="jquery/jquery-3.6.0.min.js"></script>
-<script src="owlcarousel/dist/owl.carousel.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
 $(document).ready(function() {
     $(".owl-carousel").owlCarousel();
