@@ -35,6 +35,7 @@
         border-radius: 0;
         border-bottom: 1px solid #ddd
     }
+
     </style>
 </head>
 
@@ -115,7 +116,7 @@
                             </div>
                         </div>
 
-                        <input type="submit" name="btn_submit" value="Submit Request" class="btn btn-outline-dark">
+                        <input type="submit" name="btn_submit" value="Submit Request" class="btn btn-dark">
                     </form>
 
                 </div>

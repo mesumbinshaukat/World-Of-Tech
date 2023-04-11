@@ -99,10 +99,6 @@
                     <?php include('secondcard.html'); ?>
                 </div>
                 <section>
-                    <?php include('video.html');?>
-
-                </section>
-                <section>
                     <?php include('plans.html'); ?>
 
                     <section>

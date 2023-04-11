@@ -12,22 +12,6 @@
         .planimage{
             width: 20px;
         }
-        .our{
-            font-size: medium;
-            width: 80px;
-            border: 2px solid gray;
-            background-color: rgb(204, 197, 197);
-            padding:8px 18px;
-            border-radius: 5px;
-            color: black;
-            text-decoration: none;
-            transition: .3s;
-        }
-        .our:hover{
-            transform: scale(1.1);
-            color: black;
-        }
-        
         .cardbg{
             background-color: rgb(228, 228, 228) !important;
             transition: .3s ease-in-out;
@@ -35,6 +19,48 @@
         .cardbg:hover{
             transform: scale(1.05);
         }
+        .anchor{
+  display: block;
+  width: 150px;
+  height: 35px;
+  line-height: 32px;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #333;
+  background-color:#333 ;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.anchor span{
+  position: relative;
+  z-index: 2;
+}
+
+.anchor:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  transition: all .35s;
+}
+
+.anchor:hover{
+  color: #fff;
+}
+
+.anchor:hover:after{
+  width: 100%;
+}
+
+
     </style>
 </head>
 
@@ -167,8 +193,8 @@
                   </div>
                   </li>
                 </ul>
-                <div class="card-body">
-                    <a href="contact.php" target="_blank" class="our">Book Now</a>
+                <div class="card-body d-flex justify-content-center">
+          <a  class="anchor" href="contact.php" target="_blank"><span>Book Now</span></a>
                 </div>
               </div>
             </div>
@@ -290,9 +316,9 @@
                   </div>
                   </li>
                 </ul>
-                <div class="card-body">
-                    <a href="contact.php" target="_blank" class="our">Book Now</a>
-                </div>
+                <div class="card-body d-flex justify-content-center">
+                  <a  class="anchor" href="contact.php" target="_blank"><span>Book Now</span></a>
+                        </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mb-4" data-aos="zoom-in-up">
@@ -413,9 +439,9 @@
                   </div>
                   </li>
                 </ul>
-                <div class="card-body">
-                    <a href="contact.php" target="_blank" class="our">Book Now</a>
-                </div>
+                <div class="card-body d-flex justify-content-center">
+                  <a  class="anchor" href="contact.php" target="_blank"><span>Book Now</span></a>
+                        </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mb-4" data-aos="zoom-in-down" >             
@@ -536,9 +562,9 @@
                   </div>
                   </li>
                 </ul>
-                <div class="card-body">
-                    <a href="contact.php" target="_blank" class="our">Book Now</a>
-                </div>
+                <div class="card-body d-flex justify-content-center">
+                  <a  class="anchor" href="contact.php" target="_blank"><span>Book Now</span></a>
+                        </div>
               </div>
             </div>
         </div>

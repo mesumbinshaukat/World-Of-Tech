@@ -29,23 +29,51 @@
         }
         .sstext{
             font-size: medium;
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
         }
         }
-        .button{
-            font-size: medium;
-            width: 80px;
-            border: 2px solid gray;
-            background-color: rgb(204, 197, 197);
-            padding: 10px;
-            border-radius: 5px;
-            color: black;
-            text-decoration: none;
-            transition: .3s;
-        }
-        .button:hover{
-              width: 90px;
-              color: black;
-        }
+        .anchor{
+  display: block;
+  width: 150px;
+  height: 35px;
+  line-height: 32px;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #333;
+  background-color:#333 ;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.anchor span{
+  position: relative;
+  z-index: 2;
+}
+
+.anchor:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  transition: all .35s;
+}
+
+.anchor:hover{
+  color: #fff;
+}
+
+.anchor:hover:after{
+  width: 100%;
+}
+
     </style>
 </head>
 
@@ -55,9 +83,9 @@
             <div class="col-lg-6 col-md-6 d-flex justify-content-center" data-aos="fade-left">
                 <div class="card p-2">
                     <div class="card-body">
-                        <h5 class="card-title fs-2 fw-bolder mb-4 sftext">GET YOUR WEBSITES DONE IN HOURS BY WORLD OF
-                            TECH</h5>
-                        <h6 class="card-subtitle mb-2 text-muted mb-4 sstext">Hey, you! Yeah, you! Are you tired of feeling
+                        <h2 class="card-title fw-bolder mb-4 sftext">GET YOUR WEBSITES DONE IN HOURS BY WORLD OF
+                            TECH</h2>
+                        <p class="card-subtitle mb-2 text-muted mb-4 sstext">Hey, you! Yeah, you! Are you tired of feeling
                             left out of the tech game? Do you want to up your digital game? Look no further than <b class="text-dark"> WORLD
                             OF TECH!</b> Our Software House offers a variety of services, including web development,
                             e-commerce solutions, and mobile app development. You'll be the talk of the town (or your
@@ -68,8 +96,8 @@
                             solutions to businesses of all sizes. Our Goal As Software House is to help clients optimize
                             their business processes through automation, customization, and integration of software
                             systems. Our team of experts is dedicated to providing excellent services that meet your
-                            unique requirements with precision and professionalism.</h6>
-                        <a href="contact.php" class="button">JOIN WITH US</a>
+                            unique requirements with precision and professionalism.</p>
+                        <a href="contact.php" class="anchor text-white"><span>JOIN WITH US</span></a>
                     </div>
                 </div>
             </div>
