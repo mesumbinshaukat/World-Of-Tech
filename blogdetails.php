@@ -9,8 +9,9 @@
 <head>
     <?php while($blogs_details = mysqli_fetch_array($select_query_run)) {?>
     <title><?php echo $blogs_details['blogtitle']?></title>
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <?php include('./font.html')?>
     <style>
     .image {
         border: 2px solid transparent;

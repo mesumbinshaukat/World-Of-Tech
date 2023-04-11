@@ -11,9 +11,11 @@
         content="Enhance your business productivity with our innovative software solutions. Contact us today to take your business to the next level.">
     <meta name="author" content="World Of Tech">
     <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
-    <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <link rel="canonical" href="https://www.worldoftech.company/contact.php">
+    <?php include('./font.html')?>
     <style>
     .breadcrumb a {
         color: #6c757d;
@@ -112,7 +114,7 @@
                             </div>
                         </div>
 
-                        <input type="submit" name="btn_submit" value="Submit Request" class="btn-animated">
+                        <input type="submit" name="btn_submit" value="Submit Request" class="btn btn-outline-dark">
                     </form>
 
                 </div>
@@ -124,6 +126,12 @@
     <section id="footer">
         <?php include("footer.html");?>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </body>
 
 </html>
