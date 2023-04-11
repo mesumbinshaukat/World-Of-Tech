@@ -67,6 +67,8 @@
 </head>
 
 <body class="bg_color">
+
+
     <div id="top"></div>
     <div id="arrow" class="side-arrow side-block">
         <a href="#top"><img src="./Icons/keyboard_double_arrow_up_FILL0_wght400_GRAD0_opsz48.png" alt="arrow"></a>
@@ -82,6 +84,7 @@
 
 
     <section id="carousel">
+
         <?php include('carousel.html');?>
     </section>
     <br><br>
