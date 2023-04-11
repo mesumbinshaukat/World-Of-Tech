@@ -5,9 +5,14 @@ $conn = mysqli_connect("localhost","root","XcRny943ve76JB","world_of_tech");
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>WORLD OF TECH | BLOGS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="blogs, world of tech blogs, tech blogs, error blogs, development blogs, blog websites, worldoftech, software house blogs, business blogs">
+    <meta name="description"
+        content="Our blog spage has one of the most informative blog section by professional blog writer with updated knowledge, only at WORLD OF TECH.">
+    <meta name="author" content="World Of Tech">
     <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
     <link rel="apple-touch-icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
