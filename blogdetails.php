@@ -40,7 +40,10 @@
 </head>
 
 <body>
-    <div class="container-fluid ">
+    <section id="navbar" class="pb-5 mb-5">
+        <?php include('navbar.html')?>
+    </section>
+    <div class="container-fluid pt-3">
         <!-- blog section starts -->
         <div class="blog_details section">
             <!-- title and category -->
