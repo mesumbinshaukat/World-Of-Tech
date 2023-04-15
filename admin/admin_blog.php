@@ -10,7 +10,8 @@ if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
     exit();
 }
 
-$conn = mysqli_connect('localhost', 'root','XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+// $conn = mysqli_connect('localhost', 'root','XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+$conn = mysqli_connect('localhost', 'root','', 'world_of_tech') or die("Can't Connect");
 if(isset($_POST['submitbtn'])){
     $blog_date = $_POST['blog_date'];
     $blog_categories = $_POST['blog_categories'];
@@ -38,10 +39,14 @@ if(isset($_POST['submitbtn'])){
     $conclusion_para_img_path = 'images/' .  $conclusion_para_img;
 
     move_uploaded_file($conclusion_para_img_tmp,$conclusion_para_img_path);
-    $insert_query = "INSERT INTO `admin_blogs`( `blog_category`, `thumbnail`, `blogtitle`, `subtitle`, `intro_para`, `intro_img`, `main_para`, `main_img`, `conclusion_para`, `conclusion_img`,`publish_date`) VALUES ('$blog_categories','$thumbnail_img_path','$blogtitle','$blog_sub_title','$intro_para','$intro_para_img_path','$main_para','$main_para_img_path','$conclusion_para','$conclusion_para_img_path','$blog_date')";
+    $metatags = $_POST['meta_tags'];
+    $metatags_description = $_POST['meta_tags_description'];
+    $insert_query = "INSERT INTO `admin_blogs`( `blog_category`, `thumbnail`, `blogtitle`, `subtitle`, `intro_para`, `intro_img`, `main_para`, `main_img`, `conclusion_para`, `conclusion_img`,`publish_date`,`meta_tags`,`metatags_description`) VALUES ('$blog_categories','$thumbnail_img_path','$blogtitle','$blog_sub_title','$intro_para','$intro_para_img_path','$main_para','$main_para_img_path','$conclusion_para','$conclusion_para_img_path','$blog_date', '$metatags','$metatags_description')";
     $insert_query_run = mysqli_query($conn,$insert_query);
     if($insert_query_run){
-        echo"<script>alert('inserted')</script>";
+        // echo"<script>alert('inserted')</script>";
+        header("location:admin_dashboard.php");
+        exit();
     }
     else{
         echo"<script>alert('not inserted')</script>";
@@ -119,6 +124,14 @@ if(isset($_POST['submitbtn'])){
             <div class="mb-3">
                 <label>Conclusion Image/Video</label>
                 <input type="file" name="conclusion_img" required class="form-control">
+            </div>
+            <div class="mb-3">
+                <label>Meta Tags</label>
+                <input type="text" name="meta_tags" required class="form-control">
+            </div>
+            <div class="mb-3">
+                <label>Meta Tags Description</label>
+                <input type="text" name="meta_tags_description" required class="form-control">
             </div>
 
             <input type="submit" class="btn btn-primary form-control" name="submitbtn" value="Submit">
