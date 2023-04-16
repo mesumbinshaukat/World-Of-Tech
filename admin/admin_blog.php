@@ -11,45 +11,49 @@ if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
 }
 
 // $conn = mysqli_connect('localhost', 'root','XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
-$conn = mysqli_connect('localhost', 'root','', 'world_of_tech') or die("Can't Connect");
-if(isset($_POST['submitbtn'])){
+$conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
+if (isset($_POST['submitbtn'])) {
     $blog_date = $_POST['blog_date'];
     $blog_categories = $_POST['blog_categories'];
     $thumnail_img = $_FILES['thumbnail']['name'];
     $thumbnail_img_tmp = $_FILES['thumbnail']['tmp_name'];
-    $thumbnail_img_path = 'images/' .  $thumnail_img;
-    move_uploaded_file($thumbnail_img_tmp,$thumbnail_img_path);
+    $thumbnail_img_path = '../blog_images/' . $thumnail_img;
+    move_uploaded_file($thumbnail_img_tmp, $thumbnail_img_path);
     $blogtitle = $_POST['title'];
     $blog_sub_title = $_POST['subtitle'];
     $intro_para = $_POST['intro_para'];
     $intro_para_img = $_FILES['intro_img']['name'];
     $intro_para_img_tmp = $_FILES['intro_img']['tmp_name'];
- 
-    $intro_para_img_path = 'images/' .  $intro_para_img;
-    move_uploaded_file($intro_para_img_tmp,$intro_para_img_path);
+
+    $intro_para_img_path = '../blog_images/' . $intro_para_img;
+    move_uploaded_file($intro_para_img_tmp, $intro_para_img_path);
     $main_para = $_POST['main_para'];
     $main_para_img = $_FILES['main_img']['name'];
     $main_para_img_tmp = $_FILES['main_img']['tmp_name'];
 
-    $main_para_img_path = 'images/' .  $main_para_img;
-    move_uploaded_file($main_para_img_tmp,$main_para_img_path);
+    $main_para_img_path = '../blog_images/' . $main_para_img;
+    move_uploaded_file($main_para_img_tmp, $main_para_img_path);
     $conclusion_para = $_POST['conclusion_para'];
     $conclusion_para_img = $_FILES['conclusion_img']['name'];
     $conclusion_para_img_tmp = $_FILES['conclusion_img']['tmp_name'];
-    $conclusion_para_img_path = 'images/' .  $conclusion_para_img;
+    $conclusion_para_img_path = '../blog_images/' . $conclusion_para_img;
 
-    move_uploaded_file($conclusion_para_img_tmp,$conclusion_para_img_path);
+    move_uploaded_file($conclusion_para_img_tmp, $conclusion_para_img_path);
     $metatags = $_POST['meta_tags'];
     $metatags_description = $_POST['meta_tags_description'];
     $insert_query = "INSERT INTO `admin_blogs`( `blog_category`, `thumbnail`, `blogtitle`, `subtitle`, `intro_para`, `intro_img`, `main_para`, `main_img`, `conclusion_para`, `conclusion_img`,`publish_date`,`meta_tags`,`metatags_description`) VALUES ('$blog_categories','$thumbnail_img_path','$blogtitle','$blog_sub_title','$intro_para','$intro_para_img_path','$main_para','$main_para_img_path','$conclusion_para','$conclusion_para_img_path','$blog_date', '$metatags','$metatags_description')";
-    $insert_query_run = mysqli_query($conn,$insert_query);
-    if($insert_query_run){
+    $insert_query_run = mysqli_query($conn, $insert_query);
+    if ($insert_query_run) {
         // echo"<script>alert('inserted')</script>";
-        header("location:admin_dashboard.php");
+        $select_query = "SELECT `id` FROM `admin_blogs` WHERE `blogtitle` = '$blogtitle'";
+        $select_run_query = mysqli_query($conn, $select_query);
+        $fetch_details = mysqli_fetch_array($select_run_query);
+        $fetch_id = $fetch_details['id'];
+        $_SESSION['id'] = $fetch_id;
+        header("location:blog_generator.php");
         exit();
-    }
-    else{
-        echo"<script>alert('not inserted')</script>";
+    } else {
+        echo "<script>alert('not inserted')</script>";
     }
 
 
@@ -71,11 +75,11 @@ if(isset($_POST['submitbtn'])){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Add Blog</title>
-    <?php include('../font.html')?>
+    <?php include('../font.html') ?>
 </head>
 
 <body>
-    <?php include("navbar.html");?>
+    <?php include("navbar.html"); ?>
     <h1 class="text-center">Blog</h1>
     <div class="container">
         <form method="post" enctype="multipart/form-data">

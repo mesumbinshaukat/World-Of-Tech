@@ -1,25 +1,14 @@
-<?php
-session_start();
-$conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
-$blog_id = $_SESSION['id'];
-$fetch_query = "SELECT * FROM `admin_blogs` WHERE id = '$blog_id'";
-$fetch_query_run = mysqli_query($conn, $fetch_query);
 
-
-
-while ($row = mysqli_fetch_array($fetch_query_run)) {
-
-    $blog_page_structure = "
 
 
     <html>
 
     <head>
-        <title>" . $row['blogtitle'] . "</title>
+        <title>Best Tech</title>
         <meta charset='UTF-8'>
         <meta name='viewport' content=' width=device-width, initial-scale=1'>
-        <meta name='keywords' content='" . $row['meta_tags'] . "'>
-        <meta name='description' content='" . $row['metatags_description'] . "'>
+        <meta name='keywords' content='asfsdfdsfsf'>
+        <meta name='description' content='fdsfsdfdfergrtg'>
         <meta name='author' content='world of tech'>
         <link rel='shortcut icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
     <link rel='apple-touch-icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
@@ -60,43 +49,43 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
     <div class='blog_details section'>
         <!-- title and category -->
         <div class='title_and_category'>
-            <p class='text-left mx-2 mt-2 '> " . $row['publish_date'] . " / <a
-                    class='text-secondary text-decoration-none' href='blog.php'> " . $row['blog_category'] . " </a></p>
-            <h2 class='text-left mx-2 mb-3'> " . $row['blogtitle'] . " </h2>
+            <p class='text-left mx-2 mt-2 '> 2023-04-29 / <a
+                    class='text-secondary text-decoration-none' href='blog.php'> Tech </a></p>
+            <h2 class='text-left mx-2 mb-3'> Best Tech </h2>
         </div>
         <!-- intro and thumbnail  -->
         <div class='row'>
 
             <div class='col-lg-12 col-md-12 col-sm-12'>
                 <div class='card' id='card'>
-                    <img src='../blog_images/" . $row['thumbnail'] . " ' data-bs-toggle=' modal' data-bs-target='#staticBackdrop'
+                    <img src='../blog_images/../blog_images/Google Cloud Hosting 1.PNG ' data-bs-toggle=' modal' data-bs-target='#staticBackdrop'
                         class='image w-25' alt='thumbnail'>
                 </div>
             </div>
 
             <div class='intro col-lg-12 d-flex flex-column align-self-center'>
                 <h2 class='text-left mx-2 mt-3 mb-1'>Subtitle</h2>
-                <h5 class='text-left mx-2 mt-2 mb-3'> " . $row['subtitle'] . " </h5>
+                <h5 class='text-left mx-2 mt-2 mb-3'> erhjyukk </h5>
                 <h2 class='text-left mx-2 mt-3 mb-1'>Introduction</h2>
-                <h6 class='text-left mx-2 mt-2 mb-3'> " . $row['intro_para'] . " </h6>
+                <h6 class='text-left mx-2 mt-2 mb-3'> iull,jhjmjhm </h6>
                 <div class='card' id='card'>
-                    <img src='../blog_images/" . $row['intro_img'] . "' class='image w-25' alt='intro image'>
+                    <img src='../blog_images/../blog_images/Google Domains 3.PNG' class='image w-25' alt='intro image'>
                 </div>
             </div>
         </div>
         <!-- main section -->
         <div class='main_section'>
             <h2 class='text-left mx-2 mt-3 mb-1'>Main</h2>
-            <p class='text-left mx-2 mt-3 mb-3'> " . $row['main_para'] . " </p>
+            <p class='text-left mx-2 mt-3 mb-3'> fddgdfg </p>
             <div class='card' id='card'>
-                <img src='../blog_images/" . $row['main_img'] . "' class='image w-25' alt='main image of paragraph'>
+                <img src='../blog_images/../blog_images/Email recieved.PNG' class='image w-25' alt='main image of paragraph'>
             </div>
         </div>
         <div class='conclusion_section mb-5'>
             <h2 class='text-left mx-2 mt-3 mb-1'>Conclusion</h2>
-            <p class='text-left mx-2 mt-3 mb-3'> " . $row['conclusion_para'] . " </p>
+            <p class='text-left mx-2 mt-3 mb-3'> fgddfgdfgdvs </p>
             <div class='card' id='card'>
-                <img src='../blog_images/" . $row['conclusion_img'] . " ' class=' image w-25' alt='end image'>
+                <img src='../blog_images/../blog_images/Screenshot 2022-06-27 092432.png ' class=' image w-25' alt='end image'>
             </div>
         </div>
 
@@ -112,7 +101,7 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
             <div class='modal-header'>
                 <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
             </div>
-            <div class='modal-body'> <img src='../" . $row['thumbnail'] . " ' class=' img_modal' alt=''>
+            <div class='modal-body'> <img src='../../blog_images/Google Cloud Hosting 1.PNG ' class=' img_modal' alt=''>
             </div>
 
         </div>
@@ -126,13 +115,4 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
 </script>
 </body>
 
-</html>";
-    $file_name = "../blogs/" . $row["blogtitle"] . ".php";
-    // if ($file_name) {
-    $file_handle = fopen($file_name, "w");
-    $generate_file = fwrite($file_handle, $blog_page_structure);
-    fclose($file_handle);
-    // if (header('location:admin_dashboard.php'))
-    // exit();
-    // }
-} ?>
+</html>
