@@ -128,11 +128,13 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
 
 </html>";
     $file_name = "../blogs/" . $row["blogtitle"] . ".php";
-    // if ($file_name) {
+    if ($file_name) {
     $file_handle = fopen($file_name, "w");
     $generate_file = fwrite($file_handle, $blog_page_structure);
-    fclose($file_handle);
-    // if (header('location:admin_dashboard.php'))
-    // exit();
-    // }
+    if (fclose($file_handle)){
+        header("location:admin_dashboard.php");
+        exit();
+        
+    }
+    }
 } ?>
