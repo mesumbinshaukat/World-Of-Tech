@@ -6,12 +6,11 @@ $fetch_query = "SELECT * FROM `admin_blogs` WHERE id = '$blog_id'";
 $fetch_query_run = mysqli_query($conn, $fetch_query);
 
 
-
 while ($row = mysqli_fetch_array($fetch_query_run)) {
-
+    
     $blog_page_structure = "
 
-
+   
     <html>
 
     <head>
@@ -69,7 +68,7 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
 
             <div class='col-lg-12 col-md-12 col-sm-12'>
                 <div class='card' id='card'>
-                    <img src='../blog_images/" . $row['thumbnail'] . " ' data-bs-toggle=' modal' data-bs-target='#staticBackdrop'
+                    <img src='../blog_images/" . $row['thumbnail'] . " ' 
                         class='image w-25' alt='thumbnail'>
                 </div>
             </div>
@@ -92,7 +91,7 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
                 <img src='../blog_images/" . $row['main_img'] . "' class='image w-25' alt='main image of paragraph'>
             </div>
         </div>
-        <div class='conclusion_section mb-5'>
+        <div class='conclusion_section mb-3'>
             <h2 class='text-left mx-2 mt-3 mb-1'>Conclusion</h2>
             <p class='text-left mx-2 mt-3 mb-3'> " . $row['conclusion_para'] . " </p>
             <div class='card' id='card'>
@@ -103,29 +102,54 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
     </div>
 </div>
 
-
-<!-- modal -->
-<div class='modal fade' id='staticBackdrop' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1'
-    aria-labelledby='staticBackdropLabel' aria-hidden='true'>
-    <div class='modal-dialog'>
-        <div class='modal-content'>
-            <div class='modal-header'>
-                <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
-            </div>
-            <div class='modal-body'> <img src='../" . $row['thumbnail'] . " ' class=' img_modal' alt=''>
-            </div>
-
-        </div>
-    </div>
-</div>
+<section id ='comment_section' class='container-fluid'>
+        <h2 class='fw-bold'> Comment </h2>
+        <textarea id='ID_commentarea' class='form-control' placeholder='Enter Your Comment' rows='4'></textarea>
+        <input type='button' class='btn btn-dark p-2 mb-4 mt-3 px-5' value='Submit' id='ID_button'>
+        
+        <div id='ID_div'></div>
+</section>
 
 
+<script src='https://code.jquery.com/jquery-3.6.4.min.js'
+        integrity='sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=' crossorigin='anonymous'>
+    </script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
+<script>
+$(document).ready(function(){
+    dataLoad();
+    function dataLoad(){
+        $.ajax({
+            url: '../commentsection.php',
+            type: 'POST',
+            success: function(data) {
+                $('#ID_div').html(data);
+            }
+        })
+        
+    }
 
-<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js'
-    integrity='sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe' crossorigin='anonymous'>
+
+$('#ID_button').click(function(){
+    var comment = $('#ID_commentarea').val();
+   
+    $.ajax({
+        url:'../blog_comments.php',
+        type:'POST',
+        data:{
+            submitbtn: 1,
+            ID_comment: comment,
+        },
+        success:function(){
+           dataLoad();
+        }
+
+    })
+})     
+})
+
 </script>
 </body>
-
 </html>";
     $file_name = "../blogs/" . $row["blogtitle"] . ".php";
     if ($file_name) {

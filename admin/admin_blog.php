@@ -95,47 +95,47 @@ if (isset($_POST['submitbtn'])) {
             </div>
             <div class="mb-3">
                 <label>Thumnail</label>
-                <input type="file" name="thumbnail" required class="form-control">
+                <input type="file" name="thumbnail"  class="form-control">
             </div>
             <div class="mb-3">
                 <label>Blog Title</label>
-                <textarea type="text" name="title" required class="form-control"></textarea>
+                <textarea type="text" name="title"  class="form-control"></textarea>
             </div>
             <div class="mb-3">
                 <label>Sub Title</label>
-                <textarea type="text" name="subtitle" required class="form-control"></textarea>
+                <textarea type="text" name="subtitle"  class="form-control"></textarea>
             </div>
             <div class="mb-3">
                 <label>Intro Paragraph</label>
-                <textarea type="text" name="intro_para" required class="form-control"></textarea>
+                <textarea type="text" name="intro_para"  class="form-control"></textarea>
             </div>
             <div class="mb-3">
                 <label>Intro Image/Video</label>
-                <input type="file" name="intro_img" required class="form-control">
+                <input type="file" name="intro_img"  class="form-control">
             </div>
             <div class="mb-3">
                 <label>Main Paragraph</label>
-                <textarea type="text" name="main_para" required class="form-control"></textarea>
+                <textarea type="text" name="main_para"  class="form-control"></textarea>
             </div>
             <div class="mb-3">
                 <label>Main Image/Video</label>
-                <input type="file" name="main_img" required class="form-control">
+                <input type="file" name="main_img"  class="form-control">
             </div>
             <div class="mb-3">
                 <label>Conclusion</label>
-                <textarea type="text" name="conclusion_para" required class="form-control"></textarea>
+                <textarea type="text" name="conclusion_para"  class="form-control"></textarea>
             </div>
             <div class="mb-3">
                 <label>Conclusion Image/Video</label>
-                <input type="file" name="conclusion_img" required class="form-control">
+                <input type="file" name="conclusion_img"  class="form-control">
             </div>
             <div class="mb-3">
                 <label>Meta Tags</label>
-                <input type="text" name="meta_tags" required class="form-control">
+                <input type="text" name="meta_tags"  class="form-control">
             </div>
             <div class="mb-3">
                 <label>Meta Tags Description</label>
-                <input type="text" name="meta_tags_description" required class="form-control">
+                <input type="text" name="meta_tags_description"  class="form-control">
             </div>
 
             <input type="submit" class="btn btn-primary form-control" name="submitbtn" value="Submit">

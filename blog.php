@@ -187,7 +187,7 @@ $conn = mysqli_connect("localhost","root","","world_of_tech");
                             <div class="card-body text-dark">
                                 <h5 class="card-title"><?php echo $fetch_sports['blogtitle']?></h5>
                                 <p class="card-text"><?php echo $fetch_sports['subtitle']?></p>
-
+                                
                             </div>
                         </a>
                     </div>
