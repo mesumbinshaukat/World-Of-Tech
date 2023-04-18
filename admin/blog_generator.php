@@ -7,7 +7,7 @@ $fetch_query_run = mysqli_query($conn, $fetch_query);
 
 
 while ($row = mysqli_fetch_array($fetch_query_run)) {
-    
+
     $blog_page_structure = "
 
    
@@ -106,59 +106,60 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
         <h2 class='fw-bold'> Comment </h2>
         <textarea id='ID_commentarea' class='form-control' placeholder='Enter Your Comment' rows='4'></textarea>
         <input type='button' class='btn btn-dark p-2 mb-4 mt-3 px-5' value='Submit' id='ID_button'>
-        
-        <div id='ID_div'></div>
-</section>
+        <input type='hidden' value='" . $row['id'] . "' id='hidden_id'>
+    <div id='ID_div'> </div>
+    </section>
 
 
-<script src='https://code.jquery.com/jquery-3.6.4.min.js'
+    <script src='https://code.jquery.com/jquery-3.6.4.min.js'
         integrity='sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=' crossorigin='anonymous'>
     </script>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
-<script>
-$(document).ready(function(){
-    dataLoad();
-    function dataLoad(){
-        $.ajax({
-            url: '../commentsection.php',
-            type: 'POST',
-            success: function(data) {
-                $('#ID_div').html(data);
-            }
-        })
-        
-    }
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
+    <script>
+    $(document).ready(function() {
+        dataLoad();
 
+        function dataLoad() {
+            $.ajax({
+                url: '../blog_comments.php',
+                type: 'POST',
+                success: function(data) {
+                    $('#ID_div').html(data);
+                }
+            })
 
-$('#ID_button').click(function(){
-    var comment = $('#ID_commentarea').val();
-   
-    $.ajax({
-        url:'../blog_comments.php',
-        type:'POST',
-        data:{
-            submitbtn: 1,
-            ID_comment: comment,
-        },
-        success:function(){
-           dataLoad();
         }
 
-    })
-})     
-})
 
-</script>
+        $('#ID_button').click(function() {
+            var comment = $('#ID_commentarea').val();
+            var hidden_id = $('#hidden_id').val();
+            $.ajax({
+                url: '../blog_comments.php',
+                type: 'POST',
+                data: {
+                    submitbtn: 1,
+                    ID_comment: comment,
+                    hid_id: hidden_id,
+                },
+                success: function() {
+                    dataLoad();
+                }
+
+            })
+        })
+    })
+    </script>
 </body>
 </html>";
     $file_name = "../blogs/" . $row["blogtitle"] . ".php";
     if ($file_name) {
-    $file_handle = fopen($file_name, "w");
-    $generate_file = fwrite($file_handle, $blog_page_structure);
-    if (fclose($file_handle)){
-        header("location:admin_dashboard.php");
-        exit();
-        
-    }
+        $file_handle = fopen($file_name, "w");
+        $generate_file = fwrite($file_handle, $blog_page_structure);
+        if (fclose($file_handle)) {
+            header("location:admin_dashboard.php");
+            exit();
+
+        }
     }
 } ?>
