@@ -23,7 +23,7 @@ $select_query_run = mysqli_query($conn,$select_query);
 <body>
 
     <?php if(mysqli_num_rows($select_query_run) >= 1)  {?>
-    <h2>Comments</h2>
+    <h2>Commentsa</h2>
     <?php }?>
     <?php while($row = mysqli_fetch_array($select_query_run)){?>
     <p><?php echo $row['comments']?></p>
