@@ -12,6 +12,8 @@
     <meta name="author" content="World Of Tech">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <style>
@@ -122,9 +124,9 @@
 
 
                 <div class="container mt-5 ">
-  <div class="row">
+  <div class="row" >
     <div class="col d-flex justify-content-center mb-3">
-      <div class="card " >
+      <div class="card  "  data-aos="fade-right" >
   <img src="images/webdev1.jpg" class=" card-img-top" alt="from pexel">
   <div class="card-body text-center">
     <h5 class="card-title ">WEB DEVELOPMENT</h5>
@@ -140,7 +142,7 @@
 
 
     <div class="col d-flex justify-content-center mb-3">
-    <div class="card" >
+    <div class="card" data-aos="fade-up" >
   <img src="./images/search-engine-optimization-4111000_1280.jpg" class="card-img-top" alt="from pexel">
   <div class="card-body text-center ">
     <h5 class="card-title ">SEO</h5>
@@ -154,7 +156,7 @@
 
 
     <div class="col d-flex justify-content-center mb-3">
-    <div class="card" >
+    <div class="card" data-aos="fade-left">
   <img src="./images/online-marketing-1246457_1280.jpg" class="card-img-top" alt="from pexel">
   <div class="card-body text-center">
     <h5 class="card-title ">DIGITAL MARKETING</h5>
@@ -170,7 +172,7 @@
 
 
 <div class="container mt-5 ">
-    <div class="row">
+    <div class="row" data-aos="fade-right">
       <div class="col d-flex justify-content-center mb-3">
         <div class="card " >
     <img src="images/3230320.jpg" class=" card-img-top" alt="from pexel">
@@ -185,7 +187,7 @@
   
   
       <div class="col d-flex justify-content-center mb-3">
-      <div class="card" >
+      <div class="card" data-aos="fade-up" >
     <img src="./images/emily-bernal-BM3U_D2lygo-unsplash.jpg" class="card-img-top" alt="graphic from pexel">
     <div class="card-body text-center">
       <h5 class="card-title ">GRAPHIC DESIGNING</h5>
@@ -200,7 +202,7 @@
   
   
       <div class="col d-flex justify-content-center mb-3">
-      <div class="card" >
+      <div class="card"data-aos="fade-left" >
     <img src="./images/uiux.jpg" class="card-img-top" alt="from freepik">
     <div class="card-body text-center">
       <h5 class="card-title ">UI/UX</h5>
@@ -218,7 +220,7 @@
   <div class="container mt-5 ">
     <div class="row">
       <div class="col d-flex justify-content-center mb-3">
-        <div class="card " >
+        <div class="card " data-aos="fade-right" >
     <img src="images/pexels-markus-winkler-4152505.jpg" class=" card-img-top" alt="from pexel">
     <div class="card-body text-center">
       <h5 class="card-title ">WORDEPRESS SITES</h5>
@@ -231,7 +233,7 @@
   
   
       <div class="col d-flex justify-content-center mb-3">
-      <div class="card" >
+      <div class="card" data-aos="fade-up" >
     <img src="./images/closeup-hands-using-computer-laptop-with-screen-showing-analysis-data.jpg" class="card-img-top" alt="graphic from pexel">
     <div class="card-body text-center">
       <h5 class="card-title ">DATA ENTRY</h5>
@@ -244,7 +246,7 @@
   
   
       <div class="col d-flex justify-content-center mb-3">
-      <div class="card" >
+      <div class="card"data-aos="fade-left">
     <img src="./images/Kerfin7-NEA-2219.jpg" class="card-img-top" alt="from freepik">
     <div class="card-body text-center">
       <h5 class="card-title ">.NET APPLICATION</h5>
@@ -278,7 +280,9 @@
         <?php include("footer.html");?>
 
     </footer>
-
+    <script>
+  AOS.init();
+</script>
 
 </body>
 
