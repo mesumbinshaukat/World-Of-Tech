@@ -1,6 +1,6 @@
-<?php 
+<?php
 session_start();
-$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+// $conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
 
 $admin_name = "WorldOfTech_Admin_778866_Official!!!";
 $session_admin_name = $_SESSION['Admin_Name'];
@@ -12,10 +12,10 @@ if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
 }
 
 
-// $connection = mysqli_connect("localhost" , "root" , "" , "world_of_tech");
+$conn = mysqli_connect("localhost", "root", "", "world_of_tech");
 
 $select_query = "SELECT * FROM `user_contact_details`";
-$select_query_run = mysqli_query($conn , $select_query);
+$select_query_run = mysqli_query($conn, $select_query);
 
 
 ?>
@@ -26,7 +26,7 @@ $select_query_run = mysqli_query($conn , $select_query);
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="shortcut icon" href="../Icons/admin.png" type="image/x-icon">
     <title>ADMIN PANEL</title>
-    <?php include('../font.html')?>
+    <?php include('../font.html') ?>
     <style>
     .nav_logo {
         width: 10%;
@@ -37,7 +37,7 @@ $select_query_run = mysqli_query($conn , $select_query);
 <body>
 
     <section>
-        <?php include('navbar.html');?>
+        <?php include('navbar.html'); ?>
     </section>
     <br>
     <table class="table table-primary table-bordered">
@@ -61,7 +61,7 @@ $select_query_run = mysqli_query($conn , $select_query);
                 DELETION
             </th>
         </tr>
-        <?php while($row = mysqli_fetch_array($select_query_run)){ ?>
+        <?php while ($row = mysqli_fetch_array($select_query_run)) { ?>
         <tr>
             <td><?php echo $row['user_name'] ?></td>
             <td><?php echo $row['user_email'] ?></td>
@@ -73,7 +73,7 @@ $select_query_run = mysqli_query($conn , $select_query);
                     href="delete.php?id=<?php echo $row['id'] ?>">DELETE</a>
             </td>
         </tr>
-        <?php }?>
+        <?php } ?>
     </table>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
