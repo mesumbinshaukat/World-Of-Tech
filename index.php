@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
-        content="website maker, world of tech, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website maker">
+        content="website maker, world of tech, best software house, it company, software house, software houses in karachi, web developers, best software houses in karachi, world of tech software house, software company">
     <meta name="description"
         content="Our expert Software House team ensures seamless execution and timely delivery of innovative solutions.">
     <meta name="author"

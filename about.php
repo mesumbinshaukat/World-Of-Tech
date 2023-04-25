@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
-        content="website maker, world of tech about us, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website maker, about us">
+        content="world of tech, software house, world of tech software house, software house details, world of tech about us, software house about us, world of tech team, details about world of tech, tech services, about us">
     <meta name="description"
         content="Explore the world of technology with our TECH BASED SERVICES! Our Software House business excels in providing top-quality solutions to clients worldwide.">
     <meta name="author" content="World Of Tech">
@@ -15,74 +15,74 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="canonical" href="https://www.worldoftech.company/about.php">
-    <?php include('./font.html')?>
+    <?php include('./font.html') ?>
 
     <style>
-    .breadcrumb a {
-        color: #6c757d;
-    }
-
-    .breadcrumb {
-        padding: 30px 5px 26px;
-        background-color: transparent;
-        margin-bottom: 0;
-        border-radius: 0;
-        border-bottom: 1px solid #ddd
-    }
-
-    .about_pic {
-        /* height: 30rem; */
-        border-radius: 20px;
-        box-shadow: -1px 2px 15px 5px grey;
-    }
-
-    .icon {
-        /* height: 50%; */
-        width: 30%;
-    }
-
-    .t_img {
-        /* height: 60%; */
-        width: 50%;
-        border-radius: 150px;
-    }
-
-
-
-    .t_imgd {
-        /* height: 50%; */
-        width: 30%;
-        border-radius: 150px;
-
-    }
-
-    .about-a {
-        box-shadow: -1px 1px 7px 5px grey;
-
-    }
-
-    .project {
-        border: 1px solid black;
-        border-radius: 10px;
-        transition: .3s;
-
-    }
-
-    .project:hover {
-        transform: scale(1.2);
-    }
-
-    @media (max-width: 500px) {
-        .font {
-            font-size: 10px;
+        .breadcrumb a {
+            color: #6c757d;
         }
-    }
 
-    .pstyle {
-        -webkit-box-shadow: 0px 3px 54px 1px rgba(0, 0, 0, 0.49);
-        -moz-box-shadow: 0px 3px 54px 1px rgba(0, 0, 0, 0.49);
-        box-shadow: 0px 3px 54px 1px rgba(0, 0, 0, 0.49);
-    }
+        .breadcrumb {
+            padding: 30px 5px 26px;
+            background-color: transparent;
+            margin-bottom: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #ddd
+        }
+
+        .about_pic {
+            /* height: 30rem; */
+            border-radius: 20px;
+            box-shadow: -1px 2px 15px 5px grey;
+        }
+
+        .icon {
+            /* height: 50%; */
+            width: 30%;
+        }
+
+        .t_img {
+            /* height: 60%; */
+            width: 50%;
+            border-radius: 150px;
+        }
+
+
+
+        .t_imgd {
+            /* height: 50%; */
+            width: 30%;
+            border-radius: 150px;
+
+        }
+
+        .about-a {
+            box-shadow: -1px 1px 7px 5px grey;
+
+        }
+
+        .project {
+            border: 1px solid black;
+            border-radius: 10px;
+            transition: .3s;
+
+        }
+
+        .project:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 500px) {
+            .font {
+                font-size: 10px;
+            }
+        }
+
+        .pstyle {
+            -webkit-box-shadow: 0px 3px 54px 1px rgba(0, 0, 0, 0.49);
+            -moz-box-shadow: 0px 3px 54px 1px rgba(0, 0, 0, 0.49);
+            box-shadow: 0px 3px 54px 1px rgba(0, 0, 0, 0.49);
+        }
     </style>
 
 </head>
@@ -90,7 +90,7 @@
 <body>
     <section>
 
-        <?php include("navbar.html");?>
+        <?php include("navbar.html"); ?>
 
     </section>
     <br><br><br>
@@ -299,7 +299,7 @@
 
 
     <footer class="footer">
-        <?php include("footer.html");?>
+        <?php include("footer.html"); ?>
 
     </footer>
 

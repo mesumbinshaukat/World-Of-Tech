@@ -1,7 +1,7 @@
-<?php 
+<?php
 // ini_set('display_errors','1');
-// $conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
-$conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
+$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+// $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
 
 if ($conn) {
     $submit_btn = $_POST['btn_submit'];
@@ -23,7 +23,7 @@ if ($conn) {
             header('location:index.php');
             exit();
         }
-    }else {
+    } else {
         $err = die("Could not connect to database: " . mysqli_connect_error());
         echo "<script>alert('$err')</script>";
         header('location:contact.php');

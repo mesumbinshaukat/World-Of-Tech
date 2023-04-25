@@ -1,5 +1,7 @@
 <?php
-$conn = $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech');
+$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+
+// $conn = $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech');
 $id = $_GET['id'];
 ?>
 
@@ -19,4 +21,3 @@ if ($file_blog_path) {
     exit();
 }
 ?>
-

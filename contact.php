@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
-        content="website maker, world of tech contact us, web development, web design, ui/ux, world of tech main page, worldoftech.company, web developers, best website maker, contact us">
+        content="world of tech, software house, world of tech software house, world of tech contact us, contact us, software house contact, contact details, world of tech contact us, best software house contact details, world of tech contact">
     <meta name="description"
         content="Enhance your business productivity with our innovative software solutions. Contact us today to take your business to the next level.">
     <meta name="author" content="World Of Tech">
@@ -16,33 +16,32 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="canonical" href="https://www.worldoftech.company/contact.php">
-    <?php include('./font.html')?>
+    <?php include('./font.html') ?>
     <style>
-    .breadcrumb a {
-        color: #6c757d;
-        text-decoration: none;
-    }
+        .breadcrumb a {
+            color: #6c757d;
+            text-decoration: none;
+        }
 
-    .breadcrumb a:hover {
-        color: black;
-        text-decoration: underline;
-    }
+        .breadcrumb a:hover {
+            color: black;
+            text-decoration: underline;
+        }
 
-    .breadcrumb {
-        padding: 30px 5px 26px;
-        background-color: transparent;
-        margin-bottom: 0;
-        border-radius: 0;
-        border-bottom: 1px solid #ddd
-    }
-
+        .breadcrumb {
+            padding: 30px 5px 26px;
+            background-color: transparent;
+            margin-bottom: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #ddd
+        }
     </style>
 </head>
 
 <body>
     <!-- navbar -->
     <section id="navbar" class="mb-5">
-        <?php include("navbar.html");?>
+        <?php include("navbar.html"); ?>
 
 
     </section>
@@ -126,12 +125,12 @@
 
     <!-- footer -->
     <section id="footer">
-        <?php include("footer.html");?>
+        <?php include("footer.html"); ?>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </body>

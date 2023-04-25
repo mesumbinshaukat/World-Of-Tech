@@ -1,6 +1,10 @@
 <?php
+ini_set('display_errors', '1');
+
 session_start();
-$conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
+// $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
+$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+
 $blog_id = $_SESSION['id'];
 $fetch_query = "SELECT * FROM `admin_blogs` WHERE id = '$blog_id'";
 $fetch_query_run = mysqli_query($conn, $fetch_query);
@@ -55,7 +59,7 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
     
 
 <div class='container-fluid pt-3'>
-<input type='text' id='blog_id' value='".$row['id']."'>
+<input type='hidden' id='blog_id' value='" . $row['id'] . "'>
 
     <!-- blog section starts -->
     <div class='blog_details section'>
