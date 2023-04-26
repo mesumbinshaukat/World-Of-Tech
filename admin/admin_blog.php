@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', '1');
+// ini_set('display_errors', '1');
 session_start();
 
 $admin_name = "WorldOfTech_Admin_778866_Official!!!";
@@ -11,8 +11,8 @@ if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
     exit();
 }
 
-// $conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
-$conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
+$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+// $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
 if (isset($_POST['submitbtn'])) {
     $blog_date = $_POST['blog_date'];
     $blog_categories = $_POST['blog_categories'];

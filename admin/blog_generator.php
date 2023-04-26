@@ -1,9 +1,9 @@
 <?php
-ini_set('display_errors', '1');
+// ini_set('display_errors', '1');
 
 session_start();
-$conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
-// $conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+// $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
+$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
 
 $blog_id = $_SESSION['id'];
 $fetch_query = "SELECT * FROM `admin_blogs` WHERE id = '$blog_id'";
@@ -167,6 +167,17 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
     })
     </script>
 </body>
-</html>" ; $file_name="../blogs/" . $row["blogtitle"] . ".php" ; if ($file_name) { $file_handle=fopen( $file_name, "w"
-        ); $generate_file=fwrite($file_handle, $blog_page_structure); if (fclose($file_handle)) {
-        header("location:admin_dashboard.php"); exit(); } } } ?>
+</html>";
+    $file_name = "../blogs/" . $row["blogtitle"] . ".php";
+    if ($file_name) {
+        $file_handle = fopen(
+            $file_name,
+            "w"
+        );
+        $generate_file = fwrite($file_handle, $blog_page_structure);
+        if (fclose($file_handle)) {
+            header("location:admin_dashboard.php");
+            exit();
+        }
+    }
+} ?>

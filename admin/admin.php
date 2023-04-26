@@ -1,8 +1,8 @@
 <?php
-ini_set('display_errors', '1');
+// ini_set('display_errors', '1');
 session_start();
-// $conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
-$conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
+$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+// $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
 
 if (isset($_POST['check'])) {
     $admin_name = $_POST['admin_name'];

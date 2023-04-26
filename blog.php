@@ -1,8 +1,8 @@
 <?php
 ini_set('display_errors', '1');
-// $conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
 
-$conn = mysqli_connect("localhost", "root", "", "world_of_tech");
+// $conn = mysqli_connect("localhost", "root", "", "world_of_tech");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -127,7 +127,15 @@ $conn = mysqli_connect("localhost", "root", "", "world_of_tech");
 
             </div>
         </section>
-
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5127564542975092"
+            crossorigin="anonymous"></script>
+        <!-- side_add -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5127564542975092"
+            data-ad-slot="9705757525" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
         <!-- main section active -->
 
         <section class="mt-4 pt-4 pb-3 mb-3" id="all_blogs_cards">
@@ -227,6 +235,8 @@ $conn = mysqli_connect("localhost", "root", "", "world_of_tech");
         </div>
 
     </section>
+
+
 
     <!-- footer -->
     <section id="footer">
