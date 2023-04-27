@@ -1,7 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
-
-// $conn = mysqli_connect("localhost", "root", "", "world_of_tech");
+include('connection.php');
 if (isset($_POST['click'])) {
     $categories = $_POST['blog_cat'];
     $select_blogs = "SELECT * FROM `admin_blogs` WHERE blog_category = '$categories'";

@@ -2,8 +2,7 @@
 // ini_set('display_errors', '1');
 
 session_start();
-// $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
-$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+include('../connection.php');
 
 $blog_id = $_SESSION['id'];
 $fetch_query = "SELECT * FROM `admin_blogs` WHERE id = '$blog_id'";
