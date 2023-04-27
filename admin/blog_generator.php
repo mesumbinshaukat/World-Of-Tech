@@ -14,7 +14,7 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
 
     $blog_page_structure = "
 
-   <?php session_start();?>
+  <?php session_start();?>
 <html>
 
 <head>
@@ -28,87 +28,90 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
     <link rel='apple-touch-icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet'
         integrity='sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65' crossorigin='anonymous'>
-         <style>
-        .image {
-            border: 2px solid transparent;
-            border-radius: 20px;
-        }
+        <style>
+        body{
+            background-color: rgb(228, 228, 228) !important;
+            font-family: 'Roboto Slab', serif !important;
 
-        .image:hover {
-            border-radius: 0px;
-            cursor: pointer;
         }
+    .image {
+        border: 2px solid transparent;
+        border-radius: 20px;
+    }
 
-        .modal {
-            height: 100%;
-            width: 100%;
-        }
+    .image:hover {
+        border-radius: 0px;
+        cursor: pointer;
+    }
 
-        .img_modal {
-            height: 100%;
-            width: 100%;
-        }
+    .modal {
+        height: 100%;
+        width: 100%;
+    }
 
-        #card {
-            border: none;
-        }
-        </style>
+    .img_modal {
+        height: 100%;
+        width: 100%;
+    }
+
+    #card {
+        border: none;
+    }
+    .word{
+        word-spacing:1px;
+        letter-spacing:.5px;
+    }
+    </style>
     </head>
 
     <body>
     
 
-<div class='container-fluid pt-3'>
+<div class='container pt-3 word'>
 <input type='hidden' id='blog_id' value='" . $row['id'] . "'>
 
     <!-- blog section starts -->
     <div class='blog_details section'>
         <!-- title and category -->
         <div class='title_and_category'>
-            <p class='text-left mx-2 mt-2 '> " . $row['publish_date'] . " / <a
+            <p class='text-center mx-2 mt-2 '> " . $row['publish_date'] . " / <a
                     class='text-secondary text-decoration-none' href='blog.php'> " . $row['blog_category'] . " </a></p>
-            <h2 class='text-left mx-2 mb-3'> " . $row['blogtitle'] . " </h2>
+            <h2 class='mx-2 mb-4 fs-1 fw-bolder text-center text-uppercase'> " . $row['blogtitle'] . " </h2>
         </div>
         <!-- intro and thumbnail  -->
         <div class='row'>
 
-            <div class='col-lg-12 col-md-12 col-sm-12'>
-                <div class='card' id='card'>
+            <div class='col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center'>
+            <div class='card w-75' id='card'>
                     <img src='../blog_images/" . $row['thumbnail'] . " ' 
-                        class='image w-25' alt='thumbnail'>
+                        class='image' alt='thumbnail'>
                 </div>
             </div>
 
-            <div class='intro col-lg-12 d-flex flex-column align-self-center'>
-                <h2 class='text-left mx-2 mt-3 mb-1'>Subtitle</h2>
-                <h5 class='text-left mx-2 mt-2 mb-3'> " . $row['subtitle'] . " </h5>
-                <h2 class='text-left mx-2 mt-3 mb-1'>Introduction</h2>
-                <h6 class='text-left mx-2 mt-2 mb-3'> " . $row['intro_para'] . " </h6>
-                <div class='card' id='card'>
-                    <img src='../blog_images/" . $row['intro_img'] . "' class='image w-25' alt='intro image'>
-                </div>
+            <div class='intro col-lg-12 '>
+                <h5 class='text-center fs-3 fst-italic mx-2 mt-4 mb-4 '> " . $row['subtitle'] . " </h5>
+                <h6 class='text-center mx-2 mt-2 mb-4 fw-normal fs-5'> " . $row['intro_para'] . " </h6>
+                    <img src='../blog_images/" . $row['intro_img'] . "' class='image w-25 mx-auto d-block' alt='intro image'>
             </div>
         </div>
         <!-- main section -->
         <div class='main_section'>
-            <h2 class='text-left mx-2 mt-3 mb-1'>Main</h2>
-            <p class='text-left mx-2 mt-3 mb-3'> " . $row['main_para'] . " </p>
-            <div class='card' id='card'>
-                <img src='../blog_images/" . $row['main_img'] . "' class='image w-25' alt='main image of paragraph'>
-            </div>
+            <p class='mx-2 mt-3 mb-4 fs-5 text-center'> " . $row['main_para'] . " </p>
+          
+                <img src='../blog_images/" . $row['main_img'] . "' class='image w-25 mx-auto d-block' alt='main image of paragraph'>
+          
         </div>
         <div class='conclusion_section mb-3'>
-            <h2 class='text-left mx-2 mt-3 mb-1'>Conclusion</h2>
-            <p class='text-left mx-2 mt-3 mb-3'> " . $row['conclusion_para'] . " </p>
-            <div class='card' id='card'>
-                <img src='../blog_images/" . $row['conclusion_img'] . " ' class=' image w-25' alt='end image'>
-            </div>
+            <p class='mx-2 mt-3 mb-3 fs-5 text-center'> " . $row['conclusion_para'] . " </p>
+          
+                <img src='../blog_images/" . $row['conclusion_img'] . " ' class='image w-25 mx-auto d-block' alt='end image'>
+           
         </div>
 
     </div>
 </div>
 
-<section id ='comment_section' class='container-fluid'>
+<section id ='comment_section' class='container mt-5'>
         <h2 class='fw-bold'> Comment </h2>
         <textarea id='ID_commentarea' class='form-control' placeholder='Enter Your Comment' rows='4'></textarea>
         <input type='button' class='btn btn-dark p-2 mb-4 mt-3 px-5' value='Submit' id='ID_button'>
@@ -167,17 +170,6 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
     })
     </script>
 </body>
-</html>";
-    $file_name = "../blogs/" . $row["blogtitle"] . ".php";
-    if ($file_name) {
-        $file_handle = fopen(
-            $file_name,
-            "w"
-        );
-        $generate_file = fwrite($file_handle, $blog_page_structure);
-        if (fclose($file_handle)) {
-            header("location:admin_dashboard.php");
-            exit();
-        }
-    }
-} ?>
+</html>" ; $file_name="../blogs/" . $row["blogtitle"] . ".php" ; if ($file_name) { $file_handle=fopen( $file_name, "w"
+        ); $generate_file=fwrite($file_handle, $blog_page_structure); if (fclose($file_handle)) {
+        header("location:admin_dashboard.php"); exit(); } } } ?>

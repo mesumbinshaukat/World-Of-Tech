@@ -13,8 +13,8 @@
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link rel="canonical" href="https://www.worldoftech.company/services.php">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 
 
     <style>
