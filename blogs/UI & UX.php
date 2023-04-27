@@ -1,27 +1,14 @@
-<?php
-// ini_set('display_errors', '1');
 
-session_start();
-include('../connection.php');
-
-$blog_id = $_SESSION['id'];
-$fetch_query = "SELECT * FROM `admin_blogs` WHERE id = '$blog_id'";
-$fetch_query_run = mysqli_query($conn, $fetch_query);
-
-
-while ($row = mysqli_fetch_array($fetch_query_run)) {
-
-    $blog_page_structure = "
 
   <?php session_start();?>
 <html>
 
 <head>
-    <title>" . $row['blogtitle'] . "</title>
+    <title>UI & UX</title>
     <meta charset='UTF-8'>
     <meta name='viewport' content=' width=device-width, initial-scale=1'>
-    <meta name='keywords' content='" . $row['meta_tags'] . "'>
-        <meta name='description' content='" . $row['metatags_description'] . "'>
+    <meta name='keywords' content='Best Meta Tags'>
+        <meta name='description' content='This is the best meta description'>
         <meta name='author' content='world of tech'>
         <link rel='shortcut icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
     <link rel='apple-touch-icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
@@ -67,43 +54,43 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
 
 
 <div class='container pt-3 word'>
-<input type='hidden' id='blog_id' value='" . $row['id'] . "'>
+<input type='hidden' id='blog_id' value='1'>
 
     <!-- blog section starts -->
     <div class='blog_details section'>
         <!-- title and category -->
         <div class='title_and_category'>
-            <p class='text-center mx-2 mt-2 '> " . $row['publish_date'] . " / <a
-                    class='text-secondary text-decoration-none' href='blog.php'> " . $row['blog_category'] . " </a></p>
-            <h2 class='mx-2 mb-4 fs-1 fw-bolder text-center text-uppercase'> " . $row['blogtitle'] . " </h2>
+            <p class='text-center mx-2 mt-2 '> 2023-04-28 / <a
+                    class='text-secondary text-decoration-none' href='blog.php'> Tech </a></p>
+            <h2 class='mx-2 mb-4 fs-1 fw-bolder text-center text-uppercase'> UI & UX </h2>
         </div>
         <!-- intro and thumbnail  -->
         <div class='row'>
 
             <div class='col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center'>
             <div class='card w-75' id='card'>
-                    <img src='../blog_images/" . $row['thumbnail'] . " '
+                    <img src='../blog_images/../blog_images/online-marketing-1246457_1280.jpg '
                         class='image' alt='thumbnail'>
                 </div>
             </div>
 
             <div class='intro col-lg-12 '>
-                <h5 class='text-center fs-3 fst-italic mx-2 mt-4 mb-4 '> " . $row['subtitle'] . " </h5>
-                <h6 class='text-center mx-2 mt-2 mb-4 fw-normal fs-5'> " . $row['intro_para'] . " </h6>
-                    <img src='../blog_images/" . $row['intro_img'] . "' class='image w-25 mx-auto d-block' alt='intro image'>
+                <h5 class='text-center fs-3 fst-italic mx-2 mt-4 mb-4 '> Mesum </h5>
+                <h6 class='text-center mx-2 mt-2 mb-4 fw-normal fs-5'> Huzaifa </h6>
+                    <img src='../blog_images/../blog_images/Zohair.jpg' class='image w-25 mx-auto d-block' alt='intro image'>
             </div>
         </div>
         <!-- main section -->
         <div class='main_section'>
-            <p class='mx-2 mt-3 mb-4 fs-5 text-center'> " . $row['main_para'] . " </p>
+            <p class='mx-2 mt-3 mb-4 fs-5 text-center'> Rafay </p>
 
-                <img src='../blog_images/" . $row['main_img'] . "' class='image w-25 mx-auto d-block' alt='main image of paragraph'>
+                <img src='../blog_images/../blog_images/sarim.jpeg' class='image w-25 mx-auto d-block' alt='main image of paragraph'>
 
         </div>
         <div class='conclusion_section mb-3'>
-            <p class='mx-2 mt-3 mb-3 fs-5 text-center'> " . $row['conclusion_para'] . " </p>
+            <p class='mx-2 mt-3 mb-3 fs-5 text-center'> Mashood </p>
 
-                <img src='../blog_images/" . $row['conclusion_img'] . " ' class='image w-25 mx-auto d-block' alt='end image'>
+                <img src='../blog_images/../blog_images/huzaifa.jpg ' class='image w-25 mx-auto d-block' alt='end image'>
 
         </div>
 
@@ -114,7 +101,7 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
         <h2 class='fw-bold'> Comment </h2>
         <textarea id='ID_commentarea' class='form-control' placeholder='Enter Your Comment' rows='4'></textarea>
         <input type='button' class='btn btn-dark p-2 mb-4 mt-3 px-5' value='Submit' id='ID_button'>
-        <input type='hidden' value='" . $row['id'] . "' id='hidden_id'>
+        <input type='hidden' value='1' id='hidden_id'>
     <div id='ID_div'> </div>
     </section>
 
@@ -169,14 +156,4 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
     })
     </script>
 </body>
-</html>";
-    $file_name = "../blogs/" . $row["blogtitle"] . ".php";
-    if ($file_name) {
-        $file_handle = fopen($file_name, "w");
-        $generate_file = fwrite($file_handle, $blog_page_structure);
-        if (fclose($file_handle)) {
-            header("location:admin_dashboard.php");
-            exit();
-        }
-    }
-} ?>
+</html>
