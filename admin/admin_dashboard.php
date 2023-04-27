@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
+include('../connection.php');
 
 $admin_name = "WorldOfTech_Admin_778866_Official!!!";
 $session_admin_name = $_SESSION['Admin_Name'];
@@ -12,7 +12,7 @@ if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
 }
 
 
-// $conn = mysqli_connect("localhost", "root", "", "world_of_tech");
+
 
 $select_query = "SELECT * FROM `user_contact_details`";
 $select_query_run = mysqli_query($conn, $select_query);

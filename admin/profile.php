@@ -8,9 +8,7 @@ if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
     header('location:../index.php');
     exit();
 }
-$conn = mysqli_connect('localhost', 'root', 'XcRny943ve76JB', 'world_of_tech') or die("Can't Connect");
-
-// $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
+include('../connection.php');
 $select_query = "SELECT * FROM `admin_details` WHERE `id` = 1";
 $select_query_run = mysqli_query($conn, $select_query);
 $fetch_array = mysqli_fetch_array($select_query_run);
