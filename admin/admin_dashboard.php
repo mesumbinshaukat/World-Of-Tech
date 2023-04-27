@@ -13,7 +13,6 @@ if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
 
 
 
-
 $select_query = "SELECT * FROM `user_contact_details`";
 $select_query_run = mysqli_query($conn, $select_query);
 
