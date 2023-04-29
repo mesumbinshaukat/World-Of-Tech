@@ -3,6 +3,11 @@
 session_start();
 include('../connection.php');
 
+if (isset($_SESSION['Admin_Name'])) {
+    header("location:admin_dashboard");
+    exit();
+}
+
 if (isset($_POST['check'])) {
     $admin_name = $_POST['admin_name'];
     $admin_password = $_POST['admin_password'];
