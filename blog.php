@@ -27,20 +27,28 @@ include('connection.php');
     <link rel="canonical" href="https://www.worldoftech.company/blog.php">
     <?php include('./font.html') ?>
     <style>
+        .body{
+            background-color: #D5D5D5;
+        }
         .items {
-            transition: .4s;
-            border: none;
+    border-radius: 6px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
         }
 
         .items:hover {
-            transform: scale(0.9);
+            cursor: pointer;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
         }
 
         #category_wise {
             width: 100%;
             /* height: 300px; */
-            /* background-color: lightseagreen; */
-            background-image: url('./images/blog-2355684_1280.jpg');
+
+            background-image:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 32%, rgba(255,255,255,0) 100%),  url('./images/blog-2355684_1280.jpg');
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: 100%;
@@ -80,7 +88,7 @@ include('connection.php');
     </style>
 </head>
 
-<body>
+<body class="body">
 
     <?php include('font.html') ?>
 
@@ -146,17 +154,19 @@ include('connection.php');
 
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center text-center">
                             <div class="items">
-                                <a class="text-decoration-none text-dark"
-                                    href="blogdetails.php?id='<?php echo $fetching_all['id'] ?>'">
+
                                     <div class="card" style="width: 18rem;">
+                                    <a class="text-decoration-none text-dark"
+                                    href="blogdetails.php?id='<?php echo $fetching_all['id'] ?>'">
                                         <img src="<?php echo 'admin/' . $fetching_all['thumbnail'] ?>" class="card-img-top"
-                                            width="250px" alt="blog_img">
+                                             alt="blog_img">
                                         <div class="card-body">
                                             <h5 class="card-title text-center"><?php echo $fetching_all['blogtitle'] ?></h5>
                                             <p class="card-text  text-center"><?php echo $fetching_all['subtitle'] ?></p>
                                         </div>
+                                       </a>
                                     </div>
-                                </a>
+                                
                             </div>
                         </div>
                     <?php } ?>
@@ -266,7 +276,7 @@ include('connection.php');
             document.getElementById("categories_wise_cards").style.display = "block";
             var categories = param;
             $.ajax({
-                url: 'blogs_cards.php',
+                url: 'blogscards.php',
                 type: 'POST',
                 data: {
                     click: 1,

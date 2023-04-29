@@ -17,9 +17,13 @@
     <link rel="canonical" href="https://www.worldoftech.company/services.php">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <style>
+                .body{
+            background-color: #D5D5D5;
+        }
         .breadcrumb a {
             color: #6c757d;
         }
@@ -80,19 +84,20 @@
 
         }
 
-        .card-body {
+        /* .card-body {
             background-color: rgb(203, 201, 201);
-        }
+        } */
 
         .card-title {
             font-weight: bold;
             border-bottom: 1px solid black;
         }
+
     </style>
 
 </head>
 
-<body>
+<body class="body">
     <section id="navbar">
 
         <?php include("navbar.html"); ?>
@@ -131,7 +136,7 @@
 
                 <div class="container mt-5 ">
                     <div class="row">
-                        <div class="col d-flex justify-content-center mb-3">
+                        <div class="col d-flex justify-content-center mb-3" >
                             <div class="card ">
                                 <img src="images/webdev1.jpg" class=" card-img-top" alt="from pexel">
                                 <div class="card-body text-center">
@@ -148,7 +153,7 @@
 
 
 
-                        <div class="col d-flex justify-content-center mb-3">
+                        <div class="col d-flex justify-content-center mb-3" >
                             <div class="card">
                                 <img src="./images/search-engine-optimization-4111000_1280.jpg" class="card-img-top"
                                     alt="from pexel">
@@ -164,7 +169,7 @@
 
 
 
-                        <div class="col d-flex justify-content-center mb-3">
+                        <div class="col d-flex justify-content-center mb-3" >
                             <div class="card">
                                 <img src="./images/online-marketing-1246457_1280.jpg" class="card-img-top"
                                     alt="from pexel">
@@ -184,8 +189,8 @@
 
 
                 <div class="container mt-5 ">
-                    <div class="row" data-aos="fade-right">
-                        <div class="col d-flex justify-content-center mb-3">
+                    <div class="row" >
+                        <div class="col d-flex justify-content-center mb-3" >
                             <div class="card ">
                                 <img src="images/3230320.jpg" class=" card-img-top" alt="from pexel">
                                 <div class="card-body text-center">
@@ -199,8 +204,8 @@
 
 
 
-                        <div class="col d-flex justify-content-center mb-3">
-                            <div class="card" data-aos="fade-up">
+                        <div class="col d-flex justify-content-center mb-3" >
+                            <div class="card" >
                                 <img src="./images/emily-bernal-BM3U_D2lygo-unsplash.jpg" class="card-img-top"
                                     alt="graphic from pexel">
                                 <div class="card-body text-center">
@@ -217,8 +222,8 @@
 
 
 
-                        <div class="col d-flex justify-content-center mb-3">
-                            <div class="card" data-aos="fade-left">
+                        <div class="col d-flex justify-content-center mb-3" >
+                            <div class="card">
                                 <img src="./images/uiux.jpg" class="card-img-top" alt="from freepik">
                                 <div class="card-body text-center">
                                     <h5 class="card-title ">UI/UX</h5>
@@ -237,8 +242,8 @@
 
                 <div class="container mt-5 ">
                     <div class="row">
-                        <div class="col d-flex justify-content-center mb-3">
-                            <div class="card " data-aos="fade-right">
+                        <div class="col d-flex justify-content-center mb-3" >
+                            <div class="card " >
                                 <img src="images/pexels-markus-winkler-4152505.jpg" class=" card-img-top"
                                     alt="from pexel">
                                 <div class="card-body text-center">
@@ -253,8 +258,8 @@
 
 
 
-                        <div class="col d-flex justify-content-center mb-3">
-                            <div class="card" data-aos="fade-up">
+                        <div class="col d-flex justify-content-center mb-3" >
+                            <div class="card" >
                                 <img src="./images/closeup-hands-using-computer-laptop-with-screen-showing-analysis-data.jpg"
                                     class="card-img-top" alt="graphic from pexel">
                                 <div class="card-body text-center">
@@ -269,8 +274,8 @@
 
 
 
-                        <div class="col d-flex justify-content-center mb-3">
-                            <div class="card" data-aos="fade-left">
+                        <div class="col d-flex justify-content-center mb-3" >
+                            <div class="card">
                                 <img src="./images/Kerfin7-NEA-2219.jpg" class="card-img-top" alt="from freepik">
                                 <div class="card-body text-center">
                                     <h5 class="card-title ">.NET APPLICATION</h5>
@@ -303,13 +308,18 @@
     </div>
 
 
+
+
     <footer class="footer mt-3">
         <?php include("footer.html"); ?>
 
     </footer>
-    <script>
-        AOS.init();
-    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 250,
+    });
+  </script>
 
 </body>
 

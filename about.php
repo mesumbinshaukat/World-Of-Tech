@@ -18,6 +18,9 @@
     <?php include('./font.html') ?>
 
     <style>
+                .body{
+            background-color: #D5D5D5;
+        }
         .breadcrumb a {
             color: #6c757d;
         }
@@ -30,10 +33,20 @@
             border-bottom: 1px solid #ddd
         }
 
-        .about_pic {
+        .main-img {
             /* height: 30rem; */
             border-radius: 20px;
-            box-shadow: -1px 2px 15px 5px grey;
+
+        }
+        .about_pic{
+           width:100%;
+           height:100%;
+           border-radius: 20px;
+           box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
+-webkit-box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
+-moz-box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
+
+           
         }
 
         .icon {
@@ -57,8 +70,10 @@
         }
 
         .about-a {
-            box-shadow: -1px 1px 7px 5px grey;
-
+            box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
+-webkit-box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
+-moz-box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
+background-color:#FAF9F6;
         }
 
         .project {
@@ -87,7 +102,7 @@
 
 </head>
 
-<body>
+<body class="body">
     <section>
 
         <?php include("navbar.html"); ?>
@@ -131,8 +146,11 @@
                             or consumer software based on the needs of their client base and structure for a software
                             release.
                         </p>
+                        <div class="main-img">
                         <img src="./images/pexels-fauxels-3183197.jpg" alt="Office Meeting Picture"
                             class="about_pic mt-4">
+                        </div>
+
                     </div>
                 </div>
 
