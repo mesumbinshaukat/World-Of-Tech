@@ -19,40 +19,44 @@
     <link rel="canonical" href="https://www.worldoftech.company/contact.php">
     <?php include('./font.html') ?>
     <style>
-    .breadcrumb a {
-        color: #6c757d;
-        text-decoration: none;
-    }
+        .body {
+            background-color: #D5D5D5;
+        }
 
-    .breadcrumb a:hover {
-        color: black;
-        text-decoration: underline;
-    }
+        .breadcrumb a {
+            color: #6c757d;
+            text-decoration: none;
+        }
 
-    .breadcrumb {
-        padding: 30px 5px 26px;
-        background-color: transparent;
-        margin-bottom: 0;
-        border-radius: 0;
-        border-bottom: 1px solid #ddd
-    }
+        .breadcrumb a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .breadcrumb {
+            padding: 30px 5px 26px;
+            background-color: transparent;
+            margin-bottom: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #ddd
+        }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVWJK65JN9">
     </script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-    gtag('config', 'G-PVWJK65JN9');
+        gtag('config', 'G-PVWJK65JN9');
     </script>
 </head>
 
-<body>
+<body class="body">
     <!-- navbar -->
     <section id="navbar" class="mb-5">
         <?php include("navbar.html"); ?>
@@ -144,7 +148,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </body>
