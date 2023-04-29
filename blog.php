@@ -14,8 +14,8 @@ include('connection.php');
     <meta name="description"
         content="Our blog spage has one of the most informative blog section by professional blog writer with updated knowledge, only at WORLD OF TECH.">
     <meta name="author" content="World Of Tech">
-    <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
-    <link rel="apple-touch-icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png">
+    <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
@@ -27,56 +27,56 @@ include('connection.php');
     <link rel="canonical" href="https://www.worldoftech.company/blog.php">
     <?php include('./font.html') ?>
     <style>
-    .items {
-        transition: .4s;
-        border: none;
-    }
+        .items {
+            transition: .4s;
+            border: none;
+        }
 
-    .items:hover {
-        transform: scale(0.9);
-    }
+        .items:hover {
+            transform: scale(0.9);
+        }
 
-    #category_wise {
-        width: 100%;
-        /* height: 300px; */
-        /* background-color: lightseagreen; */
-        background-image: url('./images/blog-2355684_1280.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 100%;
-    }
+        #category_wise {
+            width: 100%;
+            /* height: 300px; */
+            /* background-color: lightseagreen; */
+            background-image: url('./images/blog-2355684_1280.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 100%;
+        }
 
-    #blogs_header {
-        width: 100%;
-        /* background-color: lightseagreen; */
-    }
+        #blogs_header {
+            width: 100%;
+            /* background-color: lightseagreen; */
+        }
 
-    .cat_btn {
-        border: none;
-        background-color: transparent;
+        .cat_btn {
+            border: none;
+            background-color: transparent;
 
-    }
+        }
 
-    .cat_btn:hover {
-        transform: scale(1.2);
-    }
+        .cat_btn:hover {
+            transform: scale(1.2);
+        }
 
-    .btn_menu {
-        background-color: transparent;
-        border: none;
-    }
+        .btn_menu {
+            background-color: transparent;
+            border: none;
+        }
 
-    #blogs_toggle {
-        display: none;
-    }
+        #blogs_toggle {
+            display: none;
+        }
 
-    .blog_categories {
-        background-color: rgba(255, 255, 255, 0.541);
-    }
+        .blog_categories {
+            background-color: rgba(255, 255, 255, 0.541);
+        }
 
-    .bg_color {
-        background-color: rgba(255, 255, 255, 0.541);
-    }
+        .bg_color {
+            background-color: rgba(255, 255, 255, 0.541);
+        }
     </style>
 </head>
 
@@ -132,7 +132,7 @@ include('connection.php');
         <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5127564542975092"
             data-ad-slot="9705757525" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         <!-- main section active -->
 
@@ -144,21 +144,21 @@ include('connection.php');
                     $select_all_run = mysqli_query($conn, $select_all);
                     while ($fetching_all = mysqli_fetch_array($select_all_run)) { ?>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center text-center">
-                        <div class="items">
-                            <a class="text-decoration-none text-dark"
-                                href="blogdetails.php?id='<?php echo $fetching_all['id'] ?>'">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="<?php echo 'admin/' . $fetching_all['thumbnail'] ?>" class="card-img-top"
-                                        width="250px" alt="blog_img">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center"><?php echo $fetching_all['blogtitle'] ?></h5>
-                                        <p class="card-text  text-center"><?php echo $fetching_all['subtitle'] ?></p>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center text-center">
+                            <div class="items">
+                                <a class="text-decoration-none text-dark"
+                                    href="blogdetails.php?id='<?php echo $fetching_all['id'] ?>'">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="<?php echo 'admin/' . $fetching_all['thumbnail'] ?>" class="card-img-top"
+                                            width="250px" alt="blog_img">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center"><?php echo $fetching_all['blogtitle'] ?></h5>
+                                            <p class="card-text  text-center"><?php echo $fetching_all['subtitle'] ?></p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
-                    </div>
                     <?php } ?>
                 </div>
             </div>
@@ -188,19 +188,19 @@ include('connection.php');
                 while ($fetch_sports = mysqli_fetch_array($select_categories_sports_run)) {
                     ?>
 
-                <div class="items d-flex justify-content-center">
-                    <div class="card " style="width: 18rem;">
-                        <a href="blogdetails.php?id=<?php echo $fetch_sports['id'] ?>" class="text-decoration-none">
-                            <img src="<?php echo 'admin/' . $fetch_sports['thumbnail'] ?>" width="200px"
-                                class="card-img-top">
-                            <div class="card-body text-dark">
-                                <h5 class="card-title"><?php echo $fetch_sports['blogtitle'] ?></h5>
-                                <p class="card-text"><?php echo $fetch_sports['subtitle'] ?></p>
+                    <div class="items d-flex justify-content-center">
+                        <div class="card " style="width: 18rem;">
+                            <a href="blogdetails.php?id=<?php echo $fetch_sports['id'] ?>" class="text-decoration-none">
+                                <img src="<?php echo 'admin/' . $fetch_sports['thumbnail'] ?>" width="200px"
+                                    class="card-img-top">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title"><?php echo $fetch_sports['blogtitle'] ?></h5>
+                                    <p class="card-text"><?php echo $fetch_sports['subtitle'] ?></p>
 
-                            </div>
-                        </a>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
                 <?php } ?>
 
             </div>
@@ -214,18 +214,18 @@ include('connection.php');
                 $select_categories_tech_run = mysqli_query($conn, $select_categories_tech);
                 while ($fetch_tech = mysqli_fetch_array($select_categories_tech_run)) {
                     ?>
-                <div class="items d-flex justify-content-center">
-                    <div class="card " style="width: 18rem;">
-                        <a href="blogdetails.php?id=<?php echo $fetch_tech['id'] ?>" class="text-decoration-none">
-                            <img src="<?php echo 'admin/' . $fetch_tech['thumbnail'] ?>" width="200px"
-                                class="card-img-top">
-                            <div class="card-body text-dark">
-                                <h5 class="card-title"><?php echo $fetch_tech['blogtitle'] ?></h5>
-                                <p class="card-text"><?php echo $fetch_tech['subtitle'] ?></p>
-                            </div>
-                        </a>
+                    <div class="items d-flex justify-content-center">
+                        <div class="card " style="width: 18rem;">
+                            <a href="blogdetails.php?id=<?php echo $fetch_tech['id'] ?>" class="text-decoration-none">
+                                <img src="<?php echo 'admin/' . $fetch_tech['thumbnail'] ?>" width="200px"
+                                    class="card-img-top">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title"><?php echo $fetch_tech['blogtitle'] ?></h5>
+                                    <p class="card-text"><?php echo $fetch_tech['subtitle'] ?></p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
                 <?php } ?>
 
@@ -245,72 +245,72 @@ include('connection.php');
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
         integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    function btn_menu1() {
-        document.getElementById("main_blog_active").style.display = "block"
-        document.getElementById("blogs_toggle").style.display = "none";
-    }
+        function btn_menu1() {
+            document.getElementById("main_blog_active").style.display = "block"
+            document.getElementById("blogs_toggle").style.display = "none";
+        }
 
-    function btn_menu() {
-        document.getElementById("main_blog_active").style.display = "none"
-        document.getElementById("blogs_toggle").style.display = "block";
+        function btn_menu() {
+            document.getElementById("main_blog_active").style.display = "none"
+            document.getElementById("blogs_toggle").style.display = "block";
 
-    }
+        }
 
-    function myFunction(param) {
-        document.getElementById("all_blogs_cards").style.display = "none";
-        document.getElementById("categories_wise_cards").style.display = "block";
-        var categories = param;
-        $.ajax({
-            url: 'blogs_cards.php',
-            type: 'POST',
-            data: {
-                click: 1,
-                blog_cat: categories
-            },
-            success: function(data) {
-                $('#categories_wise_cards').html(data);
+        function myFunction(param) {
+            document.getElementById("all_blogs_cards").style.display = "none";
+            document.getElementById("categories_wise_cards").style.display = "block";
+            var categories = param;
+            $.ajax({
+                url: 'blogs_cards.php',
+                type: 'POST',
+                data: {
+                    click: 1,
+                    blog_cat: categories
+                },
+                success: function (data) {
+                    $('#categories_wise_cards').html(data);
+                }
+            })
+        }
+
+
+        function allFunction() {
+            document.getElementById("categories_wise_cards").style.display = "none";
+            document.getElementById("all_blogs_cards").style.display = "block";
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
             }
         })
-    }
-
-
-    function allFunction() {
-        document.getElementById("categories_wise_cards").style.display = "none";
-        document.getElementById("all_blogs_cards").style.display = "block";
-    }
-    </script>
-    <script>
-    $(document).ready(function() {
-        $(".owl-carousel").owlCarousel();
-    });
-    </script>
-    <script>
-    $('.owl-carousel').owlCarousel({
-        loop: false,
-
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            600: {
-                items: 3,
-                nav: false
-            },
-            1000: {
-                items: 5,
-                nav: true,
-                loop: false
-            }
-        }
-    })
     </script>
 
 </body>

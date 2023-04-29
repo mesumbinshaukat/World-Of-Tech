@@ -10,6 +10,8 @@
     <meta name="description"
         content="Explore the world of technology with our TECH BASED SERVICES! Our Software House business excels in providing top-quality solutions to clients worldwide.">
     <meta name="author" content="World Of Tech">
+    <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png" type="image/x-icon">
     <link href="./bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link rel="canonical" href="https://www.worldoftech.company/services.php">
@@ -18,74 +20,74 @@
 
 
     <style>
-    .breadcrumb a {
-        color: #6c757d;
-    }
+        .breadcrumb a {
+            color: #6c757d;
+        }
 
-    .breadcrumb {
-        padding: 30px 5px 26px;
-        background-color: transparent;
-        margin-bottom: 0;
-        border-radius: 0;
-        border-bottom: 1px solid #ddd
-    }
+        .breadcrumb {
+            padding: 30px 5px 26px;
+            background-color: transparent;
+            margin-bottom: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #ddd
+        }
 
-    .about_pic {
-        /* height: 600px; */
-        border-radius: 20px;
-        box-shadow: -1px 2px 15px 5px grey;
-    }
+        .about_pic {
+            /* height: 600px; */
+            border-radius: 20px;
+            box-shadow: -1px 2px 15px 5px grey;
+        }
 
-    .icon {
-        /* height: 50%; */
-        width: 30%;
-    }
+        .icon {
+            /* height: 50%; */
+            width: 30%;
+        }
 
-    .t_img {
-        /* height: 60%; */
-        width: 50%;
-        border-radius: 150px;
-    }
+        .t_img {
+            /* height: 60%; */
+            width: 50%;
+            border-radius: 150px;
+        }
 
 
 
-    .t_imgd {
-        /* height: 50%; */
-        width: 30%;
-        border-radius: 150px;
+        .t_imgd {
+            /* height: 50%; */
+            width: 30%;
+            border-radius: 150px;
 
-    }
+        }
 
-    .about-a {
-        box-shadow: -1px 1px 7px 5px grey;
+        .about-a {
+            box-shadow: -1px 1px 7px 5px grey;
 
-    }
+        }
 
-    .project {
-        border: 1px solid black;
-        border-radius: 10px;
-        transition: .3s;
+        .project {
+            border: 1px solid black;
+            border-radius: 10px;
+            transition: .3s;
 
-    }
+        }
 
-    .project:hover {
-        transform: scale(1.2);
-    }
+        .project:hover {
+            transform: scale(1.2);
+        }
 
-    .card {
-        width: 20rem;
-        box-shadow: 5px 10px 18px #c0c0c0;
+        .card {
+            width: 20rem;
+            box-shadow: 5px 10px 18px #c0c0c0;
 
-    }
+        }
 
-    .card-body {
-        background-color: rgb(203, 201, 201);
-    }
+        .card-body {
+            background-color: rgb(203, 201, 201);
+        }
 
-    .card-title {
-        font-weight: bold;
-        border-bottom: 1px solid black;
-    }
+        .card-title {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+        }
     </style>
 
 </head>
@@ -306,7 +308,7 @@
 
     </footer>
     <script>
-    AOS.init();
+        AOS.init();
     </script>
 
 </body>
