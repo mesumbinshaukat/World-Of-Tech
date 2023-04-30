@@ -36,6 +36,35 @@
         border-radius: 0;
         border-bottom: 1px solid #ddd
     }
+    .intro_img{
+        height:400px;
+        width:100%;
+
+        background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 32%, rgba(255,255,255,0) 100%),url('images/pexels-jéshoots-4831.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    .map{
+        height: 400px;;
+        width:100%;
+        /* filter: grayscale(100%) invert(100%); */
+
+    }
+    .form{
+        width:85%;
+    }
+    .body{
+            background-color: #D5D5D5;
+        }
+
+
+
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVWJK65JN9">
@@ -52,17 +81,20 @@
     </script>
 </head>
 
-<body>
+<body class="body">
     <!-- navbar -->
-    <section id="navbar" class="mb-5">
+    <section id="navbar" >
         <?php include("navbar.html"); ?>
 
 
     </section>
+    <div class="intro_img">
+        <h2 class="text-center text-light fw-bold fs-1">Contact us</h2>
+    </div>
 
-    <br><br><br>
+    
     <!-- breadcrumb   -->
-    <div class="container">
+    <div class="container mt-3">
         <div class="row">
             <div class="col">
                 <div class="breadcrumb-nav">
@@ -83,59 +115,35 @@
 
     </div>
     <br>
-    <!-- contact form -->
-    <div class="container mb-5">
-        <h2 class="text-center text-dark fw-bold">Contact us</h2>
-        <p class="text-center" style="color:gray; font-size:15px;"> <span class="fw-bold"> World Of Tech , </span> we
-            develop and deploy</p>
-        <section class="mt-5">
-            <main class="mt-5">
-                <div class="container-fluid mt-5">
-                    <form action="contactDb.php" method="post" class="mt-5">
-                        <div class="row justify-content-center">
-                            <p class="fs-7 fw-bold">Your Name: </p>
-                            <p style="color:gray; font-size:13px;">Please Enter your Real Name</p>
-                            <div class="col-lg-12 ">
-                                <input type="text" name="user_name" class="form-control mb-4" placeholder=" Your Name*"
-                                    required>
-
-                            </div>
-                            <p class="fs-7 fw-bold">Your Email: </p>
-                            <p style="color:gray; font-size:13px;">Please Enter your Email Carefully for more Accuracy
-                            </p>
-                            <div class="col-lg-12">
-                                <input type="email" name="user_email" class="form-control mb-4"
-                                    placeholder=" Your Email*" required>
-
-                            </div>
-                            <p class="fs-7 fw-bold">Your Phone No. : </p>
-                            <p style="color:gray; font-size:13px;">Please Enter your Phone No. Carefully</p>
-
-                            <div class="col-lg-12">
-                                <input type="number" name="phone_number" class="form-control mb-4"
-                                    placeholder="Enter your phone number" required>
-
-                            </div>
-                            <p class="fs-7 fw-bold">Message Subject: </p>
-                            <div class="col-lg-12">
-                                <input type="text" name="subject" class="form-control mb-4"
-                                    placeholder="Message Subject" required>
-
-                            </div>
-                            <p class="fs-7 fw-bold">Your Message: </p>
-                            <div class="col-lg-12">
-                                <textarea rows="4" cols="20" name="message" class="form-control mb-4"
-                                    placeholder=" Your Message" required></textarea>
-                            </div>
-                        </div>
-
-                        <input type="submit" name="btn_submit" value="Submit Request" class="btn btn-dark">
-                    </form>
-
-                </div>
-            </main>
-        </section>
+    <div class="mapcont container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924237.7078551403!2d66.4960521244516!3d25.1929839008584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1682810720376!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </div>
+    <!-- contact form -->
+<div class="row">
+    <div class="col-lg-6">
+       <div class="container mt-5 me-2">
+        <h2 class="fw-bold">
+            Contact Details
+        </h2>
+        <h6>We'll be happy to assist you with any kind of question </h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat soluta dolorum fuga provident possimus iste delectus, unde exercitationem nihil quisquam ipsum molestiae illo sit, consequatur libero, itaque cum facere aliquid!</p>
+       </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="container">
+
+        <form action="contactDb.php" method="post" class="mt-5 form">
+            <h2 class="fw-bold">Get in Touch </h2>
+            <h6>Don't hesitate to contact us</h6><br>
+         <input type="text" name="user_name" placeholder="Your Name" required class="form-control"><br>
+         <input type="email" name="user_email" placeholder="Your Email" required class="form-control"><br>
+         <textarea name="message" placeholder="Your Message" cols="30" rows="4" required class="form-control"></textarea><br>
+         <input type="submit" name="btn_submit" value="Submit Request" class="btn btn-dak btn-outline-dark"><br><br>
+        </form>
+        </div>
+
+    </div>
+</div>
 
     <!-- footer -->
     <section id="footer">
