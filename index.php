@@ -20,7 +20,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="canonical" href="https://www.worldoftech.company">
 
-    <?php include('./font.html')?>
+    <?php include('./font.html') ?>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
@@ -36,6 +36,12 @@
     @media screen and (max-width:400px) {
         .margin {
             margin-top: -80px !important;
+        }
+    }
+
+    @media screen and (max-width:750px) {
+        .side-arrow {
+            display: none !important;
         }
     }
 
@@ -72,12 +78,13 @@
 
     <div id="top"></div>
     <div id="arrow" class="side-arrow side-block">
-        <a href="#top"><img src="./Icons/keyboard_double_arrow_up_FILL0_wght400_GRAD0_opsz48.png" alt="arrow"></a>
+        <a href="#top"><img class="img_arrow" src="./Icons/keyboard_double_arrow_up_FILL0_wght400_GRAD0_opsz48.png"
+                alt="arrow"></a>
     </div>
 
     <section>
 
-        <?php include("navbarhome.html");?>
+        <?php include("navbarhome.html"); ?>
 
     </section>
 
@@ -86,7 +93,7 @@
 
     <section id="carousel">
 
-        <?php include('carousel.html');?>
+        <?php include('carousel.html'); ?>
     </section>
     <br><br>
     <section>
@@ -104,7 +111,7 @@
 
                     <section>
                         <footer class="footer mt-5">
-                            <?php include("footer.html");?>
+                            <?php include("footer.html"); ?>
                         </footer>
                     </section>
 
