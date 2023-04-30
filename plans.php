@@ -194,7 +194,7 @@
                   </li>
                 </ul>
                 <div class="card-body d-flex justify-content-center">
-          <a  class="anchor" href="packages_modal.php#exampleModal" target="_blank"><span>Book Now</span></a>
+          <a  class="anchor" href="contact.php?Plan=Basic " target="_blank"><span>Book Now</span></a>
                 </div>
               </div>
             </div>
@@ -317,7 +317,7 @@
                   </li>
                 </ul>
                 <div class="card-body d-flex justify-content-center">
-                  <a  class="anchor" href="contact.php" target="_blank"><span>Book Now</span></a>
+                  <a  class="anchor" href="contact.php?Plan=Economy" target="_blank"><span>Book Now</span></a>
                         </div>
               </div>
             </div>
@@ -440,7 +440,7 @@
                   </li>
                 </ul>
                 <div class="card-body d-flex justify-content-center">
-                  <a  class="anchor" href="contact.php" target="_blank"><span>Book Now</span></a>
+                  <a  class="anchor" href="contact.php?Plan=Premium" target="_blank"><span>Book Now</span></a>
                         </div>
               </div>
             </div>
@@ -563,7 +563,7 @@
                   </li>
                 </ul>
                 <div class="card-body d-flex justify-content-center">
-                  <a  class="anchor" href="contact.php" target="_blank"><span>Book Now</span></a>
+                  <a  class="anchor" href="contact.php?Plan=Business" target="_blank"><span>Book Now</span></a>
                         </div>
               </div>
             </div>
