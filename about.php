@@ -18,9 +18,10 @@
     <?php include('./font.html') ?>
 
     <style>
-                .body{
+        .body {
             background-color: #D5D5D5;
         }
+
         .breadcrumb a {
             color: #6c757d;
         }
@@ -35,18 +36,19 @@
 
         .main-img {
             /* height: 30rem; */
-            border-radius: 20px;
+            border-radius: 15px;
 
         }
-        .about_pic{
-           width:100%;
-           height:100%;
-           border-radius: 20px;
-           box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
--webkit-box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
--moz-box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
 
-           
+        .about_pic {
+            width: 100%;
+            /* height: 100%; */
+            border-radius: 20px;
+            box-shadow: 10px 10px 28px -3px rgba(0, 0, 0, 0.33);
+            -webkit-box-shadow: 10px 10px 28px -3px rgba(0, 0, 0, 0.33);
+            -moz-box-shadow: 10px 10px 28px -3px rgba(0, 0, 0, 0.33);
+
+
         }
 
         .icon {
@@ -70,10 +72,10 @@
         }
 
         .about-a {
-            box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
--webkit-box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
--moz-box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.33);
-background-color:#FAF9F6;
+            box-shadow: 10px 10px 28px -3px rgba(0, 0, 0, 0.33);
+            -webkit-box-shadow: 10px 10px 28px -3px rgba(0, 0, 0, 0.33);
+            -moz-box-shadow: 10px 10px 28px -3px rgba(0, 0, 0, 0.33);
+            background-color: #FAF9F6;
         }
 
         .project {
@@ -135,7 +137,7 @@ background-color:#FAF9F6;
                     </div>
                 </div>
 
-                <div class="container mt-4">
+                <div class="container mt-4 ">
                     <div class="row">
                         <h3 class="text-center">
                             <b>About Us..</b>
@@ -146,9 +148,9 @@ background-color:#FAF9F6;
                             or consumer software based on the needs of their client base and structure for a software
                             release.
                         </p>
-                        <div class="main-img">
-                        <img src="./images/pexels-fauxels-3183197.jpg" alt="Office Meeting Picture"
-                            class="about_pic mt-4">
+                        <div class="main-img text-center d-flex justify-content-center align-items-center">
+                            <img src="./images/IMG-20230411-WA0007.jpg" alt="Office Meeting Picture"
+                                class="about_pic mt-4 w-75 text-center d-flex justify-content-center">
                         </div>
 
                     </div>
