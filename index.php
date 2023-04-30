@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>WORLD OF TECH | BEST SOFTWATE HOUSE</title>
+    <title>WORLD OF TECH (PVT) LTD | BEST SOFTWATE HOUSE</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
@@ -20,50 +20,50 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="canonical" href="https://www.worldoftech.company">
 
-    <?php include('./font.html')?>
+    <?php include('./font.html') ?>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
-    body {
-        font-family: 'Roboto Slab', serif !important;
-    }
-
-    .image {
-        width: 100px !important;
-        margin-left: 90px;
-    }
-
-    @media screen and (max-width:400px) {
-        .margin {
-            margin-top: -80px !important;
+        body {
+            font-family: 'Roboto Slab', serif !important;
         }
-    }
 
-    .side-block {
-        display: none;
-        transition: .3s;
-    }
+        .image {
+            width: 100px !important;
+            margin-left: 90px;
+        }
 
-    .side-arrow {
-        display: block;
-        background-color: gray;
-        border: 2px solid darkgray;
-        border-radius: 50%;
-        padding: 5px;
-        position: fixed;
-        top: 85%;
-        left: 95%;
-        z-index: 1;
-    }
+        @media screen and (max-width:400px) {
+            .margin {
+                margin-top: -80px !important;
+            }
+        }
 
-    .bg_color {
-        background-color: #D5D5D5;
-    }
+        .side-block {
+            display: none;
+            transition: .3s;
+        }
 
-    .scrolled {
-        background-color: rgba(73, 71, 71, 0.712);
-        transition: background-color 200ms linear;
-    }
+        .side-arrow {
+            display: block;
+            background-color: gray;
+            border: 2px solid darkgray;
+            border-radius: 50%;
+            padding: 5px;
+            position: fixed;
+            top: 85%;
+            left: 95%;
+            z-index: 1;
+        }
+
+        .bg_color {
+            background-color: #D5D5D5;
+        }
+
+        .scrolled {
+            background-color: rgba(73, 71, 71, 0.712);
+            transition: background-color 200ms linear;
+        }
     </style>
 </head>
 
@@ -77,7 +77,7 @@
 
     <section>
 
-        <?php include("navbarhome.html");?>
+        <?php include("navbarhome.html"); ?>
 
     </section>
 
@@ -86,7 +86,7 @@
 
     <section id="carousel">
 
-        <?php include('carousel.html');?>
+        <?php include('carousel.html'); ?>
     </section>
     <br><br>
     <section>
@@ -104,7 +104,7 @@
 
                     <section>
                         <footer class="footer mt-5">
-                            <?php include("footer.html");?>
+                            <?php include("footer.html"); ?>
                         </footer>
                     </section>
 
@@ -115,25 +115,25 @@
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
                         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
                         crossorigin="anonymous">
-                    </script>
+                        </script>
                     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
                         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
-                    </script>
+                        </script>
                     <script>
-                    $(document).ready(function() {
-                        $(window).scroll(function() {
-                            // alert("working")
+                        $(document).ready(function () {
+                            $(window).scroll(function () {
+                                // alert("working")
 
-                            $('#arrow').toggleClass('side-arrow', $(this).scrollTop() > 200);
+                                $('#arrow').toggleClass('side-arrow', $(this).scrollTop() > 200);
+                            });
                         });
-                    });
 
-                    $(function() {
-                        $(document).scroll(function() {
-                            var $nav = $("#navbar");
-                            $nav.toggleClass('scrolled', $(this).scrollTop() > 300);
+                        $(function () {
+                            $(document).scroll(function () {
+                                var $nav = $("#navbar");
+                                $nav.toggleClass('scrolled', $(this).scrollTop() > 300);
+                            });
                         });
-                    });
                     </script>
 
 
