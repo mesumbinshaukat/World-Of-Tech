@@ -88,13 +88,6 @@
 
     </section>
 
-
-
-
-    <section id="carousel">
-
-        <?php include('carousel.html'); ?>
-    </section>
     <br><br>
 
     <section>
