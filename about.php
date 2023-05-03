@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -466,10 +465,7 @@
 
 
 
-    <footer class="footer">
-        <?php include("footer.html"); ?>
 
-    </footer>
 
   
    
