@@ -224,39 +224,7 @@
 </head>
 
 <body class="body">
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top smbg navigation" id="" >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.php"><img src="./LOGO/Logo-white-text-full-screen(2048px-1152px).png" alt="logo" width="140" class="rounded"></a>
-        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-flex justify-content-center " id="navbarNav">
-                <ul class="nav navbar-nav justify-content-center">
-                  <li class="nav-item">
-                      <a class="nav-link active me-4 d-flex justify-content-center " aria-current="page" href="index.php">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active me-4 d-flex justify-content-center" aria-current="page" href="about.php">About us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active me-4 d-flex justify-content-center" aria-current="page" href="services.php">Services</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active me-4 d-flex justify-content-center" aria-current="page" href="blog.php">Blogs</a>
-                  </li>
-                  <li>
-                    <a href="contact.php" class="btn-animated d-flex justify-content-center text-white">
-                      <span class=""></span>
-                       <span class=""></span>
-                       <span class=""></span>
-                       <span class=""></span>
-                          Contact Us
-                        </a>
-                  </li>
-              </ul>
-        </div>
-      </div>
-    </nav>
+<?php include('navbar.html') ?>
     <br><br><br>
     <div class="mt-5 container">
         <div class="row">

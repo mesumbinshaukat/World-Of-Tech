@@ -82,58 +82,59 @@
                 alt="arrow"></a>
     </div>
 
+
+    <?php include('navbarhome.html') ?>
+
+
+
     <section>
 
-        <?php include("navbarhome.html"); ?>
+        <?php include("carousel.html"); ?>
 
     </section>
-
+    <div class="container-fluid ">
+        <?php include('startingcards.html'); ?>
+    </div>
+    </section>
     <br><br>
-
-    <section>
+    <section class="">
         <div class="container-fluid ">
-            <?php include('startingcards.html'); ?>
+            <?php include('secondcard.html'); ?>
         </div>
-</section>
-            <br><br>
-            <section class="">
-                <div class="container-fluid ">
-                    <?php include('secondcard.html'); ?>
-                </div>
-</section>
-                <section id='plans'>
-                    <?php include('plans.php'); ?>
+    </section>
+    <section id='plans'>
+        <?php include('plans.php'); ?>
 
-</section>
-<section>
-                        <footer class="footer mt-5">
-                            <?php include("footer.html"); ?>
-                        </footer>
-                    </section>
+    </section>
+    <section>
+        <footer class="footer mt-5">
+            <?php include("footer.html"); ?>
+        </footer>
+    </section>
 
 
-                
-                  
-                    </script>
-                    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-                        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
-                    </script>
-                    <script>
-                    $(document).ready(function() {
-                        $(window).scroll(function() {
-                            // alert("working")
 
-                            $('#arrow').toggleClass('side-arrow', $(this).scrollTop() > 200);
-                        });
-                    });
 
-                    $(function() {
-                        $(document).scroll(function() {
-                            var $nav = $("#navbar");
-                            $nav.toggleClass('scrolled', $(this).scrollTop() > 300);
-                        });
-                    });
-                    </script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+    </script>
+    <script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            // alert("working")
+
+            $('#arrow').toggleClass('side-arrow', $(this).scrollTop() > 200);
+        });
+    });
+
+    $(function() {
+        $(document).scroll(function() {
+            var $nav = $("#navbar");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > 300);
+        });
+    });
+    </script>
 
 
 
