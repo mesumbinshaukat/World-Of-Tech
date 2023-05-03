@@ -26,11 +26,7 @@ $select_query_run = mysqli_query($conn, $select_query);
     <link rel="shortcut icon" href="../Icons/admin.png" type="image/x-icon">
     <title>ADMIN PANEL</title>
     <?php include('../font.html') ?>
-    <style>
-    .nav_logo {
-        width: 10%;
-    }
-    </style>
+
 </head>
 
 <body>
@@ -57,6 +53,9 @@ $select_query_run = mysqli_query($conn, $select_query);
                 MESSAGE
             </th>
             <th>
+                Plan
+            </th>
+            <th>
                 DELETION
             </th>
         </tr>
@@ -67,6 +66,7 @@ $select_query_run = mysqli_query($conn, $select_query);
             <td><?php echo $row['phone_number'] ?></td>
             <td><?php echo $row['subject'] ?></td>
             <td><?php echo $row['message'] ?></td>
+            <td><?php echo $row['plan'] ?></td>
             <td>
                 <a class="btn btn-danger" onclick="return confirm('are you sure you want delete')"
                     href="delete.php?id=<?php echo $row['id'] ?>">DELETE</a>

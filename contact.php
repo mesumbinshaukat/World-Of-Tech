@@ -1,6 +1,9 @@
-<?php 
-if(isset($_GET['Plan'])){
+<?php
+session_start();
+
+if (isset($_GET['Plan'])) {
     $plan = $_GET['Plan'];
+    $_SESSION['plan'] = $plan;
 }
 
 
@@ -25,15 +28,15 @@ if(isset($_GET['Plan'])){
     <link rel="canonical" href="https://www.worldoftech.company/contact.php">
     <?php include('./font.html') ?>
     <style>
-    .breadcrumb a {
-        color: #6c757d;
-        text-decoration: none;
-    }
+        .breadcrumb a {
+            color: #6c757d;
+            text-decoration: none;
+        }
 
-    .breadcrumb a:hover {
-        color: black;
-        text-decoration: underline;
-    }
+        .breadcrumb a:hover {
+            color: black;
+            text-decoration: underline;
+        }
 
         .breadcrumb {
             padding: 30px 5px 26px;
@@ -42,20 +45,24 @@ if(isset($_GET['Plan'])){
             border-radius: 0;
             border-bottom: 1px solid #ddd
         }
-        .plan_type{
+
+        .plan_type {
             font-size: 15px;
-         letter-spacing: 0.1px;
-         color: gray;
+            letter-spacing: 0.1px;
+            color: gray;
         }
-        .plan_type:hover{   
-            color:gray;
+
+        .plan_type:hover {
+            color: gray;
         }
-        .plan_para{
-         font-size: 15px;
-         letter-spacing: 0.1px;
-         color: gray;
+
+        .plan_para {
+            font-size: 15px;
+            letter-spacing: 0.1px;
+            color: gray;
         }
-        .plan_para:hover{
+
+        .plan_para:hover {
             color: black;
             cursor: pointer;
         }
@@ -64,14 +71,14 @@ if(isset($_GET['Plan'])){
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVWJK65JN9">
     </script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-    gtag('config', 'G-PVWJK65JN9');
+        gtag('config', 'G-PVWJK65JN9');
     </script>
 </head>
 
@@ -94,27 +101,27 @@ if(isset($_GET['Plan'])){
 
                             <li class="home breadcrumb-item"><a href="index.php">Home</a></li>
                             <li class="post post-page current-item breadcrumb-item active"><a
-                            href="contact.php"><b>Contact Page</b></a></li>
-                            
+                                    href="contact.php"><b>Contact Page</b></a></li>
+
                         </ol>
-                        
+
                     </nav>
-                    
+
                 </div>
             </div>
         </div>
-        
+
     </div>
     <br>
     <!-- contact form -->
     <div class="container mb-5">
-        <?php if(isset($plan)) {?>
-        <p class='d-flex justify-content-end '> <a href="index.php#plans" class='text-decoration-none plan_type
-         '>Plan Type:  <span class='plan_para'><?php echo $plan;?></span> </a> </p>
-        <?php }?>
+        <?php if (isset($plan)) { ?>
+            <p class='d-flex justify-content-end '> <a href="index.php#plans" class='text-decoration-none plan_type
+         '>Plan Type: <span class='plan_para'><?php echo $plan; ?></span> </a> </p>
+        <?php } ?>
         <h2 class="text-center text-dark fw-bold">Contact us</h2>
         <p class="text-center" style="color:gray; font-size:15px;"> <span class="fw-bold"> World Of Tech , </span> we
-        develop and deploy</p>
+            develop and deploy</p>
         <section class="mt-5">
             <main class="mt-5">
                 <div class="container-fluid mt-5">
@@ -171,7 +178,7 @@ if(isset($_GET['Plan'])){
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </body>

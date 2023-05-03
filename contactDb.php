@@ -1,7 +1,8 @@
 <?php
 // ini_set('display_errors', '1');
 include('connection.php');
-
+session_start();
+// $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -31,19 +32,20 @@ if ($conn) {
         $message = $_POST['message'];
         $message = str_replace("<", "&lt", $message);
         $message = str_replace(">", "&gt", $message);
-
-        $insert_query = "INSERT INTO `user_contact_details`(`user_name`, `user_email`, `phone_number`, `subject`, `message`) VALUES ('$user_name','$user_email','$phone_number','$subject','$message')";
+        $plan = $_SESSION['plan'];
+        $insert_query = "INSERT INTO `user_contact_details`(`user_name`, `user_email`, `phone_number`, `subject`, `message`, `plan`) VALUES ('$user_name','$user_email','$phone_number','$subject','$message', '$plan')";
         // $insert_query = "INSERT INTO `user_contact_details`(`user_name`) VALUE ('$user_name')";
 
         $run_insert_query = mysqli_query($conn, $insert_query);
 
         if ($run_insert_query) {
-
+            echo "<script>alert('Form Submitted Successfuly')</script>";
             $select_query = "SELECT * FROM `user_contact_details` WHERE `user_email` = '$user_email'";
 
             $run_select_query = mysqli_query($conn, $select_query);
 
-
+            session_unset();
+            session_destroy();
             if ($run_select_query) {
                 $fetch_details = mysqli_fetch_assoc($run_select_query);
 
@@ -68,7 +70,7 @@ if ($conn) {
                         $mail->addAddress($user_fetched_email, $fetch_user_name); //Add a recipient
 
 
-                        $body = "<h3>Hello <b>" . $fetch_details['user_name'] . "</b></h3><br/> \t <p>Thank you for contacting us 🤗. This is an automated email response. We'll get back to you shortly 😁😁😉. </p><br/> <h4><b>Whatsapp: +923220275616</b></h4><br><h4><b>Call: +923362100225</b></h4><br><br><h4>Best Regards,<br> <b>WORLD OF TECH TEAM 🥰</b></h4>";
+                        $body = "<p>Hello <b>" . $fetch_details['user_name'] . "</b></p><br/> \t <p>Thank you for contacting us 🤗. This is an automated email response. We'll get back to you shortly 😁😁😉. </p><br/> <p><b>Whatsapp: +923220275616</b></p><br><p><b>Call: +923362100225</b></p><br><br><p>Best Regards,<br> <b>WORLD OF TECH TEAM 🥰</b></p>";
 
                         //Content
                         $mail->isHTML(true); //Set email format to HTML

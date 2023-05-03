@@ -17,6 +17,10 @@ $query_run = mysqli_query($conn, $select_query);
 </head>
 
 <body>
+    <section>
+        <?php include('navbar.html'); ?>
+    </section>
+
     <table class="table">
         <thead>
             <tr>

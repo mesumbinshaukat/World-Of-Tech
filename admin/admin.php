@@ -4,7 +4,7 @@ session_start();
 include('../connection.php');
 
 if (isset($_SESSION['Admin_Name'])) {
-    header("location:admin_dashboard");
+    header("location:admin_dashboard.php");
     exit();
 }
 
