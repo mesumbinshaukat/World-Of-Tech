@@ -70,11 +70,11 @@ if ($conn) {
                         $mail->addAddress($user_fetched_email, $fetch_user_name); //Add a recipient
 
 
-                        $body = "<p>Hello <b>" . $fetch_details['user_name'] . "</b></p><br/> \t <p>Thank you for contacting us 🤗. This is an automated email response. We'll get back to you shortly 😁😁😉. </p><br/> <p><b>Whatsapp: +923220275616</b></p><br><p><b>Call: +923362100225</b></p><br><br><p>Best Regards,<br> <b>WORLD OF TECH TEAM 🥰</b></p>";
+                        $body = "<p>Hello <b>" . $fetch_details['user_name'] . "</b></p><br/> \t <p>Thank you for contacting us . This is an automated email response. We'll get back to you shortly . </p><br/> <p><b>Whatsapp: +923220275616</b></p><br><p><b>Call: +923362100225</b></p><br><br><p>Best Regards,<br> <b>WORLD OF TECH TEAM </b></p>";
 
                         //Content
                         $mail->isHTML(true); //Set email format to HTML
-                        $mail->Subject = 'Testing';
+                        $mail->Subject = $fetch_details['user_name'];
                         $mail->Body = $body;
                         $mail->AltBody = strip_tags($body);
 
