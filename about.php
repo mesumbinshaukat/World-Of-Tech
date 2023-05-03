@@ -12,8 +12,8 @@
     <meta name="author" content="World Of Tech">
     <link rel="shortcut icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./LOGO/Logo-white-text-full-screen(2048px-1152px).png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="canonical" href="https://www.worldoftech.company/about.php">
     <?php include('./font.html') ?>
 
@@ -100,16 +100,164 @@
             -moz-box-shadow: 0px 3px 54px 1px rgba(0, 0, 0, 0.49);
             box-shadow: 0px 3px 54px 1px rgba(0, 0, 0, 0.49);
         }
+        .bgtrans{
+          background-color: transparent;
+        }
+        @media screen and (max-width:992px)  {
+          .smbg{
+            background-color:  rgba(73, 71, 71, 0.712);
+          }
+        }
+    
+    .btn-animated {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 0.5s;
+        /* margin-top: 40px; */
+        letter-spacing: 4px;
+      }
+      
+       .btn-animated:hover {
+        background:  #464646 !important;
+        color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 2px gray, 0 0 15px gray, 0 0 25px gray,
+          0 0 50px gray;
+      }
+      
+       .btn-animated span {
+        position: absolute;
+        display: block;
+      }
+      
+       .btn-animated span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #fff);
+        animation: btn-anim1 1s linear infinite;
+      }
+      
+      @keyframes btn-anim1 {
+        0% {
+          left: -100%;
+        }
+        50%,
+        100% {
+          left: 100%;
+        }
+      }
+      
+       .btn-animated span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #fff);
+        animation: btn-anim2 1s linear infinite;
+        animation-delay: 0.25s;
+      }
+      
+      @keyframes btn-anim2 {
+        0% {
+          top: -100%;
+        }
+        50%,
+        100% {
+          top: 100%;
+        }
+      }
+      
+       .btn-animated span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #fff);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: 0.5s;
+      }
+      
+      @keyframes btn-anim3 {
+        0% {
+          right: -100%;
+        }
+        50%,
+        100% {
+          right: 100%;
+        }
+      }
+      
+      .btn-animated span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #fff);
+        animation: btn-anim4 1s linear infinite;
+        animation-delay: 0.75s;
+      }
+      .navigation{
+        background-color: rgba(73, 71, 71, 0.712);
+      }
+    
+    
+      
+      @keyframes btn-anim4 {
+        0% {
+          bottom: -100%;
+        }
+        50%,
+        100% {
+          bottom: 100%;
+        }
+      }
+        
     </style>
 
 </head>
 
 <body class="body">
-    <section>
-
-        <?php include("navbar.html"); ?>
-
-    </section>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top smbg navigation" id="" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.php"><img src="./LOGO/Logo-white-text-full-screen(2048px-1152px).png" alt="logo" width="140" class="rounded"></a>
+        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-center " id="navbarNav">
+                <ul class="nav navbar-nav justify-content-center">
+                  <li class="nav-item">
+                      <a class="nav-link active me-4 d-flex justify-content-center " aria-current="page" href="index.php">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active me-4 d-flex justify-content-center" aria-current="page" href="about.php">About us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active me-4 d-flex justify-content-center" aria-current="page" href="services.php">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active me-4 d-flex justify-content-center" aria-current="page" href="blog.php">Blogs</a>
+                  </li>
+                  <li>
+                    <a href="contact.php" class="btn-animated d-flex justify-content-center text-white">
+                      <span class=""></span>
+                       <span class=""></span>
+                       <span class=""></span>
+                       <span class=""></span>
+                          Contact Us
+                        </a>
+                  </li>
+              </ul>
+        </div>
+      </div>
+    </nav>
     <br><br><br>
     <div class="mt-5 container">
         <div class="row">
@@ -323,7 +471,9 @@
 
     </footer>
 
-
+  
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
