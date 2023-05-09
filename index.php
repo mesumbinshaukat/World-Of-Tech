@@ -33,11 +33,11 @@
         margin-left: 90px;
     }
 
-    @media screen and (max-width:400px) {
+    /* @media screen and (max-width:400px) {
         .margin {
             margin-top: -80px !important;
         }
-    }
+    } */
 
     @media screen and (max-width:750px) {
         .side-arrow {
