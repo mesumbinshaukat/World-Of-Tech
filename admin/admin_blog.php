@@ -41,7 +41,8 @@ if (isset($_POST['submitbtn'])) {
     move_uploaded_file($conclusion_para_img_tmp, $conclusion_para_img_path);
     $metatags = $_POST['meta_tags'];
     $metatags_description = $_POST['meta_tags_description'];
-    $insert_query = "INSERT INTO `admin_blogs`( `blog_category`, `thumbnail`, `blogtitle`, `subtitle`, `intro_para`, `intro_img`, `main_para`, `main_img`, `conclusion_para`, `conclusion_img`,`publish_date`,`meta_tags`,`metatags_description`) VALUES ('$blog_categories','$thumbnail_img_path','$blogtitle','$blog_sub_title','$intro_para','$intro_para_img_path','$main_para','$main_para_img_path','$conclusion_para','$conclusion_para_img_path','$blog_date', '$metatags','$metatags_description')";
+    $insert_query = "INSERT INTO
+     `admin_blogs`(`blog_category`, `thumbnail`, `blogtitle`, `subtitle`, `intro_para`, `intro_img`, `main_para`, `main_img`, `conclusion_para`, `conclusion_img`, `publish_date`, `meta_tags`, `metatags_description`) VALUES ('$blog_categories ','$thumbnail_img_path','$blogtitle','$blog_sub_title','$intro_para','$intro_para_img_path','$main_para','$main_para_img_path','$conclusion_para','$conclusion_para_img_path','$blog_date','$metatags','$metatags_description')";
     $insert_query_run = mysqli_query($conn, $insert_query);
     if ($insert_query_run) {
         // echo"<script>alert('inserted')</script>";
@@ -59,7 +60,8 @@ if (isset($_POST['submitbtn'])) {
 
 }
 
-
+$select_categories  = "SELECT * FROM `tbl_blogcat`";
+$select_categories_run = mysqli_query($conn,$select_categories);
 
 ?>
 
@@ -89,8 +91,9 @@ if (isset($_POST['submitbtn'])) {
             <div class="mb-3">
                 <label>Blog Category</label>
                 <select name="blog_categories" class="form-control">
-                    <option value="Tech">Tech</option>
-                    <option value="Sports">Sports</option>
+                    <?php while($row = mysqli_fetch_array($select_categories_run)) {?>
+                    <option value="<?php echo $row['id']?>"><?php echo $row['blog_cat']?></option>
+                    <?php }?>
                 </select>
             </div>
             <div class="mb-3">

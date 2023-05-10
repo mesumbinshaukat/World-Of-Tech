@@ -1,6 +1,9 @@
 <?php
 ini_set('display_errors', '1');
 include('connection.php');
+$select_categories = "SELECT * FROM `tbl_blogcat`";
+$select_categories_run = mysqli_query($conn,$select_categories);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,11 +66,11 @@ include('connection.php');
     .cat_btn {
         border: none;
         background-color: transparent;
-
+        transition: .1s;
     }
 
     .cat_btn:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     .btn_menu {
@@ -81,10 +84,14 @@ include('connection.php');
 
     .blog_categories {
         background-color: rgba(255, 255, 255, 0.541);
+        border: 2px solid transparent;
+        border-radius: 10px;
     }
 
     .bg_color {
         background-color: rgba(255, 255, 255, 0.541);
+        border: 2px solid transparent;
+        border-radius: 10px;
     }
     </style>
 </head>
@@ -105,29 +112,23 @@ include('connection.php');
 
         <section id="category_wise"
             class=" d-flex flex-column  justify-content-center align-items-center mt-5 pt-5 pb-5">
-            <div class="bg_color p-2 text-center fw-bold mb-3">
-                <p class="mb-3 pt-3 fs-2 text-dark">BLOG CATEGORIES</p>
+            <div class="bg_color p-1 text-center fw-bold mb-5 mt-5">
+                <p class="mb-3 px-3 pt-3 fs-2 text-dark">BLOGS</p>
             </div>
 
 
-            <div class="blog_categories text-center ">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
-                        <h1 class="fs-5 text-dark"><input type="button" class="cat_btn p-2 fw-bold"
-                                onclick="myFunction('Tech')" value="Tech"></h1>
+            <!-- <div class="blog_categories text-center ">
+                <div class="d-flex p-2 flex-row">
 
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                    <?php while($col = mysqli_fetch_array($select_categories_run)) {?>
                         <h1 class="fs-5 text-dark"><input type="button" class="cat_btn p-2 fw-bold"
-                                onclick="myFunction('Sports')" value="Sports"></h1>
-
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
-                        <h1 class="fs-5 text-dark"><input type="button" class="cat_btn p-2 fw-bold"
+                                onclick="myFunction('<?php echo $col['id']?>')" value="<?php echo $col['blog_cat']?>"></h1>
+                            
+                            <?php }?>
+                                <h1 class="fs-5 text-dark"><input type="button" class="cat_btn p-2 fw-bold"
                                 onclick="allFunction()" value="All"></h1>
-
-                    </div>
-                </div>
+                                
+                </div> -->
 
 
 
@@ -266,22 +267,22 @@ include('connection.php');
 
     }
 
-    function myFunction(param) {
-        document.getElementById("all_blogs_cards").style.display = "none";
-        document.getElementById("categories_wise_cards").style.display = "block";
-        var categories = param;
-        $.ajax({
-            url: 'blogscards.php',
-            type: 'POST',
-            data: {
-                click: 1,
-                blog_cat: categories
-            },
-            success: function(data) {
-                $('#categories_wise_cards').html(data);
-            }
-        })
-    }
+    // function myFunction(param) {
+    //     document.getElementById("all_blogs_cards").style.display = "none";
+    //     document.getElementById("categories_wise_cards").style.display = "block";
+    //     var categories = param;
+    //     $.ajax({
+    //         url: 'blogs_cards.php',
+    //         type: 'POST',
+    //         data: {
+    //             click: 1,
+    //             blog_cat: categories
+    //         },
+    //         success: function(data) {
+    //             $('#categories_wise_cards').html(data);
+    //         }
+    //     })
+    // }
 
 
     function allFunction() {

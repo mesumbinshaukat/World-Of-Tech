@@ -196,7 +196,7 @@ if (isset($_POST['submitbtn'])) {
     </script>
 </body>
 </html>" ;
-$file_name="../blogs/" . $blogtitle . ".php" ;
+$file_name="../blogs/" . $blogtitle . ".php" ;      
 if ($file_name) {
         $file_handle=fopen($file_name, "w" );
         $generate_file=fwrite($file_handle, $blog_page_structure);
@@ -210,7 +210,10 @@ if ($file_name) {
 
 
 
-
+<?php 
+    $select_categories = "SELECT * FROM `tbl_blogcat`";
+    $select_categories_run = mysqli_query($conn,$select_categories); 
+?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -233,8 +236,9 @@ if ($file_name) {
             <div class="mb-3">
                 <label>Blog Category</label>
                 <select name="blog_categories" class="form-control">
-                    <option value="Tech">Tech</option>
-                    <option value="Sports">Sports</option>
+                    <?php while($categories = mysqli_fetch_array($select_categories_run)) {?>
+                      <option value="<?php echo $categories['id']?>"><?php echo $categories['blog_cat']?></option   >
+                    <?php }?>
                 </select>
             </div>
             <div class="mb-3">

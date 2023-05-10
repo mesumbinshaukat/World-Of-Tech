@@ -1,8 +1,11 @@
 <?php
 include('connection.php');
 if (isset($_POST['click'])) {
-    $categories = $_POST['blog_cat'];
-    $select_blogs = "SELECT * FROM `admin_blogs` WHERE blog_category = '$categories'";
+    // $categories = $_POST['blog_cat'];
+    // $select_blogs = "SELECT * FROM `admin_blogs` WHERE `blog_cat` = '$categories'";
+    // $select_blogs_run = mysqli_query($conn, $select_blogs);
+
+$select_blogs = "SELECT * FROM `admin_blogs`";
     $select_blogs_run = mysqli_query($conn, $select_blogs);
 
 
