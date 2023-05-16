@@ -22,6 +22,11 @@ if (isset($_POST['submitbtn'])) {
     $blogtitle = $_POST['title'];
     $blog_sub_title = $_POST['subtitle'];
     $intro_para = mysqli_real_escape_string($conn, $_POST['intro_para']);
+    // $intro_para = $_POST['intro_para'];
+    // $intro_para = str_replace("'", "&s_q", $intro_para);
+    // $intro_para = str_replace('"', "&d_q", $intro_para);
+    // $intro_para = str_replace(':', "&c", $intro_para);
+    // $intro_para = str_replace('/', "&f_slash", $intro_para);
     $intro_para_img = $_FILES['intro_img']['name'];
     $intro_para_img_tmp = $_FILES['intro_img']['tmp_name'];
 
