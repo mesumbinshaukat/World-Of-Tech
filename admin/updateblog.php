@@ -14,7 +14,11 @@ if (isset($_POST['submitbtn'])) {
     move_uploaded_file($thumbnail_img_tmp, $thumbnail_img_path);
     $blogtitle = $_POST['title'];
     $blog_sub_title = $_POST['subtitle'];
-    $intro_para = mysqli_real_escape_string($conn, $_POST['intro_para']);
+    $intro_para = $_POST['intro_para'];
+    $intro_para = str_replace("'", "&s_q", $intro_para);
+    $intro_para = str_replace('"', "&d_q", $intro_para);
+    $intro_para = str_replace(':', "&c", $intro_para);
+    $intro_para = str_replace('/', "&f_slash", $intro_para);
     $intro_para_img = $_FILES['intro_img']['name'];
     $intro_para_img_tmp = $_FILES['intro_img']['tmp_name'];
 
@@ -117,7 +121,7 @@ if (isset($_POST['submitbtn'])) {
                 <div class='intro col-lg-12 '>
                     <h5 class='text-center fs-3 fst-italic mx-2 mt-4 mb-4 '> " . $blog_sub_title . " </h5>
                     <h6 class='text-center mx-2 mt-2 mb-4 fw-normal fs-5'> " . $intro_para . " </h6>
-                    <img src='../blog_images/" . $intro_para_img_path . "' class='image w-25 mx-auto d-block'
+                    <img src='../blog_images/" . $intro_para_img_path . "' class='image w-50 mx-auto d-block'
                         alt='intro image'>
                 </div>
             </div>
@@ -125,14 +129,14 @@ if (isset($_POST['submitbtn'])) {
             <div class='main_section'>
                 <p class='mx-2 mt-3 mb-4 fs-5 text-center'> " . $main_para . " </p>
 
-                <img src='../blog_images/" . $main_para_img_path . "' class='image w-25 mx-auto d-block'
+                <img src='../blog_images/" . $main_para_img_path . "' class='image w-50 mx-auto d-block'
                     alt='main image of paragraph'>
 
             </div>
             <div class='conclusion_section mb-3'>
                 <p class='mx-2 mt-3 mb-3 fs-5 text-center'> " . $conclusion_para . " </p>
 
-                <img src='../blog_images/" . $conclusion_para_img_path . " ' class='image w-25 mx-auto d-block'
+                <img src='../blog_images/" . $conclusion_para_img_path . " ' class='image w-50 mx-auto d-block'
                     alt='end image'>
 
             </div>
@@ -142,9 +146,13 @@ if (isset($_POST['submitbtn'])) {
 
     <section id='comment_section' class='container mt-5'>
         <h2 class='fw-bold'> Comment </h2>
+        <input type='email' class='form-control mb-3 mt-3' required placeholder='Enter Your Email' id='ID_email'>
         <textarea id='ID_commentarea' class='form-control' placeholder='Enter Your Comment' rows='4'></textarea>
-        <input type='button' class='btn btn-dark p-2 mb-4 mt-3 px-5' value='Submit' id='ID_button'>
-        <input type='hidden' value='" . $data[' id'] . "' id='hidden_id'>
+        <input type='checkbox' class='mx-1 mt-2 ' onclick='Checkbox()'>
+        <label class='mx-1 mt-2'>I agree to notify me for the latest blogs</label>
+        <br>
+        <input type='button' disabled class='btn btn-dark mt-2 mb-3 px-5' value='Submit' id='ID_button'>
+        <input type='hidden' value='" . $row[' id'] . "' id='hidden_id'>
     <div id='ID_div'> </div>
     </section>
 
@@ -205,109 +213,107 @@ if (isset($_POST['submitbtn'])) {
     })
     </script>
 </body>
-</html>";
-        $file_name = "../blogs/" . $blogtitle . ".php";
-        if ($file_name) {
-            $file_handle = fopen($file_name, "w");
-            $generate_file = fwrite($file_handle, $blog_page_structure);
-            if (fclose($file_handle)) {
-                header('location:showblog.php');
-                exit();
-            }
-        }
-    } else {
-        echo "<script>alert('not updated')</script>";
-    }
-} ?>
+</html>" ; $file_name="../blogs/" . $blogtitle . ".php" ; if ($file_name) { $file_handle=fopen($file_name, "w" );
+            $generate_file=fwrite($file_handle, $blog_page_structure); if (fclose($file_handle)) {
+            header('location:showblog.php'); exit(); } } } else { echo "<script>alert('not updated')</script>" ; } } ?>
 
 
 
-<?php
+        <?php
 $select_categories = "SELECT * FROM `tbl_blogcat`";
 $select_categories_run = mysqli_query($conn, $select_categories);
 ?>
-<!DOCTYPE html>
-<html lang="en">
+        <!DOCTYPE html>
+        <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Update Blog</title>
-</head>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+                crossorigin="anonymous">
+            <title>Update Blog</title>
+        </head>
 
-<body>
-    <div class="container">
-        <form method="post" enctype="multipart/form-data">
+        <body>
+            <div class="container">
+                <form method="post" enctype="multipart/form-data">
 
-            <div class="mb-3">
-                <input type="date" name="blog_date" class="form-control" value="<?php echo $data['publish_date']; ?>">
-            </div>
-            <div class="mb-3">
-                <label>Blog Category</label>
-                <select name="blog_categories" class="form-control">
-                    <?php while ($categories = mysqli_fetch_array($select_categories_run)) { ?>
-                        <option value="<?php echo $categories['id'] ?>"><?php echo $categories['blog_cat'] ?>
-                        </option>
-                    <?php } ?>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label>Thumnail</label>
-                <input type="file" name="thumbnail" class="form-control" value="<?php echo $data['thumbnail']; ?>">
-            </div>
-            <div class="mb-3">
-                <label>Blog Title</label>
-                <input type="text" name="title" class="form-control" value="<?php echo $data['blogtitle']; ?>" />
-            </div>
-            <div class="mb-3">
-                <label>Sub Title</label>
-                <input type="text" name="subtitle" class="form-control" value="<?php echo $data['subtitle']; ?>" />
-            </div>
-            <div class="mb-3">
-                <label>Intro Paragraph</label>
-                <textarea type="text" name="intro_para"
-                    class="form-control"><?php echo $data['intro_para']; ?></textarea>
-            </div>
-            <div class="mb-3">
-                <label>Intro Image/Video</label>
-                <input type="file" name="intro_img" class="form-control" value="<?php echo $data['intro_img']; ?>">
-            </div>
-            <div class="mb-3">
-                <label>Main Paragraph</label>
-                <textarea type="text" name="main_para" class="form-control"><?php echo $data['main_para']; ?></textarea>
-            </div>
-            <div class="mb-3">
-                <label>Main Image/Video</label>
-                <input type="file" name="main_img" class="form-control" value="<?php echo $data['main_img']; ?>">
-            </div>
-            <div class="mb-3">
-                <label>Conclusion</label>
-                <textarea type="text" name="conclusion_para"
-                    class="form-control"><?php echo $data['conclusion_para']; ?></textarea>
-            </div>
-            <div class="mb-3">
-                <label>Conclusion Image/Video</label>
-                <input type="file" name="conclusion_img" class="form-control"
-                    value="<?php echo $data['conclusion_img']; ?>">
-            </div>
-            <div class="mb-3">
-                <label>Meta Tags</label>
-                <input type="text" name="meta_tags" class="form-control" value="<?php echo $data['meta_tags']; ?>">
-            </div>
-            <div class="mb-3">
-                <label>Meta Tags Description</label>
-                <input type="text" name="meta_tags_description" class="form-control"
-                    value="<?php echo $data['metatags_description']; ?>">
+                    <div class="mb-3">
+                        <input type="date" name="blog_date" class="form-control"
+                            value="<?php echo $data['publish_date']; ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label>Blog Category</label>
+                        <select name="blog_categories" class="form-control">
+                            <?php while ($categories = mysqli_fetch_array($select_categories_run)) { ?>
+                            <option value="<?php echo $categories['id'] ?>"><?php echo $categories['blog_cat'] ?>
+                            </option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label>Thumnail</label>
+                        <input type="file" name="thumbnail" class="form-control"
+                            value="<?php echo $data['thumbnail']; ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label>Blog Title</label>
+                        <input type="text" name="title" class="form-control"
+                            value="<?php echo $data['blogtitle']; ?>" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Sub Title</label>
+                        <input type="text" name="subtitle" class="form-control"
+                            value="<?php echo $data['subtitle']; ?>" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Intro Paragraph</label>
+                        <textarea type="text" name="intro_para"
+                            class="form-control"><?php echo $data['intro_para']; ?></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label>Intro Image/Video</label>
+                        <input type="file" name="intro_img" class="form-control"
+                            value="<?php echo $data['intro_img']; ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label>Main Paragraph</label>
+                        <textarea type="text" name="main_para"
+                            class="form-control"><?php echo $data['main_para']; ?></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label>Main Image/Video</label>
+                        <input type="file" name="main_img" class="form-control"
+                            value="<?php echo $data['main_img']; ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label>Conclusion</label>
+                        <textarea type="text" name="conclusion_para"
+                            class="form-control"><?php echo $data['conclusion_para']; ?></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label>Conclusion Image/Video</label>
+                        <input type="file" name="conclusion_img" class="form-control"
+                            value="<?php echo $data['conclusion_img']; ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label>Meta Tags</label>
+                        <input type="text" name="meta_tags" class="form-control"
+                            value="<?php echo $data['meta_tags']; ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label>Meta Tags Description</label>
+                        <input type="text" name="meta_tags_description" class="form-control"
+                            value="<?php echo $data['metatags_description']; ?>">
+                    </div>
+
+                    <input type="submit" class="btn btn-primary form-control" name="submitbtn" value="Submit">
+
+                </form>
             </div>
 
-            <input type="submit" class="btn btn-primary form-control" name="submitbtn" value="Submit">
+        </body>
 
-        </form>
-    </div>
-
-</body>
-
-</html>
+        </html>

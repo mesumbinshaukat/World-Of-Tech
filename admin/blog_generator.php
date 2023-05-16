@@ -11,6 +11,12 @@ $fetch_query_run = mysqli_query($conn, $fetch_query);
 
 while ($row = mysqli_fetch_array($fetch_query_run)) {
 
+    // $intro_para = $row['intro_para'];
+    // $intro_para = str_replace("&s_q", "'", $intro_para);
+    // $intro_para = str_replace("&d_q", '"', $intro_para);
+    // $intro_para = str_replace('&c', ':', $intro_para);
+    // $intro_para = str_replace("&f_slash", '/', $intro_para);
+
     $blog_page_structure = "
 
   <?php session_start();?>
@@ -20,7 +26,7 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
     <title>" . $row['blogtitle'] . "</title>
     <meta charset='UTF-8'>
     <meta name='viewport' content=' width=device-width, initial-scale=1'>
-    <meta name='keywords' content='" . $row['meta_tags'] . "'>
+    <meta name='keywords' content='" . $row[' meta_tags'] . "'>
         <meta name='description' content='" . $row['metatags_description'] . "'>
         <meta name='author' content='world of tech'>
         <link rel='shortcut icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
@@ -182,7 +188,10 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
 </html>";
     $file_name = "../blogs/" . $row["blogtitle"] . ".php";
     if ($file_name) {
-        $file_handle = fopen($file_name, "w");
+        $file_handle = fopen(
+            $file_name,
+            "w"
+        );
         $generate_file = fwrite($file_handle, $blog_page_structure);
         if (fclose($file_handle)) {
             header("location:admin_dashboard.php");
