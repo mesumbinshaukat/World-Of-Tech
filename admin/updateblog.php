@@ -14,19 +14,19 @@ if (isset($_POST['submitbtn'])) {
     move_uploaded_file($thumbnail_img_tmp, $thumbnail_img_path);
     $blogtitle = $_POST['title'];
     $blog_sub_title = $_POST['subtitle'];
-    $intro_para = $_POST['intro_para'];
+    $intro_para = mysqli_real_escape_string($conn, $_POST['intro_para']);
     $intro_para_img = $_FILES['intro_img']['name'];
     $intro_para_img_tmp = $_FILES['intro_img']['tmp_name'];
 
     $intro_para_img_path = '../blog_images/' . $intro_para_img;
     move_uploaded_file($intro_para_img_tmp, $intro_para_img_path);
-    $main_para = $_POST['main_para'];
+    $main_para = mysqli_real_escape_string($conn, $_POST['main_para']);
     $main_para_img = $_FILES['main_img']['name'];
     $main_para_img_tmp = $_FILES['main_img']['tmp_name'];
 
     $main_para_img_path = '../blog_images/' . $main_para_img;
     move_uploaded_file($main_para_img_tmp, $main_para_img_path);
-    $conclusion_para = $_POST['conclusion_para'];
+    $conclusion_para = mysqli_real_escape_string($conn, $_POST['conclusion_para']);
     $conclusion_para_img = $_FILES['conclusion_img']['name'];
     $conclusion_para_img_tmp = $_FILES['conclusion_img']['tmp_name'];
     $conclusion_para_img_path = '../blog_images/' . $conclusion_para_img;
@@ -47,18 +47,19 @@ if (isset($_POST['submitbtn'])) {
     <meta charset='UTF-8'>
     <meta name='viewport' content=' width=device-width, initial-scale=1'>
     <meta name='keywords' content='" . $metatags . "'>
-        <meta name='description' content='" . $metatags_description . "'>
-        <meta name='author' content='world of tech'>
-        <link rel='shortcut icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
+    <meta name='description' content='" . $metatags_description . "'>
+    <meta name='author' content='world of tech'>
+    <link rel='shortcut icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
     <link rel='apple-touch-icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet'
         integrity='sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65' crossorigin='anonymous'>
-        <style>
-        body{
-            background-color: rgb(228, 228, 228) !important;
-            font-family: 'Roboto Slab', serif !important;
+    <style>
+    body {
+        background-color: rgb(228, 228, 228) !important;
+        font-family: 'Roboto Slab', serif !important;
 
-        }
+    }
+
     .image {
         border: 2px solid transparent;
         border-radius: 20px;
@@ -82,65 +83,68 @@ if (isset($_POST['submitbtn'])) {
     #card {
         border: none;
     }
-    .word{
-        word-spacing:1px;
-        letter-spacing:.5px;
+
+    .word {
+        word-spacing: 1px;
+        letter-spacing: .5px;
     }
     </style>
-    </head>
+</head>
 
-    <body>
+<body>
 
 
-<div class='container pt-3 word'>
-<input type='hidden' id='blog_id' value='" . $getid . "'>
+    <div class='container pt-3 word'>
+        <input type='hidden' id='blog_id' value='" . $getid . "'>
 
-    <!-- blog section starts -->
-    <div class='blog_details section'>
-        <!-- title and category -->
-        <div class='title_and_category'>
-            <p class='text-center mx-2 mt-2 '> " . $blog_date . " / <a
-                    class='text-secondary text-decoration-none' href='blog.php'> " . $blog_categories . " </a></p>
-            <h2 class='mx-2 mb-4 fs-1 fw-bolder text-center text-uppercase'> " . $blogtitle . " </h2>
-        </div>
-        <!-- intro and thumbnail  -->
-        <div class='row'>
+        <!-- blog section starts -->
+        <div class='blog_details section'>
+            <!-- title and category -->
+            <div class='title_and_category'>
+                <p class='text-center mx-2 mt-2 '> " . $blog_date . " / <a class='text-secondary text-decoration-none'
+                        href='blog.php'> " . $blog_categories . " </a></p>
+                <h2 class='mx-2 mb-4 fs-1 fw-bolder text-center text-uppercase'> " . $blogtitle . " </h2>
+            </div>
+            <!-- intro and thumbnail  -->
+            <div class='row'>
 
-            <div class='col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center'>
-            <div class='card w-75' id='card'>
-                    <img src='../blog_images/" . $thumbnail_img_path . " '
-                        class='image' alt='thumbnail'>
+                <div class='col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center'>
+                    <div class='card w-75' id='card'>
+                        <img src='../blog_images/" . $thumbnail_img_path . " ' class='image' alt='thumbnail'>
+                    </div>
+                </div>
+
+                <div class='intro col-lg-12 '>
+                    <h5 class='text-center fs-3 fst-italic mx-2 mt-4 mb-4 '> " . $blog_sub_title . " </h5>
+                    <h6 class='text-center mx-2 mt-2 mb-4 fw-normal fs-5'> " . $intro_para . " </h6>
+                    <img src='../blog_images/" . $intro_para_img_path . "' class='image w-25 mx-auto d-block'
+                        alt='intro image'>
                 </div>
             </div>
+            <!-- main section -->
+            <div class='main_section'>
+                <p class='mx-2 mt-3 mb-4 fs-5 text-center'> " . $main_para . " </p>
 
-            <div class='intro col-lg-12 '>
-                <h5 class='text-center fs-3 fst-italic mx-2 mt-4 mb-4 '> " . $blog_sub_title . " </h5>
-                <h6 class='text-center mx-2 mt-2 mb-4 fw-normal fs-5'> " . $intro_para . " </h6>
-                    <img src='../blog_images/" . $intro_para_img_path . "' class='image w-25 mx-auto d-block' alt='intro image'>
+                <img src='../blog_images/" . $main_para_img_path . "' class='image w-25 mx-auto d-block'
+                    alt='main image of paragraph'>
+
             </div>
-        </div>
-        <!-- main section -->
-        <div class='main_section'>
-            <p class='mx-2 mt-3 mb-4 fs-5 text-center'> " . $main_para . " </p>
+            <div class='conclusion_section mb-3'>
+                <p class='mx-2 mt-3 mb-3 fs-5 text-center'> " . $conclusion_para . " </p>
 
-                <img src='../blog_images/" . $main_para_img_path . "' class='image w-25 mx-auto d-block' alt='main image of paragraph'>
+                <img src='../blog_images/" . $conclusion_para_img_path . " ' class='image w-25 mx-auto d-block'
+                    alt='end image'>
 
-        </div>
-        <div class='conclusion_section mb-3'>
-            <p class='mx-2 mt-3 mb-3 fs-5 text-center'> " . $conclusion_para . " </p>
-
-                <img src='../blog_images/" . $conclusion_para_img_path . " ' class='image w-25 mx-auto d-block' alt='end image'>
+            </div>
 
         </div>
-
     </div>
-</div>
 
-<section id ='comment_section' class='container mt-5'>
+    <section id='comment_section' class='container mt-5'>
         <h2 class='fw-bold'> Comment </h2>
         <textarea id='ID_commentarea' class='form-control' placeholder='Enter Your Comment' rows='4'></textarea>
         <input type='button' class='btn btn-dark p-2 mb-4 mt-3 px-5' value='Submit' id='ID_button'>
-        <input type='hidden' value='" . $data['id'] . "' id='hidden_id'>
+        <input type='hidden' value='" . $data[' id'] . "' id='hidden_id'>
     <div id='ID_div'> </div>
     </section>
 
@@ -150,6 +154,9 @@ if (isset($_POST['submitbtn'])) {
     </script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
     <script>
+    function Checkbox(){
+        document.getElementById('ID_button').toggleAttribute('disabled');
+    }  
     $(document).ready(function() {
         var blog_ids = $('#blog_id').val();
         $.ajax({
@@ -178,6 +185,8 @@ if (isset($_POST['submitbtn'])) {
         $('#ID_button').click(function() {
             var comment = $('#ID_commentarea').val();
             var hidden_id = $('#hidden_id').val();
+            var email = $('#ID_email').val();
+
             $.ajax({
                 url: '../blog_comments.php',
                 type: 'POST',
@@ -185,6 +194,7 @@ if (isset($_POST['submitbtn'])) {
                     submitbtn: 1,
                     ID_comment: comment,
                     hid_id: hidden_id,
+                    user_email:email
                 },
                 success: function() {
                     dataLoad();
@@ -195,36 +205,38 @@ if (isset($_POST['submitbtn'])) {
     })
     </script>
 </body>
-</html>" ;
-$file_name="../blogs/" . $blogtitle . ".php" ;      
-if ($file_name) {
-        $file_handle=fopen($file_name, "w" );
-        $generate_file=fwrite($file_handle, $blog_page_structure);
-        if (fclose($file_handle)) {
-        header('location:showblog.php');
-        exit(); } }
-       } else { echo "<script>alert('not updated')</script>" ;
-      } }
+</html>";
+        $file_name = "../blogs/" . $blogtitle . ".php";
+        if ($file_name) {
+            $file_handle = fopen($file_name, "w");
+            $generate_file = fwrite($file_handle, $blog_page_structure);
+            if (fclose($file_handle)) {
+                header('location:showblog.php');
+                exit();
+            }
+        }
+    } else {
+        echo "<script>alert('not updated')</script>";
+    }
+} ?>
 
+
+
+<?php
+$select_categories = "SELECT * FROM `tbl_blogcat`";
+$select_categories_run = mysqli_query($conn, $select_categories);
 ?>
+<!DOCTYPE html>
+<html lang="en">
 
-
-
-<?php 
-    $select_categories = "SELECT * FROM `tbl_blogcat`";
-    $select_categories_run = mysqli_query($conn,$select_categories); 
-?>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <title>Update Blog</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Update Blog</title>
+</head>
 
 <body>
     <div class="container">
@@ -236,9 +248,10 @@ if ($file_name) {
             <div class="mb-3">
                 <label>Blog Category</label>
                 <select name="blog_categories" class="form-control">
-                    <?php while($categories = mysqli_fetch_array($select_categories_run)) {?>
-                      <option value="<?php echo $categories['id']?>"><?php echo $categories['blog_cat']?></option   >
-                    <?php }?>
+                    <?php while ($categories = mysqli_fetch_array($select_categories_run)) { ?>
+                        <option value="<?php echo $categories['id'] ?>"><?php echo $categories['blog_cat'] ?>
+                        </option>
+                    <?php } ?>
                 </select>
             </div>
             <div class="mb-3">

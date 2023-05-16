@@ -21,19 +21,19 @@ if (isset($_POST['submitbtn'])) {
     move_uploaded_file($thumbnail_img_tmp, $thumbnail_img_path);
     $blogtitle = $_POST['title'];
     $blog_sub_title = $_POST['subtitle'];
-    $intro_para = $_POST['intro_para'];
+    $intro_para = mysqli_real_escape_string($conn, $_POST['intro_para']);
     $intro_para_img = $_FILES['intro_img']['name'];
     $intro_para_img_tmp = $_FILES['intro_img']['tmp_name'];
 
     $intro_para_img_path = '../blog_images/' . $intro_para_img;
     move_uploaded_file($intro_para_img_tmp, $intro_para_img_path);
-    $main_para = $_POST['main_para'];
+    $main_para = mysqli_real_escape_string($conn, $_POST['main_para']);
     $main_para_img = $_FILES['main_img']['name'];
     $main_para_img_tmp = $_FILES['main_img']['tmp_name'];
 
     $main_para_img_path = '../blog_images/' . $main_para_img;
     move_uploaded_file($main_para_img_tmp, $main_para_img_path);
-    $conclusion_para = $_POST['conclusion_para'];
+    $conclusion_para = mysqli_real_escape_string($conn, $_POST['conclusion_para']);
     $conclusion_para_img = $_FILES['conclusion_img']['name'];
     $conclusion_para_img_tmp = $_FILES['conclusion_img']['tmp_name'];
     $conclusion_para_img_path = '../blog_images/' . $conclusion_para_img;
@@ -60,8 +60,8 @@ if (isset($_POST['submitbtn'])) {
 
 }
 
-$select_categories  = "SELECT * FROM `tbl_blogcat`";
-$select_categories_run = mysqli_query($conn,$select_categories);
+$select_categories = "SELECT * FROM `tbl_blogcat`";
+$select_categories_run = mysqli_query($conn, $select_categories);
 
 ?>
 
@@ -91,9 +91,9 @@ $select_categories_run = mysqli_query($conn,$select_categories);
             <div class="mb-3">
                 <label>Blog Category</label>
                 <select name="blog_categories" class="form-control">
-                    <?php while($row = mysqli_fetch_array($select_categories_run)) {?>
-                    <option value="<?php echo $row['id']?>"><?php echo $row['blog_cat']?></option>
-                    <?php }?>
+                    <?php while ($row = mysqli_fetch_array($select_categories_run)) { ?>
+                        <option value="<?php echo $row['id'] ?>"><?php echo $row['blog_cat'] ?></option>
+                    <?php } ?>
                 </select>
             </div>
             <div class="mb-3">
