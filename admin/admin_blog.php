@@ -98,7 +98,8 @@ $select_categories_run = mysqli_query($conn, $select_categories);
             </div>
             <div class="mb-3">
                 <label>Thumnail</label>
-                <input type="file" name="thumbnail" class="form-control">
+            
+                <input type="file" name="thumbnail" class="form-control"  >
             </div>
             <div class="mb-3">
                 <label>Blog Title</label>
@@ -145,6 +146,7 @@ $select_categories_run = mysqli_query($conn, $select_categories);
 
         </form>
     </div>
+
 </body>
 
 </html>
