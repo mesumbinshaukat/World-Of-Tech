@@ -1,133 +1,133 @@
 
 
-  <?php session_start();?>
-<html>
+        <?php session_start();?>
+      <html>
+      
+      <head>
+          <title>A Roadmap For Web Development</title>
+          <meta charset='UTF-8'>
+          <meta name='viewport' content=' width=device-width, initial-scale=1'>
+          <meta name='keywords' content='blog, world of tech, mesum, Huzaifa, sarim, Rafay, zohair'>
+              <meta name='description' content='This is the best meta description'>
+              <meta name='author' content='world of tech'>
+              <link rel='shortcut icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
+          <link rel='apple-touch-icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
+          <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet'
+              integrity='sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65' crossorigin='anonymous'>
+              <style>
+              body{
+                  background-color: rgb(228, 228, 228) !important;
+                  font-family: 'Roboto Slab', serif !important;
+      
+              }
+          .image {
+              border: 2px solid transparent;
+              border-radius: 20px;
+          }
+      
+          .image:hover {
+              border-radius: 0px;
+              cursor: pointer;
+          }
+      
+          .modal {
+              height: 100%;
+              width: 100%;
+          }
+      
+          .img_modal {
+              height: 100%;
+              width: 100%;
+          }
+      
+          #card {
+              border: none;
+          }
+          .word{
+              word-spacing:1px;
+              letter-spacing:.5px;
+          }
+          </style>
+          </head>
+      
+          <body>
+      
+      
+      <div class='container pt-3 word'>
+      <input type='hidden' id='blog_id' value='11'>
+      
+          <!-- blog section starts -->
+          <div class='blog_details section'>
+              <!-- title and category -->
+              <div class='title_and_category'>
+                  <p class='text-center mx-2 mt-2 '> sarim  <a
+                          class='text-secondary text-decoration-none' href='blog.php'>  </a></p>
+                  <h2 class='mx-2 mb-4 fs-1 fw-bolder text-center text-uppercase'> A Roadmap For Web Development </h2>
+              </div>
+              <!-- intro and thumbnail  -->
+              <div class='container'>
+      
+                  <div class='col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center'>
+                  <div class='card w-75' id='card'>
+                          <img src='../blog_images/../blog_images/2.png '
+                              class='image' alt='thumbnail'>
+                      </div>
+                  </div>
+      
+                  <div class='intro col-lg-12 '>
+                      <h5 class='text-center fs-3 fst-italic mx-2 mt-4 mb-4 '> Zohair </h5>
+                      <h6 class='text-center mx-2 mt-2 mb-4 fw-normal fs-5'> Welcome to the world of web development! This roadmap will guide you through the exciting journey of building websites and web applications. From the basics to advanced concepts, you&s_qll gain a comprehensive understanding of the key components and technologies involved in creating dynamic and interactive web experiences
 
-<head>
-    <title>A Roadmap For Web Development</title>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content=' width=device-width, initial-scale=1'>
-    <meta name='keywords' content=''>
-        <meta name='description' content='This is the best meta description'>
-        <meta name='author' content='world of tech'>
-        <link rel='shortcut icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
-    <link rel='apple-touch-icon' href='/LOGO/Logo-white-text-full-screen(2048px-1152px).png'>
-    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet'
-        integrity='sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65' crossorigin='anonymous'>
-        <style>
-        body{
-            background-color: rgb(228, 228, 228) !important;
-            font-family: 'Roboto Slab', serif !important;
 
-        }
-    .image {
-        border: 2px solid transparent;
-        border-radius: 20px;
-    }
+First, you&s_qll explore the fundamentals of web development, starting with HTML (Hypertext Markup Language), the backbone of every web page. Next, you&s_qll dive into CSS (Cascading Style Sheets) to enhance the appearance and layout of your web pages. Alongside these front-end technologies, you&s_qll also learn JavaScript, a powerful programming language that adds interactivity and dynamic functionality to websites.
 
-    .image:hover {
-        border-radius: 0px;
-        cursor: pointer;
-    }
+As you progress, you&s_qll venture into the realm of back-end development, where you&s_qll discover server-side languages such as Python, Ruby, or PHP. These languages enable you to build complex web applications, handle data storage and retrieval, and interact with databases.
 
-    .modal {
-        height: 100%;
-        width: 100%;
-    }
+To bring everything together, you&s_qll explore frameworks and libraries that simplify web development tasks and provide efficient solutions. Popular choices include front-end frameworks like React, Angular, or Vue.js, and back-end frameworks like Ruby on Rails, Django, or Laravel.
 
-    .img_modal {
-        height: 100%;
-        width: 100%;
-    }
+Moreover, you&s_qll learn about databases and how to manage data efficiently using technologies like SQL (Structured Query Language) or NoSQL databases. Additionally, you&s_qll gain insights into version control systems like Git, which help you collaborate with others and track changes to your codebase.
 
-    #card {
-        border: none;
-    }
-    .word{
-        word-spacing:1px;
-        letter-spacing:.5px;
-    }
-    </style>
-    </head>
+Throughout your journey, you&s_qll encounter essential concepts like responsive design, accessibility, security, and performance optimization. These elements ensure that your websites are user-friendly, inclusive, secure, and load quickly across different devices and network conditions.
 
-    <body>
-
-
-<div class='container pt-3 word'>
-<input type='hidden' id='blog_id' value='11'>
-
-    <!-- blog section starts -->
-    <div class='blog_details section'>
-        <!-- title and category -->
-        <div class='title_and_category'>
-            <p class='text-center mx-2 mt-2 '> 2023-05-16 <a
-                    class='text-secondary text-decoration-none' href='blog.php'>  </a></p>
-            <h2 class='mx-2 mb-4 fs-1 fw-bolder text-center text-uppercase'> A Roadmap For Web Development </h2>
-        </div>
-        <!-- intro and thumbnail  -->
-        <div class='row'>
-
-            <div class='col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center'>
-            <div class='card w-75' id='card'>
-                    <img src='../blog_images/../blog_images/web-development-roadmap.jpg '
-                        class='image' alt='thumbnail'>
-                </div>
-            </div>
-
-            <div class='intro col-lg-12 '>
-                <h5 class='text-center fs-3 fst-italic mx-2 mt-4 mb-4 '> Learn Web Development </h5>
-                <h6 class='text-center mx-2 mt-2 mb-4 fw-normal fs-5'> Welcome to the world of web development! This roadmap will guide you through the exciting journey of building websites and web applications. From the basics to advanced concepts, you'll gain a comprehensive understanding of the key components and technologies involved in creating dynamic and interactive web experiences
-
-
-First, you'll explore the fundamentals of web development, starting with HTML (Hypertext Markup Language), the backbone of every web page. Next, you'll dive into CSS (Cascading Style Sheets) to enhance the appearance and layout of your web pages. Alongside these front-end technologies, you'll also learn JavaScript, a powerful programming language that adds interactivity and dynamic functionality to websites.
-
-As you progress, you'll venture into the realm of back-end development, where you'll discover server-side languages such as Python, Ruby, or PHP. These languages enable you to build complex web applications, handle data storage and retrieval, and interact with databases.
-
-To bring everything together, you'll explore frameworks and libraries that simplify web development tasks and provide efficient solutions. Popular choices include front-end frameworks like React, Angular, or Vue.js, and back-end frameworks like Ruby on Rails, Django, or Laravel.
-
-Moreover, you'll learn about databases and how to manage data efficiently using technologies like SQL (Structured Query Language) or NoSQL databases. Additionally, you'll gain insights into version control systems like Git, which help you collaborate with others and track changes to your codebase.
-
-Throughout your journey, you'll encounter essential concepts like responsive design, accessibility, security, and performance optimization. These elements ensure that your websites are user-friendly, inclusive, secure, and load quickly across different devices and network conditions.
-
-As you become proficient in web development, you'll have the opportunity to explore advanced topics like web APIs (Application Programming Interfaces), cloud computing, deployment strategies, and DevOps practices, which enable you to build robust and scalable web applications.
+As you become proficient in web development, you&s_qll have the opportunity to explore advanced topics like web APIs (Application Programming Interfaces), cloud computing, deployment strategies, and DevOps practices, which enable you to build robust and scalable web applications.
 
 Remember, web development is a continuously evolving field, and staying up to date with new technologies, tools, and best practices is crucial. Embrace the mindset of lifelong learning, and immerse yourself in the vibrant web development community, where you can seek guidance, collaborate with fellow developers, and contribute to open-source projects.
 
 Now, buckle up and get ready to embark on this exciting journey as you uncover the intricacies of web development and bring your creative ideas to life on the World Wide Web
-HTML and CSS Fundamentals:
+HTML and CSS Fundamentals&c
 
-HTML: Building Blocks of a Webpage: HTML is the backbone of every webpage. It uses a set of tags to define the structure and content of a document. Key points to understand about HTML include: Structure: HTML organizes content into a hierarchical structure using elements such as headings, paragraphs, lists, and images. Tags: Tags are used to mark up content and provide meaning to the browser. They are enclosed in angle brackets, and most tags have an opening and closing pair.
-CSS: Aesthetics and Visual Enhancements:
+HTML&c Building Blocks of a Webpage&c HTML is the backbone of every webpage. It uses a set of tags to define the structure and content of a document. Key points to understand about HTML include&c Structure&c HTML organizes content into a hierarchical structure using elements such as headings, paragraphs, lists, and images. Tags&c Tags are used to mark up content and provide meaning to the browser. They are enclosed in angle brackets, and most tags have an opening and closing pair.
+CSS&c Aesthetics and Visual Enhancements&c
 
-CSS adds the flair and aesthetics to a webpage. It controls the layout, colors, fonts, and other visual aspects. Here are the key aspects of CSS: Selectors: CSS selectors target HTML elements and define which elements the styles should be applied to. Selectors can target elements by tag name, class, ID, or other attributes. Properties and Values: CSS properties define the visual characteristics, while values specify the specific settings for those properties. Examples include color, font-size, margin, and background. Cascading: CSS follows the cascading principle, where styles can be applied in multiple ways (inline, internal, or external), and conflicts are resolved using specificity rules. Box Model: The box model defines how elements are rendered and includes properties like padding, border, and margin that affect the space around and within an element.
-JavaScript and Front-End Frameworks:
+CSS adds the flair and aesthetics to a webpage. It controls the layout, colors, fonts, and other visual aspects. Here are the key aspects of CSS&c Selectors&c CSS selectors target HTML elements and define which elements the styles should be applied to. Selectors can target elements by tag name, class, ID, or other attributes. Properties and Values&c CSS properties define the visual characteristics, while values specify the specific settings for those properties. Examples include color, font-size, margin, and background. Cascading&c CSS follows the cascading principle, where styles can be applied in multiple ways (inline, internal, or external), and conflicts are resolved using specificity rules. Box Model&c The box model defines how elements are rendered and includes properties like padding, border, and margin that affect the space around and within an element.
+JavaScript and Front-End Frameworks&c
 
 JavaScript has become an essential language for web development, enabling dynamic and interactive features on websites. Coupled with front-end frameworks, JavaScript empowers developers to create sophisticated and responsive user interfaces. In this blog post, we will explore the fundamentals of JavaScript and shed light on popular front-end frameworks, highlighting their importance in modern web development.
-JavaScript: The Language of the Web:
+JavaScript&c The Language of the Web&c
 
 JavaScript is a versatile programming language primarily used to enhance the interactivity and functionality of websites. It runs on the client side, allowing developers to manipulate webpage elements, handle user interactions, and fetch and display data dynamically. JavaScript supports various paradigms, including procedural, object-oriented, and functional programming, making it flexible and adaptable to different coding styles.
-Key Concepts in JavaScript:
+Key Concepts in JavaScript&c
 
-Variables and Data Types: JavaScript variables store data of different types, such as numbers, strings, booleans, arrays, and objects. Understanding data types and proper variable declaration is crucial for effective programming. Control Flow and Looping: Conditional statements (if-else, switch) and looping structures (for, while) enable developers to execute specific blocks of code based on conditions or iterate over sets of data. Functions: Functions in JavaScript are reusable blocks of code that can be called to perform specific tasks. They promote code organization, modularity, and reusability. DOM Manipulation: The Document Object Model (DOM) represents the structure of a webpage. JavaScript provides methods to access and manipulate DOM elements dynamically, allowing developers to update content, handle events, and create interactive user experiences.
-Front-End Frameworks:
+Variables and Data Types&c JavaScript variables store data of different types, such as numbers, strings, booleans, arrays, and objects. Understanding data types and proper variable declaration is crucial for effective programming. Control Flow and Looping&c Conditional statements (if-else, switch) and looping structures (for, while) enable developers to execute specific blocks of code based on conditions or iterate over sets of data. Functions&c Functions in JavaScript are reusable blocks of code that can be called to perform specific tasks. They promote code organization, modularity, and reusability. DOM Manipulation&c The Document Object Model (DOM) represents the structure of a webpage. JavaScript provides methods to access and manipulate DOM elements dynamically, allowing developers to update content, handle events, and create interactive user experiences.
+Front-End Frameworks&c
 
-Front-end frameworks provide developers with pre-designed structures, components, and libraries that streamline the development process and ensure consistency in user interfaces. Here are some popular front-end frameworks:
-React:
+Front-end frameworks provide developers with pre-designed structures, components, and libraries that streamline the development process and ensure consistency in user interfaces. Here are some popular front-end frameworks&c
+React&c
 
-Developed by Facebook, React is a JavaScript library for building user interfaces. It follows a component-based architecture, allowing developers to create reusable UI components and efficiently manage state and data flow. React's virtual DOM optimizes performance, making it a preferred choice for large-scale applications.
-Angular:
+Developed by Facebook, React is a JavaScript library for building user interfaces. It follows a component-based architecture, allowing developers to create reusable UI components and efficiently manage state and data flow. React&s_qs virtual DOM optimizes performance, making it a preferred choice for large-scale applications.
+Angular&c
 
 Developed by Google, Angular is a robust framework for building dynamic web applications. It employs a declarative approach and utilizes TypeScript, a superset of JavaScript, to enhance static typing and tooling. Angular provides a comprehensive set of features, including dependency injection, two-way data binding, and a powerful templating engine.
-Vue.js:
+Vue.js&c
 
 Vue.js is a progressive framework for building user interfaces. It is simplicity and gentle learning curve make it suitable for both small projects and large-scale applications. Vue.js emphasizes reactivity, enabling developers to create responsive components and manage complex UI interactions effortlessly.
  </h6>
-                    <img src='../blog_images/../blog_images/front-end-development.jpg' class='image w-50 mx-auto d-block' alt='intro image'>
-            </div>
-        </div>
-        <!-- main section -->
-        <div class='main_section'>
-            <p class='mx-2 mt-3 mb-4 fs-5 text-center'> Backend Development:
+                          <img src='../blog_images/../blog_images/' class='image w-50 mx-auto d-block' alt='intro image'>
+                  </div>
+              </div>
+              <!-- main section -->
+              <div class='main_section'>
+                  <p class='mx-2 mt-3 mb-4 fs-5 text-center'> Backend Development:kkk
 
 Backend development plays a crucial role in building robust and functional web applications. It involves the implementation and management of server-side logic, databases, and APIs that power the user-facing front end. In this blog post, we'll explore the key concepts and technologies essential to backend development. Server-Side Languages:
 
@@ -221,12 +221,12 @@ Compress images and other media files to reduce their file sizes without comprom
 Caching and Content Delivery Networks (CDNs):
 
 Leverage caching techniques to store static content and serve it quickly to subsequent visitors, reducing server load and improving performance. Additionally, using a CDN allows you to distribute your website's files across multiple servers worldwide, delivering content from the nearest server to the user's location. </p>
-
-                <img src='../blog_images/../blog_images/server-side.jpg' class='image w-50 mx-auto d-block' alt='main image of paragraph'>
-
-        </div>
-        <div class='conclusion_section mb-3'>
-            <p class='mx-2 mt-3 mb-3 fs-5 text-center'> Deployment and Hosting:
+      
+                      <img src='../blog_images/../blog_images/' class='image w-50 mx-auto d-block' alt='main image of paragraph'>
+      
+              </div>
+              <div class='conclusion_section mb-3'>
+                  <p class='mx-2 mt-3 mb-3 fs-5 text-center'> Deployment and Hosting:
 
 In today's digital landscape, deployment and hosting are critical steps in bringing your web application to life. Whether you're a developer, a startup founder, or an enthusiast, understanding the process and available options is crucial for a successful launch. In this blog post, we'll demystify deployment and hosting, exploring the key concepts and providing you with a clear roadmap to get your web application up and running.
 What is Deployment?
@@ -268,81 +268,81 @@ c) Monitoring and Logging: Set up monitoring tools to track application performa
 
 d) Backup and Disaster Recovery: Establish regular backups and implement disaster recovery plans to protect against data loss or system failures.
  </p>
-
-                <img src='../blog_images/../blog_images/ ' class='image w-50 mx-auto d-block' alt='end image'>
-
-        </div>
-
-    </div>
-</div>
-
-<section id ='comment_section' class='container mt-5'>
-        <h2 class='fw-bold'> Comment </h2>
-        <input type='email' class='form-control mb-3 mt-3' required placeholder='Enter Your Email' id='ID_email'>
-        <textarea id='ID_commentarea' class='form-control' placeholder='Enter Your Comment' rows='4'></textarea>
-        <input type='checkbox' class='mx-1 mt-2 '  onclick='Checkbox()'>
-        <label class='mx-1 mt-2'>I agree to notify me for the latest blogs</label>
-        <br>
-        <input type='button' disabled class='btn btn-dark mt-2 mb-3 px-5' value='Submit' id='ID_button'>
-        <input type='hidden' value='11' id='hidden_id'>
-    <div id='ID_div'> </div>
-    </section>
-
-
-    <script src='https://code.jquery.com/jquery-3.6.4.min.js'
-        integrity='sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=' crossorigin='anonymous'>
-    </script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
-    <script>
-    function Checkbox(){
-        document.getElementById('ID_button').toggleAttribute('disabled');
-    }  
-    $(document).ready(function() {
-        var blog_ids = $('#blog_id').val();
-        $.ajax({
-            url:'../blog_comments.php',
-            type:'POST',
-            data:{
-                blog_id: blog_ids,
-            }
-
-        })
-
-        dataLoad();
-
-        function dataLoad() {
-            $.ajax({
-                url: '../blog_comments.php',
-                type: 'POST',
-                success: function(data) {
-                    $('#ID_div').html(data);
-                }
-            })
-
-        }
-
-
-        $('#ID_button').click(function() {
-            var comment = $('#ID_commentarea').val();
-            var hidden_id = $('#hidden_id').val();
-            var email = $('#ID_email').val();
-
-            $.ajax({
-                url: '../blog_comments.php',
-                type: 'POST',
-                data: {
-                    submitbtn: 1,
-                    ID_comment: comment,
-                    hid_id: hidden_id,
-                    user_email:email
-                },
-                success: function() {
-                    dataLoad();
-                }
-
-            })
-        })
-    })
-    </script>
-</body>
-</html>
+      
+                      <img src='../blog_images/../blog_images/ ' class='image w-50 mx-auto d-block' alt='end image'>
+      
+              </div>
+      
+          </div>
+      </div>
+      
+      <section id ='comment_section' class='container mt-5'>
+              <h2 class='fw-bold'> Comment </h2>
+              <input type='email' class='form-control mb-3 mt-3' required placeholder='Enter Your Email' id='ID_email'>
+              <textarea id='ID_commentarea' class='form-control' placeholder='Enter Your Comment' rowtwos='4'></textarea>
+              <input type='checkbox' class='mx-1 mt-2 '  onclick='Checkbox()'>
+              <label class='mx-1 mt-2'>I agree to notify me for the latest blogs</label>
+              <br>
+              <input type='button' disabled class='btn btn-dark mt-2 mb-3 px-5' value='Submit' id='ID_button'>
+              <input type='hidden' value='11' id='hidden_id'>
+          <div id='ID_div'> </div>
+          </section>
+      
+      
+          <script src='https://code.jquery.com/jquery-3.6.4.min.js'
+              integrity='sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=' crossorigin='anonymous'>
+          </script>
+          <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
+          <script>
+          function Checkbox(){
+              document.getElementById('ID_button').toggleAttribute('disabled');
+          }  
+          $(document).ready(function() {
+              var blog_ids = $('#blog_id').val();
+              $.ajax({
+                  url:'../blog_comments.php',
+                  type:'POST',
+                  data:{
+                      blog_id: blog_ids,
+                  }
+      
+              })
+      
+              dataLoad();
+      
+              function dataLoad() {
+                  $.ajax({
+                      url: '../blog_comments.php',
+                      type: 'POST',
+                      success: function(data) {
+                          $('#ID_div').html(data);
+                      }
+                  })
+      
+              }
+      
+      
+              $('#ID_button').click(function() {
+                  var comment = $('#ID_commentarea').val();
+                  var hidden_id = $('#hidden_id').val();
+                  var email = $('#ID_email').val();
+      
+                  $.ajax({
+                      url: '../blog_comments.php',
+                      type: 'POST',
+                      data: {
+                          submitbtn: 1,
+                          ID_comment: comment,
+                          hid_id: hidden_id,
+                          user_email:email
+                      },
+                      success: function() {
+                          dataLoad();
+                      }
+      
+                  })
+              })
+          })
+          </script>
+      </body>
+      </html>
