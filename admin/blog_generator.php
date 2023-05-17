@@ -1,5 +1,5 @@
 <?php
-// ini_set('display_errors', '1');
+ini_set('display_errors', '1');
 
 session_start();
 include('../connection.php');
@@ -19,7 +19,7 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
 
     $blog_page_structure = "
    
-  <?php session_start();
+  <?php session_start();?>
 <html>
 
 <head>
