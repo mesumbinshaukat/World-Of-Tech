@@ -1,24 +1,4 @@
-<?php
-ini_set('display_errors', '1');
 
-session_start();
-include('../connection.php');
-
-
-$blog_id = $_SESSION['id'];
-$fetch_query = "SELECT * FROM `admin_blogs` WHERE id = '$blog_id'";
-$fetch_query_run = mysqli_query($conn, $fetch_query);
-
-
-while ($row = mysqli_fetch_array($fetch_query_run)) {
-
-    // $intro_para = $row['intro_para'];
-    // $intro_para = str_replace("&s_q", "'", $intro_para);
-    // $intro_para = str_replace("&d_q", '"', $intro_para);
-    // $intro_para = str_replace('&c', ':', $intro_para);
-    // $intro_para = str_replace("&f_slash", '/', $intro_para);
-
-    $blog_page_structure =  "
    
   <?php session_start();
 
@@ -29,10 +9,10 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
   <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content=' width=device-width, initial-scale=1'>
-    <meta name='keywords' content='" . $row['meta_tags'] . "'>
-        <meta name='description' content='" . $row['metatags_description'] . "'>
+    <meta name='keywords' content='dsa'>
+        <meta name='description' content='das'>
         <meta name='author' content='world of tech'>
-  <title>" . $row['blogtitle'] . "</title>
+  <title>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis </title>
   
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700' rel='stylesheet'>
   
@@ -49,7 +29,7 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
   <div class='section'>
   
   <div class='container'>
-    <input type='hidden' id='blog_id' value='" . $row['id'] . "'>
+    <input type='hidden' id='blog_id' value='2'>
   <div class='row'>
   <div class='col-md-8'>
   
@@ -57,26 +37,26 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
   
   
   <div class='section-row'>
-  <h3> " . $row['blogtitle'] . "</h3>
-  <h4> " . $row['subtitle'] . "</h4>
+  <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis </h3>
+  <h4> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis </h4>
   <figure >
-    <img src='../blog_images/" . $row['thumbnail'] . " ' height='auto' alt='thumbnail'>
+    <img src='../blog_images/../blog_images/Screenshot 2023-06-14 004719.png ' height='auto'  alt='thumbnail'>
     </figure>
-  <p>" . $row['intro_para'] . "</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. </p>
   <figure >
-    <img src='../blog_images/" . $row['intro_img'] . " ' height='auto' alt='intro image'>
+    <img src='../blog_images/../blog_images/Screenshot (5).png ' height='auto'  alt='intro image'>
     </figure>
-  <p> " . $row['main_para'] . " </p>
+  <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, </p>
   
   <figure>
-  <img src='../blog_images/" . $row['main_img'] . "' height='auto' alt='main image of paragraph'>
+  <img src='../blog_images/../blog_images/goku.jpg' height='auto'  alt='main image of paragraph'>
   </figure>
   <h3>Conclusion</h3>
-  <p>" . $row['conclusion_para'] . "</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. </p>
   <figure>
-  <img src='../blog_images/" . $row['conclusion_img'] . " ' height='auto' alt='end image'>
+  <img src='../blog_images/../blog_images/calculator.png ' height='auto'  alt='end image'>
   </figure>
-  <input type='hidden' value='" . $row['id'] . "' id='hidden_id'>
+  <input type='hidden' value='2' id='hidden_id'>
   
   </div>
   
@@ -130,19 +110,19 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
   <div class='social-widget'>
   <ul>
   <li class=''>
-  <a href='https://www.facebook.com/worldoftech.softwarehouse.official' class='social-facebook'>
+  <a href='#' class='social-facebook'>
   <i class='fa fa-facebook'></i>
   
   </a>
   </li>
   <li>
-  <a href='https://www.instagram.com/world_of_tech_official/' class='social-twitter'>
+  <a href='#' class='social-twitter'>
   <i class='fa fa-instagram'></i>
   
   </a>
   </li>
   <li>
-  <a href='https://www.youtube.com/@WorldOfTech.Official' class='social-google-plus'>
+  <a href='#' class='social-google-plus'>
   <i class='fa fa-youtube-play'></i>
   
   </a>
@@ -247,17 +227,4 @@ while ($row = mysqli_fetch_array($fetch_query_run)) {
   
   </body>
   </html>
-  ";
-    $file_name = "../blogs/" . $row["blogtitle"] . ".php";
-    if ($file_name) {
-        $file_handle = fopen(
-            $file_name,
-            "w"
-        );
-        $generate_file = fwrite($file_handle, $blog_page_structure);
-        if (fclose($file_handle)) {
-            header("location:admin_dashboard.php");
-            exit();
-        }
-    }
-} ?>
+  
