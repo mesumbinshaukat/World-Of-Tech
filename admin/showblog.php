@@ -1,5 +1,16 @@
 <?php
+session_start();
 include("../connection.php");
+
+$admin_name = "WorldOfTech_Admin_778866_Official!!!";
+$session_admin_name = $_SESSION['Admin_Name'];
+
+
+if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
+    header('location:../index.php');
+    exit();
+}
+
 // $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't Connect");
 $select_query = "SELECT * FROM `admin_blogs` ";
 $query_run = mysqli_query($conn, $select_query);

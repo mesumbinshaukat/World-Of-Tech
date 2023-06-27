@@ -10,7 +10,7 @@ if (isset($_POST['submitbtn'])) {
     $comment = str_replace(">", "&gt", $comment);
     $user_email = $_POST['user_email'];
     $user_email = str_replace("<", "&lt", $user_email);
-    $user_email = str_replace(">", "&gt", $user_email);
+    $user_email = str_replace(">", "&gt", $user_email); 
     //    $blog_id = $_SESSION['id'];
     $insert_query = "INSERT INTO `blogs_comment`(`comments`, `blog_id`,`user_email`) VALUES ('$comment','$blog_id','$user_email')";
     $query_run = mysqli_query($conn, $insert_query);
@@ -31,6 +31,8 @@ $select_query_run = mysqli_query($conn, $select_query);
 <html lang="en">
 
 <head>
+<link type='text/css' rel='stylesheet' href='style.css' />
+
     <style>
     .heading {
         /* text-decoration: underline;  */
@@ -46,16 +48,34 @@ $select_query_run = mysqli_query($conn, $select_query);
 </head>
 
 <body>
+   
+  <div class='section-title'>
+      <?php if (mysqli_num_rows($select_query_run) >= 1) { ?>
+        <h3 class='title'>Comments</h3>
+        <?php } ?>
+  </div>
+  <div class='post-comments'>
+    
+  <div class='media'>
+  
+      <?php while ($row = mysqli_fetch_array($select_query_run)) { ?>
+  <div class='media-body mx-2'>
+  <div class='media-heading'>
+  <h4><?php $username = strstr($row['user_email'], '@', true);
+        echo $username; ?>:</h4>
+</div>
+<p><?php echo $row['comments'] ?></p>
+  
+<?php } ?>
+  </div>
 
-    <?php if (mysqli_num_rows($select_query_run) >= 1) { ?>
-    <h2>Comments</h2>
-    <?php } ?>
-    <?php while ($row = mysqli_fetch_array($select_query_run)) { ?>
-    <h6 class='heading'><?php $username = strstr($row['user_email'], '@', true);
-        echo $username; ?>:</h6>
-    <p class='p'><?php echo $row['comments'] ?></p>
+  </div>
+  
+  </div>
 
-    <?php } ?>
+
+   
+
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
 </body>
 

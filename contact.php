@@ -6,6 +6,11 @@ if (isset($_GET['Plan'])) {
     $_SESSION['plan'] = $plan;
 }
 
+if (isset($_GET['service_name'])) {
+    $service = $_GET['service_name'];
+    $area = $_GET['area']; 
+    $_SESSION['service_name'] = $service;
+}
 
 ?>
 <html lang="en">
@@ -47,19 +52,24 @@ if (isset($_GET['Plan'])) {
         }
 
         .plan_type {
-            font-size: 15px;
+            font-size: 18px;
             letter-spacing: 0.1px;
             color: gray;
+            font-weight:170px;
+            letter-spacing:.5px;
         }
 
         .plan_type:hover {
             color: gray;
+           
         }
 
         .plan_para {
-            font-size: 15px;
+            font-size: 18px;
+            font-weight:170px;
             letter-spacing: 0.1px;
             color: gray;
+            letter-spacing:.5px;
         }
 
         .plan_para:hover {
@@ -119,6 +129,11 @@ if (isset($_GET['Plan'])) {
             <p class='d-flex justify-content-end '> <a href="index.php#plans" class='text-decoration-none plan_type
          '>Plan Type: <span class='plan_para'><?php echo $plan; ?></span> </a> </p>
         <?php } ?>
+        <?php if(isset($service)) { ?>
+            <p class='d-flex justify-content-end '> <a href="services.php#<?php echo $area ?>" class='text-decoration-none plan_type
+         '>Service Type: <span class='plan_para'><?php echo $service; ?></span> </a> </p>
+        <?php } ?>
+
         <h2 class="text-center text-dark fw-bold">Contact us</h2>
         <p class="text-center" style="color:gray; font-size:15px;"> <span class="fw-bold"> World Of Tech , </span> we
             develop and deploy</p>
