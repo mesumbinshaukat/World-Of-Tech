@@ -1,5 +1,5 @@
 <?php
-// ini_set('display_errors', '1');
+ini_set('display_errors', '1');
 session_start();
 
 $admin_name = "WorldOfTech_Admin_778866_Official!!!";
@@ -97,7 +97,7 @@ $select_categories_run = mysqli_query($conn, $select_categories);
                 <label>Blog Category</label>
                 <select name="blog_categories" class="form-control">
                     <?php while ($row = mysqli_fetch_array($select_categories_run)) { ?>
-                        <option value="<?php echo $row['id'] ?>"><?php echo $row['blog_cat'] ?></option>
+                    <option value="<?php echo $row['id'] ?>"><?php echo $row['blog_cat'] ?></option>
                     <?php } ?>
                 </select>
             </div>

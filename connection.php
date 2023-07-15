@@ -6,4 +6,5 @@ $conn = mysqli_connect('localhost', 'root', '', 'world_of_tech') or die("Can't C
 
 
 
+
 ?>

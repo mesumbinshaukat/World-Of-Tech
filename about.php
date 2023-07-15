@@ -374,7 +374,7 @@
                                 <hr>
                             </div>
                         </div>
-                        <div class="container mt-3">
+                        <div class="container mt-3 mb-5">
                             <div class="row">
                                 <div class="col text-center">
                                     <img src="./images/rafay.jpg" alt="Abdul Rafay Khan" class="t_img">
@@ -394,7 +394,7 @@
                                 </div>
                             </div>
                         </div>
-                        <hr>
+                        <!-- <hr> -->
 
 
                     </div>
@@ -406,7 +406,7 @@
             </div>
         </div>
 
-        <div class="container mt-5">
+        <!-- <div class="container mt-5">
             <div class="row">
                 <h3 class="text-center">
                     <b>Our Projects</b>
@@ -440,7 +440,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -450,7 +450,7 @@
 
 
 
-    <section>
+    <section class="mt-5">
         <?php include('footer.html') ?>
     </section>
 
