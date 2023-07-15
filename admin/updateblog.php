@@ -1,5 +1,6 @@
 <?php
 include('../connection.php');
+session_start();
 
 $admin_name = "WorldOfTech_Admin_778866_Official!!!";
 $session_admin_name = $_SESSION['Admin_Name'];
@@ -279,37 +280,27 @@ if (isset($_POST['submitbtn'])) {
         
         </body>
         </html>
-        ";
-    }
-    $file_name = "../blogs/" . $rowtwo["blogtitle"] . ".php";
-    if ($file_name) {
-        $file_handle = fopen($file_name, "w");
-        $generate_file = fwrite($file_handle, $blog_page_structure);
-        if
-        (fclose($file_handle)) {
-            header("location:admin_dashboard.php");
-            exit();
-        }
-    }
-} ?>
+        " ; } $file_name="../blogs/" . $rowtwo["blogtitle"] . ".php" ; if ($file_name) {
+        $file_handle=fopen($file_name, "w" ); $generate_file=fwrite($file_handle, $blog_page_structure); if
+        (fclose($file_handle)) { header("location:admin_dashboard.php"); exit(); } } } ?>
 
 
 
-<?php
+    <?php
 $select_categories = "SELECT * FROM `tbl_blogcat`";
 $select_categories_run = mysqli_query($conn, $select_categories);
 ?>
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Update Blog</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <title>Update Blog</title>
+    </head>
 
 <body>
     <?php include("navbar.html"); ?>
@@ -323,8 +314,8 @@ $select_categories_run = mysqli_query($conn, $select_categories);
                 <label>Blog Category</label>
                 <select name="blog_categories" class="form-control">
                     <?php while ($categories = mysqli_fetch_array($select_categories_run)) { ?>
-                        <option value="<?php echo $categories['id'] ?>"><?php echo $categories['blog_cat'] ?>
-                        </option>
+                    <option value="<?php echo $categories['id'] ?>"><?php echo $categories['blog_cat'] ?>
+                    </option>
                     <?php } ?>
                 </select>
             </div>
