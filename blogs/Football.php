@@ -9,14 +9,15 @@
   <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content=' width=device-width, initial-scale=1'>
-    <meta name='keywords' content='wefwef'>
-        <meta name='description' content='gwrgegergre'>
+    <meta name='keywords' content='Football, Messi, Ronaldo, Mbappe'>
+        <meta name='description' content='This is a football news blog'>
         <meta name='author' content='world of tech'>
-  <title>dsjkofjkspodfjkpos</title>
+  <title>Football</title>
   
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700' rel='stylesheet'>
   
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   <link type='text/css' rel='stylesheet' href='../style.css' />
   
@@ -24,39 +25,41 @@
   <body>
   
   
+  <section>
+    <?php include("navbar.html")?>
+  </section>
   
-  
-  <div class='section'>
+  <div class='section' style='margin-top: 100px !important;'>
   
   <div class='container'>
-    <input type='hidden' id='blog_id' value='18'>
+    <input type='hidden' id='blog_id' value='2'>
   <div class='row'>
   <div class='col-md-8'>
   
   
   
   
-  <div class='section-row'>
-  <h3> dsjkofjkspodfjkpos</h3>
-  <h4> sdfjsdfjpsdjfpiosdjfp</h4>
+  <div class='section-row' >
+  <h3> Football</h3>
+  <h4> Football News</h4>
   <figure >
-    <img src='../blog_images/../blog_images/pexels-designecologist-1779487.jpg ' height='auto' alt='thumbnail'>
+    <img src='../blog_images/../blog_images/https___therealchamps.com_wp-content_uploads_getty-images_2017_07_1453284988.jpeg ' height='auto' alt='thumbnail'>
     </figure>
-  <p>fwl;ejmpfowejkpfowjkef</p>
+  <p>This is the intro paragraph</p>
   <figure >
-    <img src='../blog_images/../blog_images/pexels-kevin-ku-577585.jpg ' height='auto' alt='intro image'>
+    <img src='../blog_images/../blog_images/Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped).jpg ' height='auto' alt='intro image'>
     </figure>
-  <p> efwjiefjioewjfiowejf </p>
+  <p> This is the main paragraph </p>
   
   <figure>
-  <img src='../blog_images/../blog_images/pexels-lisa-fotios-16129705.jpg' height='auto' alt='main image of paragraph'>
+  <img src='../blog_images/../blog_images/Cristiano_Ronaldo_WC2022_-_01_(cropped).jpg' height='auto' alt='main image of paragraph'>
   </figure>
   <h3>Conclusion</h3>
-  <p>ewfjwejfopewjkfoewj9fwefgg</p>
+  <p>This is the conclusion paragraph</p>
   <figure>
-  <img src='../blog_images/../blog_images/pexels-pixabay-270404.jpg ' height='auto' alt='end image'>
+  <img src='../blog_images/../blog_images/news.png ' height='auto' alt='end image'>
   </figure>
-  <input type='hidden' value='18' id='hidden_id'>
+  <input type='hidden' value='2' id='hidden_id'>
   
   </div>
   

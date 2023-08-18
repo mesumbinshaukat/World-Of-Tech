@@ -14,7 +14,7 @@ if (!isset($session_admin_name) && $admin_name !== $session_admin_name) {
 include('../connection.php');
 if (isset($_POST['submitbtn'])) {
     $blog_date = $_POST['blog_date'];
-    $blog_categories = $_POST['blog_categories'];
+    $blog_category = $_POST['blog_categories'];
     $thumnail_img = $_FILES['thumbnail']['name'];
     $thumbnail_img_tmp = $_FILES['thumbnail']['tmp_name'];
     $thumbnail_img_path = '../blog_images/' . $thumnail_img;
@@ -47,7 +47,7 @@ if (isset($_POST['submitbtn'])) {
     $metatags = $_POST['meta_tags'];
     $metatags_description = $_POST['meta_tags_description'];
     $insert_query = "INSERT INTO
-     `admin_blogs`(`blog_cat`, `thumbnail`, `blogtitle`, `subtitle`, `intro_para`, `intro_img`, `main_para`, `main_img`, `conclusion_para`, `conclusion_img`, `publish_date`, `meta_tags`, `metatags_description`) VALUES ('$blog_categories ','$thumbnail_img_path','$blogtitle','$blog_sub_title','$intro_para','$intro_para_img_path','$main_para','$main_para_img_path','$conclusion_para','$conclusion_para_img_path','$blog_date','$metatags','$metatags_description')";
+     `admin_blogs`(`blog_category`, `thumbnail`, `blogtitle`, `subtitle`, `intro_para`, `intro_img`, `main_para`, `main_img`, `conclusion_para`, `conclusion_img`, `publish_date`, `meta_tags`, `metatags_description`) VALUES ('$blog_category','$thumbnail_img_path','$blogtitle','$blog_sub_title','$intro_para','$intro_para_img_path','$main_para','$main_para_img_path','$conclusion_para','$conclusion_para_img_path','$blog_date','$metatags','$metatags_description')";
     $insert_query_run = mysqli_query($conn, $insert_query);
     if ($insert_query_run) {
         // echo"<script>alert('inserted')</script>";

@@ -1,6 +1,6 @@
 <?php
     include('../connection.php');
- $select_blogs = 'SELECT * FROM `admin_blogs` INNER JOIN `tbl_blogcat` ON  admin_blogs.blog_cat = tbl_blogcat.id';
+ $select_blogs = 'SELECT * FROM `admin_blogs` INNER JOIN `tbl_blogcat` ON  admin_blogs.blog_category = tbl_blogcat.id';
 
       // $select_blogs = 'SELECT * FROM `admin_blogs`';
       $select_blogs_run = mysqli_query($conn,$select_blogs);
